@@ -1,0 +1,14 @@
+extends ./layout.jade
+
+block topNav
+    a(href='dev.html') Web Dev
+    a.selected(href='illustration.html') Illustration
+    a(href='games.html') Games
+
+block content
+    
+    .row
+        .col-1
+            +bigButton('portfolio', 'Carbonmade', 'https://nixallover.carbonmade.com/')
+        .col-2
+            +bigButton('sketches', 'Tumblr', 'http://nixallover.tumblr.com/')

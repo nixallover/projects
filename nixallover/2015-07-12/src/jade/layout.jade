@@ -1,3 +1,5 @@
+include ./util.jade
+
 //- primary layout
 doctype html
 html(lang="en")
@@ -22,12 +24,12 @@ html(lang="en")
                     h1 Nix All Over
                     h1.sub Art + Dev by Nicole Oliver
                 
-                
         nav.top-level-nav(role='navigation')
             .container
-                a.selected(href='/dev') Web Dev
-                a(href='/illustration') Illustration
-                a(href='/games') Games
+                block topNav
+                    a(href='dev.html') Web Dev
+                    a(href='illustration.html') Illustration
+                    a(href='games.html') Games
         
 
         .leading-content
@@ -36,7 +38,7 @@ html(lang="en")
 
         footer
             .container
-                p &copy; Made with &hearts; by Nicole Oliver. All rights reserved.
+                p &copy; 2015 Made with &hearts; by Nicole Oliver. <a href="mailto:nicole@nixallover.com">Shoot me an email</a> before using my work!
 
 
         block scripts

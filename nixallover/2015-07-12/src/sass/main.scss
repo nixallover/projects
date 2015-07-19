@@ -51,6 +51,7 @@ $test: $pink;
 body {
     background-color: $lightest;
     font-family: 'Roboto Slab', serif;
+    font-size: 20px;
     color: $accent;
     
     * {
@@ -89,11 +90,11 @@ $height-dragon: 200px;
     vertical-align: top;
     
     h1 { 
-        font-size: 300%;
+        font-size: 280%;
         margin: 0 0;
         
         &.sub {
-            font-size: 250%;
+            font-size: 220%;
             font-weight: normal;
             margin: 0 0;
         }
@@ -149,37 +150,72 @@ $height-dragon: 200px;
     padding: 3em 0;
 }
 
-$height-big-button:200px;
+
+
+$height-big-button: 175px;
 
 /*a*/.big-button {
     @extend %block;
     @include transition(background-color, .5s, ease-in);
     background-color: $accent;
     color: $lightest;
-    height: $height-big-button;
-    margin: 1em auto;
-    width: 60%;
+    min-height: $height-big-button;
+    margin: 2em auto;
+    text-decoration: none;
+    width: 100%;
     
     &:hover {
         background-color: hoverify($accent);
     }
     
     .big-button-icon {
+        background: url('../img/dragon-icon.png') transparent 0 0 no-repeat;
+        background-size: auto $height-big-button;
+        border:none;
         float: left;
         display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
         height: $height-big-button;
-        width: auto;
+        width: $height-big-button;
+        
+        &.bbi-Unknotted { background-image: url('../img/icon-dev.png'); }
+        &.bbi-GitHub { background-image: url('../img/icon-github.png'); }
+        &.bbi-Tumblr { background-image: url('../img/icon-illustration.png'); }
     }
     
     .big-button-text {
-        font-size: 270%;
+        font-size: 200%;
         padding: 1em;
         font-weight: bold;
         text-align: right;
+        vertical-align: top;
+        margin-left: $height-big-button;
         
         .small {
             font-size: 80%;
             font-weight: normal;
         }
     }
+}
+
+
+// columns (2)
+
+.row {
+    @extend %block;
+    
+    .col-1, 
+    .col-2 {
+        @extend %inline-block;
+        width: 50%;
+    }
+    
+    .col-1 { padding-right: 1em; }
+    .col-2 { padding-left: 1em; }
+}
+
+.project {
+    @extend %block;
 }

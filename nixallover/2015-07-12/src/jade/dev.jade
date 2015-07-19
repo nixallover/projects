@@ -1,0 +1,18 @@
+extends ./layout.jade
+
+block topNav
+    a.selected(href='dev.html') Web Dev
+    a(href='illustration.html') Illustration
+    a(href='games.html') Games
+
+block content
+    p I'm a full-stack web developer, with a focus on interaction design and development. Mostly I work in Node.js. 
+    
+    .row
+        .col-1
+            +bigButton('dev blog', 'Unknotted', 'https://unknotted.ucsd.edu/')
+        .col-2
+            +bigButton('Fork me on', 'GitHub', 'https://github.com/nixallover')
+            
+            
+    .project
