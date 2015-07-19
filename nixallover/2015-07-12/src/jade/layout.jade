@@ -1,5 +1,3 @@
-// include ./util.jade
-
 //- primary layout
 doctype html
 html(lang="en")
@@ -9,7 +7,6 @@ html(lang="en")
 
         block css
             //- styles
-            link(rel='stylesheet', href='styles/normalize.css')
             // link(rel='stylesheet', href='/components/fontawesome/css/font-awesome.min.css')
             link(rel='stylesheet', href='styles/main.css')
 
@@ -18,23 +15,28 @@ html(lang="en")
 
 
     body
+        .title-banner
+            .container
+                .title-banner-icon
+                .title-banner-text
+                    h1 Nix All Over
+                    h1.sub Art + Dev by Nicole Oliver
+                
+                
         nav.top-level-nav(role='navigation')
             .container
-                .navbar-header
-                    button.navbar-toggle(type='button',data-toggle='collapse',data-target='.navbar-ex1-collapse')
-                        span.sr-only Toggle navigation
-                        span.icon-bar
-                        span.icon-bar
-                        span.icon-bar
-                    a.navbar-brand
+                a.selected(href='/dev') Web Dev
+                a(href='/illustration') Illustration
+                a(href='/games') Games
+        
 
-                .collapse.navbar-collapse
-                    p.navbar-text.navbar-right
-
-        #main-container
-            block content
+        .leading-content
+            .container
+                block content
 
         footer
+            .container
+                p &copy; Made with &hearts; by Nicole Oliver. All rights reserved.
 
 
         block scripts
