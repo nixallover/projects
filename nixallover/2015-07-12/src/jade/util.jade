@@ -1,0 +1,9 @@
+//- jade mixins
+
+//- strip layout
+mixin bigButton(opener, name, url)
+    a.big-button(href=url)
+        div(class='big-button-icon bbi-#{name}')
+        .big-button-text
+            .small= opener
+            | #{name}

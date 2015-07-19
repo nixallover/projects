@@ -1,0 +1,46 @@
+include ./util.jade
+
+//- primary layout
+doctype html
+html(lang="en")
+    head
+        block title
+            title Nix All Over
+
+        block css
+            //- styles
+            // link(rel='stylesheet', href='/components/fontawesome/css/font-awesome.min.css')
+            link(rel='stylesheet', href='styles/main.css')
+
+        //- fonts
+        link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100')
+
+
+    body
+        .title-banner
+            .container
+                .title-banner-icon
+                .title-banner-text
+                    h1 Nix All Over
+                    h1.sub Art + Dev by Nicole Oliver
+                
+        nav.top-level-nav(role='navigation')
+            .container
+                block topNav
+                    a(href='dev.html') Web Dev
+                    a(href='illustration.html') Illustration
+                    a(href='games.html') Games
+        
+
+        .leading-content
+            .container
+                block content
+
+        footer
+            .container
+                p &copy; 2015 Made with &hearts; by Nicole Oliver. <a href="mailto:nicole@nixallover.com">Shoot me an email</a> before using my work!
+
+
+        block scripts
+            //- scripts: libs 
+            script(src='scripts/jquery.min.js')
