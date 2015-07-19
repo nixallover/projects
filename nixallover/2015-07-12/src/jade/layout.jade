@@ -9,16 +9,16 @@ html(lang="en")
 
         block css
             //- styles
-            link(rel='stylesheet', href='/components/foundation/css/normalize.min.css')
+            link(rel='stylesheet', href='styles/normalize.css')
             // link(rel='stylesheet', href='/components/fontawesome/css/font-awesome.min.css')
-            link(rel='stylesheet', href='/styles/main.css')
+            link(rel='stylesheet', href='styles/main.css')
 
         //- fonts
         link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100')
 
 
     body
-        nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+        nav.top-level-nav(role='navigation')
             .container
                 .navbar-header
                     button.navbar-toggle(type='button',data-toggle='collapse',data-target='.navbar-ex1-collapse')
@@ -39,4 +39,4 @@ html(lang="en")
 
         block scripts
             //- scripts: libs 
-            script(src='/components/jquery/dist/jquery.min.js')
+            script(src='scripts/jquery.min.js')

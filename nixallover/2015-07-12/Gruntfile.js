@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     jade: {
       compile: {
         files: {
-          'dist/index.html': 'src/jade/layout.jade'
+          'dist/index.html': 'src/jade/index.jade'
         }
       }
     },

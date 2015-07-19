@@ -1,5 +1,38 @@
-body {
-	color: #22f;
+// nixallover.com
+// created 7/17/2015 by nicole@nixallover.com
+
+// colors
+$white: #fff;
+$cream: #EFEBDC;
+$red: #EF6250;
+$mint: #3FEFB9;
+
+// color assignments
+$bg: $white;
+$neutral: $cream;
+$accent: $red;
+$highlight: $mint;
+
+// @import 'normalize';
+
+%block {
+    display: block;
+    position: relative;
 }
 
-				
+// border for testing
+#leading-content {
+
+}
+
+body {
+    color: #22f;
+}
+
+nav {
+    background-color: $accent;
+}
+
+#leading-content {
+
+}
