@@ -1,0 +1,1033 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"wid",
+				"width-mech-asset"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"menu",
+				"menuMgr"
+			],
+			[
+				"mouse",
+				"mouseenter"
+			],
+			[
+				"active",
+				"activeTurn"
+			],
+			[
+				"ac",
+				"activeTurn"
+			],
+			[
+				"va",
+				"validate"
+			],
+			[
+				"direct",
+				"directNeighbor"
+			],
+			[
+				"Ad",
+				"isAdjacent"
+			],
+			[
+				"is",
+				"isAdjacent"
+			],
+			[
+				"dom",
+				"domNodes"
+			],
+			[
+				"sele",
+				"selectedDomNodes"
+			],
+			[
+				"check",
+				"checkDirectNeighbor"
+			],
+			[
+				"sq",
+				"squaresHaveSameRow"
+			],
+			[
+				"se",
+				"selectedDomNodes"
+			],
+			[
+				"ma",
+				"maxSquaresSelected"
+			],
+			[
+				"anima",
+				"animalsCreated"
+			],
+			[
+				"values",
+				"valuesLength"
+			],
+			[
+				"fon",
+				"font-style"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"border",
+				"border-radius"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "jade/layout.jade",
+			"settings":
+			{
+				"buffer_size": 3873,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sass/_preloader.scss",
+			"settings":
+			{
+				"buffer_size": 3713,
+				"line_ending": "Windows",
+				"name": "#escapingBallG{"
+			}
+		},
+		{
+			"file": "jade/index.jade",
+			"settings":
+			{
+				"buffer_size": 2307,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sass/_mixins.scss",
+			"settings":
+			{
+				"buffer_size": 2735,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sass/style.scss",
+			"settings":
+			{
+				"buffer_size": 6895,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "jade/mailing-list-signup.jade",
+			"settings":
+			{
+				"buffer_size": 1213,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "jade/util.jade",
+			"settings":
+			{
+				"buffer_size": 3000,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 19 files for \"64\" (case sensitive)\n\nC:\\Users\\Nicole\\Desktop\\zmd\\dev\\sass\\_animations.scss:\n    2  \n    3  // animation stuff\n    4: $width-mech-asset: 64px;\n    5  \n    6  \n\nC:\\Users\\Nicole\\Desktop\\zmd\\dev\\zmd.sublime-workspace:\n  261  		\"/C/Users/Nicole/Desktop/zmd/bower_components/animate.css/animate.css\",\n  262  		\"/C/Users/Nicole/Desktop/zmd/dev/sass/style.scss\",\n  263: 		\"/C/Users/Nicole/AppData/Local/Temp/Rar$DR05.648/css/bootstrap.css\",\n  264  		\"/C/Users/Nicole/Desktop/zmd/dev/sass/_mixins.scss\",\n  265  		\"/C/Users/Nicole/Desktop/zmd/dev/sass/_tooltips.scss\",\n\n2 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 610,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "sass/_top-nav.scss",
+			"settings":
+			{
+				"buffer_size": 2361,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sass/_tooltips.scss",
+			"settings":
+			{
+				"buffer_size": 843,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sass/_animations.scss",
+			"settings":
+			{
+				"buffer_size": 6865,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Nicole/Desktop/zmd/GruntFile.js",
+			"settings":
+			{
+				"buffer_size": 1105,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "#mc_embed_signup {\n    form {\n        display:block; \n        float: left;\n        position:relative; \n        text-align:left; \n        padding:10px 0 10px 3%\n    }\n    h2 {\n\n        font-weight:bold; \n        padding:0; \n        margin:15px 0; \n        font-size:1.4em;\n    }\n    input {\n        @include border-radius(4px);\n        border:1px solid #999; \n        -webkit-appearance:none;\n        font-size: 16px;\n\n            &[type=checkbox]{\n                -webkit-appearance:checkbox;\n            }\n            &[type=radio]{\n                -webkit-appearance:radio;\n            }\n            &:focus {\n                border-color:#333;\n            }\n    }\n    .button {\n        //@include transition('background-color', .5, 'ease-in');\n        clear: both; \n        background-color: $cAltMed; \n        border: 0 none; \n        border-radius:4px; \n        color: $cWhite; \n        cursor: pointer; \n        display: inline-block; \n        font-size:15px; \n        font-weight: bold; \n        height: 32px; \n        line-height: 32px; \n        margin: 0 5px 10px 0; \n        padding:0; \n        text-align: center; \n        text-decoration: none; \n        vertical-align: top; \n        white-space: nowrap; \n        width: auto;\n\n        &:hover {\n            background-color: darken($cAltMed, 5);\n        }\n    }\n    .small-meta {\n        font-size: 11px;\n    }\n    .nowrap {\n        white-space:nowrap;\n    }     \n    .clear {\n        clear:none; \n        display:inline;\n    }\n    label {\n        display:block; \n        font-size:16px; \n        padding-bottom:10px; \n        font-weight:bold;\n    }\n    input.email {\n        display:block; \n        padding:8px 0; \n        margin:0 4% 10px 0; \n        text-indent:5px; \n        width:100%; \n        min-width:130px;\n    }\n    input.button {\n        display:block; \n        width:35%; \n        margin:0 0 10px 0; \n        min-width:90px;\n    }\n    div#mce-responses {\n        float:left; \n        top:-1.4em; \n        padding:0em .5em 0em .5em; \n        overflow:hidden; \n        width:90%;margin: 0 5%; \n        clear: both;\n    }\n    div.response {\n        margin:1em 0; \n        padding:1em .5em .5em 0; \n        font-weight:bold; \n        float:left; \n        top:-1.5em; \n        z-index:1; \n        width:80%;\n    }\n    #mce-error-response {\n        display:none;\n    }\n    #mce-success-response {\n        color:#529214; \n        display:none;\n    }\n    label.error {\n        display:block; \n        float:none; \n        width:auto; \n        margin-left:1.05em; \n        text-align:left; \n        padding:.5em 0;\n    }\n}",
+			"file": "sass/_mailing-list.scss",
+			"file_size": 2897,
+			"file_write_time": 130790629290701571,
+			"settings":
+			{
+				"buffer_size": 2590,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 117.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"snip",
+				"Snippet: starter-html"
+			],
+			[
+				"pac",
+				"Preferences: Browse Packages"
+			],
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 520.0
+	},
+	"console":
+	{
+		"height": 160.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Nicole/Desktop/zmd/dev/sass/ie-only.scss",
+		"/C/Users/Nicole/Desktop/zmd/dist/styles/style.css",
+		"/C/Users/Nicole/Desktop/zmd/dev/sass/_reset.scss",
+		"/C/Users/Nicole/Desktop/zmd/dev/jade/util.jade",
+		"/C/Users/Nicole/Desktop/zmd/dev/sass/_alt-barrier-format.scss",
+		"/C/Users/Nicole/Desktop/zmd/dev/sass/_image-links.scss",
+		"/C/Users/Nicole/Desktop/zmd/bower_components/animate.css/animate.css",
+		"/C/Users/Nicole/Desktop/zmd/dev/sass/style.scss",
+		"/C/Users/Nicole/AppData/Local/Temp/Rar$DR05.648/css/bootstrap.css",
+		"/C/Users/Nicole/Desktop/zmd/dev/sass/_mixins.scss",
+		"/C/Users/Nicole/Desktop/zmd/dev/sass/_tooltips.scss",
+		"/C/Users/Nicole/Desktop/zmd/dist/index.html",
+		"/C/Users/Nicole/Desktop/zmd/dist/scripts/tooltips.js",
+		"/C/Users/Nicole/Desktop/zmd/GruntFile.js",
+		"/C/Users/Nicole/Desktop/zmd/dist/mech-animation-test.html",
+		"/C/Users/Nicole/Desktop/zmd/dev/sass/_base.scss",
+		"/C/Users/Nicole/Desktop/zmd/dist/draft/sections.html",
+		"/C/Users/Nicole/Desktop/zmd/dist/draft/section1.html",
+		"/C/Users/Nicole/Desktop/zmd/dev/sass/_baveuse-font.scss",
+		"/C/Users/Nicole/Desktop/zmd/dist/scrollr-test.html",
+		"/C/Users/Nicole/Desktop/zmd/dist/styles/style.scss",
+		"/C/Users/Nicole/Desktop/zmd/dev/GruntFile.js",
+		"/E/Nicole/GitHub/nodemain/nicole/experiments/enigma/package.json",
+		"/C/Users/Nicole/Desktop/zmd/package.json",
+		"/C/Users/Nicole/Documents/GitHub/animix/Gruntfile.js",
+		"/C/Users/Nicole/Desktop/zmd/bower_components/HTML5-Reset/assets/css/style.css",
+		"/C/Users/Nicole/Desktop/zmd/bower_components/HTML5-Reset/assets/css/reset.css",
+		"/C/Users/Nicole/Desktop/zmd/dist/scripts/scrollr.min.js",
+		"/C/Users/Nicole/Desktop/zmd/index.html",
+		"/C/Users/Nicole/Desktop/zmd/dev/index.html",
+		"/C/Users/Nicole/Desktop/wp-config.php",
+		"/C/dev/animix/public/scripts/game/variables.js",
+		"/C/dev/animix/views/play.jade",
+		"/C/dev/animix/public/scripts/game/classes/Move.js",
+		"/C/dev/animix/public/scripts/game/roundInit.js",
+		"/C/dev/animix/public/scripts/game/classes/Round.js",
+		"/C/dev/animix/public/scripts/game/init.js",
+		"/C/dev/animix/views/layout.jade",
+		"/C/dev/animix/routes/index.js",
+		"/C/dev/animix/views/index.jade",
+		"/C/dev/animix/public/scripts/game/floorMgr.js",
+		"/C/dev/animix/public/scripts/game/tileMgr.js",
+		"/C/dev/animix/models/play.json",
+		"/C/dev/animix/public/scripts/game/gridMgr.js",
+		"/C/dev/animix/public/scripts/game/danceMgr.js",
+		"/C/dev/animix/public/scripts/game/classes/User.js",
+		"/C/dev/animix/public/styles/sass/main.scss",
+		"/C/dev/animix/public/scripts/game/classes/Turn.js",
+		"/C/dev/animix/public/scripts/game/squares-old.js",
+		"/C/dev/animix/public/scripts/game/stats.js",
+		"/C/dev/animix/public/scripts/gamMgr.js",
+		"/C/dev/animix/public/scripts/game/grid.js",
+		"/C/dev/animix/public/scripts/game/squares.js",
+		"/C/dev/animix/Gruntfile.js",
+		"/C/dev/animix/public/scripts/refactored-drag.js",
+		"/C/dev/animix/public/styles/css/main.css",
+		"/C/dev/animix/test/path.html",
+		"/C/dev/animix/public/scripts/game/squares-new.js",
+		"/C/dev/animix/public/scripts/refactored-drag3.js",
+		"/E/game-projects/animix/app/views/layout.jade",
+		"/E/game-projects/animix/animix.sublime-project",
+		"/C/dev/animix/bower.json",
+		"/F/game-projects/animix/app/public/scripts/game/util.js",
+		"/F/game-projects/animix/app/public/scripts/game/init.js",
+		"/F/game-projects/animix/app/public/scripts/game/classes/Turn.js",
+		"/F/game-projects/animix/app/public/scripts/game/classes/Round.js",
+		"/F/game-projects/animix/app/public/scripts/game/gameState.js",
+		"/F/game-projects/animix/app/public/scripts/game/stats.js",
+		"/F/game-projects/animix/app/public/scripts/game/classes/User.js",
+		"/F/game-projects/animix/app/test/sprites.html",
+		"/F/game-projects/animix/app/public/styles/sass/main.scss",
+		"/F/game-projects/animix/app/Gruntfile.js",
+		"/F/game-projects/animix/app/public/scripts/game/ui.js",
+		"/F/game-projects/animix/app/public/scripts/game/squares.js",
+		"/F/game-projects/animix/app/public/scripts/game/grid.js",
+		"/F/game-projects/animix/app/package.json",
+		"/F/game-projects/animix/app/views/layout.jade",
+		"/F/game-projects/animix/app/public/scripts/game/roundInit.js",
+		"/F/game-projects/animix/app/public/scripts/game/square.js",
+		"/F/game-projects/animix/app/public/scripts/game/round.js",
+		"/F/game-projects/animix/app/public/scripts/crap/dontknow.js",
+		"/F/game-projects/animix/app/views/index.jade",
+		"/F/game-projects/animix/app/routes/index.js",
+		"/F/game-projects/animix/app/test/drag/main.css",
+		"/F/game-projects/animix/app/test/drag/index.html",
+		"/F/game-projects/animix/app/public/scripts/updateStats.js",
+		"/F/game-projects/animix/app/public/scripts/crap/refactored-drag2.js",
+		"/F/game-projects/animix/app/public/scripts/crap/refactored-drag1.js",
+		"/F/game-projects/animix/app/public/scripts/game/drag.js",
+		"/F/game-projects/animix/app/public/scripts/init.js",
+		"/F/game-projects/animix/test/drag/main.css",
+		"/C/Users/Nicole/Documents/ssh/id_rsa.pub",
+		"/F/game-projects/animix/html/css",
+		"/F/game-projects/animix/app/public/scripts/createGrid.js",
+		"/F/game-projects/animix/html/index.html",
+		"/F/game-projects/animix/app/bower.json",
+		"/F/game-projects/animix/app/.bowerrc",
+		"/F/game-projects/animix/html/scripts/updateStats.js",
+		"/F/game-projects/animix/html/scripts/roundInit.js",
+		"/F/game-projects/animix/html/scripts/createGrid.js",
+		"/F/game-projects/animix/html/styles/sass/main.scss",
+		"/F/game-projects/animix/html/scripts/init.js",
+		"/F/game-projects/animix/psuedocode/round.js",
+		"/F/game-projects/animix/app/models/game.json",
+		"/F/game-projects/animix/app/views/error.jade",
+		"/E/game-projects/animix/html/scripts/calculateStats.js",
+		"/E/game-projects/animix/psuedocode/effects.js",
+		"/E/game-projects/animix/html/scripts/squareGenerator.js",
+		"/E/game-projects/animix/html/scripts/moveLogic.js",
+		"/E/game-projects/animix/html/scripts/createGrid.js",
+		"/E/game-projects/animix/html/animix.js",
+		"/E/game-projects/animix/html/util.js",
+		"/E/game-projects/animix/.gitignore",
+		"/E/game-projects/animix/.gitignore.txt",
+		"/F/web-projects/websites/nixallover/2014-03/index.html",
+		"/C/Users/Nicole/Dropbox/animix/psuedocode/animix.js",
+		"/C/Users/Nicole/Dropbox/animix/psuedocode/main-menu.js",
+		"/C/Users/Nicole/Dropbox/animix/psuedocode/hud.js",
+		"/C/Users/Nicole/Dropbox/animix/psuedocode/round.js",
+		"/C/Users/Nicole/Dropbox/Preferences.sublime-settings",
+		"/C/Users/Nicole/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Nicole/Documents/GitHub/staff/nicole/chat-server/index.js",
+		"/C/Users/Nicole/Documents/GitHub/tunnel-vision/index-new.htm",
+		"/C/Users/Nicole/Desktop/wordpress/wp-config.php",
+		"/C/Users/Nicole/Desktop/shadowbox.css",
+		"/C/Users/Nicole/Desktop/Cards and Castles/splash/splash.htm",
+		"/F/blue/tools-web/tools.htm",
+		"/C/Users/Nicole/AppData/Roaming/Sublime Text 2/Packages/User/starter-html.sublime-snippet"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Users\\Nicole\\Desktop\\zmd\\dev",
+			"C:\\dev\\animix\\public\\scripts\\game",
+			"F:\\game-projects\\animix\\app\\public\\scripts\\game",
+			"F:\\game-projects\\animix\\app"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			";\n",
+			"64",
+			"fixed",
+			"100",
+			"400",
+			"300",
+			"250",
+			"border:",
+			"skew",
+			".col50-right",
+			"col50-left",
+			"col50-right",
+			"col50-left",
+			"106px",
+			"42px",
+			"22px",
+			"600",
+			"1500",
+			"200",
+			".mech-brain",
+			"10",
+			"20%",
+			"40%",
+			"41%",
+			"\")",
+			"(src=\"/B",
+			"src=\"/",
+			"img",
+			"section",
+			"overwhelmed",
+			"anim-brain",
+			"anim-asset",
+			"anim-brain",
+			"mechanic-floating-text",
+			"$color-base1",
+			"color-accent2",
+			"$color-accent1",
+			"2E46BD_1_0",
+			"-6deg",
+			"<a href=\"#\">(.*)</a>",
+			",",
+			"}",
+			"{",
+			"move",
+			"\"#status\"",
+			"timer",
+			"time.",
+			"timerActivity",
+			"timerTotal",
+			"timerActivity",
+			"tickEvery",
+			"dumb",
+			"move",
+			"move.values",
+			"User",
+			"Turn",
+			"turn",
+			"Turn",
+			"turn",
+			"updateOnCompleteTurn",
+			"reset",
+			"turnMgr.reset",
+			"dropNewPart",
+			"dropPartsAbove",
+			"ui.grid.part",
+			"ui.grid.container",
+			"ui.grid.tile",
+			"grid.",
+			"checking",
+			"$ui",
+			"tile",
+			"grid.container",
+			"$ui.grid.container",
+			"$ui.turns",
+			"Square",
+			"square",
+			"$ui.score",
+			".grid-square",
+			"square",
+			"stats",
+			"square",
+			"stats.",
+			"ANIMIX.values",
+			"values",
+			"theDomNodes",
+			"round.activeTurn ",
+			"event.data.",
+			"domNodes",
+			"turn.domNodes",
+			"currTurn",
+			"actives",
+			"results",
+			"candidate, actives",
+			"new",
+			"selectedDomNodes",
+			"logger.status",
+			"\"column\"",
+			"\"row\"",
+			"last",
+			"check",
+			"data-part",
+			"</div>",
+			"data-animal",
+			"src=",
+			"img",
+			"squares.add.success",
+			"squareCandidate",
+			"ui",
+			":",
+			"currMove",
+			"activeTurn",
+			"update",
+			"<img",
+			"<img ",
+			"<img(.*)>",
+			"statusLog",
+			"debugLog",
+			"console.log",
+			"selectedDomNodes",
+			"move.",
+			"selectedDomNodes",
+			"move.positions",
+			"positions",
+			"$square",
+			"$ui",
+			"generatePart",
+			"numberOfAnimals",
+			"console"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<a href=\"#\" title=\"$1\">1</a>",
+			"ui.part",
+			"ui.grid",
+			"ui.tile",
+			"$( ui.grid.container )",
+			"$( ui.turns )",
+			"Tile",
+			"tile",
+			"$(ui.score)",
+			".tile",
+			"ANIMIX.currParts",
+			"ANIMIX.activeTurn"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "jade/layout.jade",
+					"settings":
+					{
+						"buffer_size": 3873,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								408,
+								408
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "sass/_preloader.scss",
+					"settings":
+					{
+						"buffer_size": 3713,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#escapingBallG{",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "jade/index.jade",
+					"settings":
+					{
+						"buffer_size": 2307,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1777,
+								1777
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 645.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "sass/_mixins.scss",
+					"settings":
+					{
+						"buffer_size": 2735,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1793,
+								1793
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 794.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "sass/style.scss",
+					"settings":
+					{
+						"buffer_size": 6895,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6850,
+								6850
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7142.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "jade/mailing-list-signup.jade",
+					"settings":
+					{
+						"buffer_size": 1213,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								328,
+								328
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "jade/util.jade",
+					"settings":
+					{
+						"buffer_size": 3000,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								120,
+								120
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"settings":
+					{
+						"buffer_size": 610,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										161,
+										163
+									],
+									[
+										434,
+										436
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								174,
+								174
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "sass/_top-nav.scss",
+					"settings":
+					{
+						"buffer_size": 2361,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								117,
+								117
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "sass/_tooltips.scss",
+					"settings":
+					{
+						"buffer_size": 843,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								397,
+								397
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "sass/_animations.scss",
+					"settings":
+					{
+						"buffer_size": 6865,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6593,
+								6593
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5432.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/C/Users/Nicole/Desktop/zmd/GruntFile.js",
+					"settings":
+					{
+						"buffer_size": 1105,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "sass/_mailing-list.scss",
+					"settings":
+					{
+						"buffer_size": 2590,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2590,
+								2590
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1742.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 219.0,
+	"status_bar_visible": true
+}

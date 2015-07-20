@@ -1,0 +1,104 @@
+//- jade mixins
+
+//- strip layout
+mixin strip(name)
+    .strip(id=name+'-strip')
+        .container
+            if block
+                block
+            else
+                p No content provided
+
+
+//- mechanics layout
+mixin mechText(pos, popText, plainText)
+    h2.mech-text.animated(
+        id='mechText' + pos,
+        data-500-bottom-center='display:none;', 
+        data-bottom-center='display:block; animation-name: bounceInLeft;'
+    )
+        span.pop= popText
+        | #{plainText}
+
+
+
+mixin mechAnimation(pos)
+    .mech-animation.animated(
+        id='mechAnim' + pos,
+        data-500-bottom-center='display:none;', 
+        data-bottom-center='display:block; animation-name: bounceInRight;'
+    )
+        .mal-container
+            +mechAnimationContent(pos)
+
+
+//- mechanic animation assets
+mixin mechAnimationContent(pos)
+    case pos
+        when 1
+            //- match 3 brains to remove them 
+            .mal.mal-replacement-brains
+                .mech-brain.brainA
+                .mech-brain.brainA
+                .mech-brain.brainC 
+
+            .mal.mal-brains
+                .mech-brain.brain-pos1.brainA
+                .mech-brain.brain-pos2.brainA
+                .mech-brain.brain-pos3.brainC
+                .mech-brain.brain-pos4.brainA
+                .mech-brain.brain-pos5.brainB
+
+            .mal.mal-zombie
+
+        when 2
+            //- zombies move every time you move a brain      
+            .mal.mal-brains
+                .mech-brain.brain-pos1.brainD
+                .mech-brain.brain-pos2.brainB
+                .mech-brain.brain-pos3.brainD
+                .mech-brain.brain-pos4.brainC
+                .mech-brain.brain-pos5.brainA
+
+            .mal.mal-zombie
+                .mech-zombie
+
+        when 3
+            //- remove zombies by matching the brain they're on  
+            .mal.mal-replacement-brains
+                .mech-brain.brainB
+                .mech-brain.brainA
+                .mech-brain.brainC 
+
+            .mal.mal-brains
+                .mech-brain.brain-pos1.brainD
+                .mech-brain.brain-pos2.brainA
+                .mech-brain.brain-pos3.brainC
+                .mech-brain.brain-pos4.brainA
+                .mech-brain.brain-pos5.brainA
+
+            .mal.mal-zombie
+                .mech-zombie.mech-zombie-death
+
+        default
+            //- you lose if the zombies escape out an open door
+            .mal.mal-brains
+                .mech-door.mech-door-open
+                .mech-brain.brain-pos3.brainB
+                .mech-brain.brain-pos4.brainC
+                .mech-brain.brain-pos5.brainD
+
+            .mal.mal-zombie
+                .mech-zombie.mech-zombie-escape
+
+
+
+//- screenshot zombie positioning
+mixin ssZombie(num,type)
+    img(
+        class='ss-zombie ssz-'+num, 
+        src='img/Zombie'+type+'.png', 
+        data-200-center-center='opacity:0;', 
+        data-199-center-center='opacity:1;transform[cubic]:scale(1.2)',
+        data-170-center-center='transform[cubic]:scale(1)'
+    )

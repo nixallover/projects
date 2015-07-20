@@ -1,0 +1,44 @@
+#tooltip {
+    background: $cMainDarker;
+    color: $cWhite;
+    font-family: Baveuse-Regular;
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    z-index: 100;
+
+    &:after /* triangle decoration */
+    {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid $cMainDarker;
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        margin-left: -10px;
+    }
+ 
+    &.top:after
+    {
+        border-top-color: transparent;
+        border-bottom: 10px solid $cMainDarker;
+        top: -20px;
+        bottom: auto;
+    }
+
+    &.left:after
+    {
+        left: 10px;
+        margin: 0;
+    }
+
+    &.right:after
+    {
+        right: 10px;
+        left: auto;
+        margin: 0;
+    }
+}

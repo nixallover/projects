@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta description="Zombie Match Defense blends the casual match-3 genre with the strategic nature of a lane defense game">
+    <!-- site designed & developed by Nicole Oliver (nixallover.com) -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="img/zmd-icon.png">
+    <title>Zombie Match Defense | A game coming to iOS and Android</title>
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <div id="preloader">
+      <div id="ballContainer">
+        <div id="theBall"></div>
+      </div>
+    </div><img id="scroll-indicator" src="img/arrow.png" data-0="display:block;" data-200="display:none;" class="animated bounce">
+    <div id="nav-container">
+      <div class="chevron animated bounceInDown"></div>
+      <nav id="top-nav" class="animated bounceInDown">
+        <div id="brand-links" class="icon-links"><a id="shovelware-website" href="http://shovelware.com/" title="Shovelware Games" rel="tooltip"><img src="img/Shovelware_Logo.png" alt="Shovelware Games"></a><a id="presskit" href="http://shovelware.com/press/" title="Presskit" rel="tooltip"></a><a id="email" href="mailto:hello@shovelware.com" title="Email" rel="tooltip"></a></div>
+        <div id="social-links" class="icon-links"><a id="tumblr" href="http://blog.zombiematchdefense.com/" title="Dev blog" rel="tooltip"></a><a id="twitter" href="https://twitter.com/shovelware" title="Twitter" rel="tooltip"></a><a id="facebook" href="https://www.facebook.com/pages/Zombie-Match-Defense/430837240409375" title="Facebook" rel="tooltip"></a></div>
+        <h1 id="nav-brand-logo"><img src="img/ZMD_Logo.png" alt="Zombie Match Defense"></h1>
+      </nav>
+    </div>
+    <div id="main-container">
+      <div id="skrollr-body">
+                <div id="mechanics-strip" class="strip">
+                  <div class="container">
+                    <div class="row">
+                              <h2 id="mechText1" data-500-bottom-center="display:none;" data-bottom-center="display:block; animation-name: bounceInLeft;" class="mech-text animated"><span class="pop">match 3 brains</span>to remove them</h2>
+                              <div id="mechAnim1" data-500-bottom-center="display:none;" data-bottom-center="display:block; animation-name: bounceInRight;" class="mech-animation animated">
+                                <div class="mal-container">
+                                          <div class="mal mal-replacement-brains">
+                                            <div class="mech-brain brainA"></div>
+                                            <div class="mech-brain brainA"></div>
+                                            <div class="mech-brain brainC"> </div>
+                                          </div>
+                                          <div class="mal mal-brains">
+                                            <div class="mech-brain brain-pos1 brainA"></div>
+                                            <div class="mech-brain brain-pos2 brainA"></div>
+                                            <div class="mech-brain brain-pos3 brainC"></div>
+                                            <div class="mech-brain brain-pos4 brainA"></div>
+                                            <div class="mech-brain brain-pos5 brainB"></div>
+                                          </div>
+                                          <div class="mal mal-zombie"></div>
+                                </div>
+                              </div>
+                    </div>
+                    <div class="row">
+                              <h2 id="mechText2" data-500-bottom-center="display:none;" data-bottom-center="display:block; animation-name: bounceInLeft;" class="mech-text animated"><span class="pop">zombies move</span>every time you move a brain</h2>
+                              <div id="mechAnim2" data-500-bottom-center="display:none;" data-bottom-center="display:block; animation-name: bounceInRight;" class="mech-animation animated">
+                                <div class="mal-container">
+                                          <div class="mal mal-brains">
+                                            <div class="mech-brain brain-pos1 brainD"></div>
+                                            <div class="mech-brain brain-pos2 brainB"></div>
+                                            <div class="mech-brain brain-pos3 brainD"></div>
+                                            <div class="mech-brain brain-pos4 brainC"></div>
+                                            <div class="mech-brain brain-pos5 brainA"></div>
+                                          </div>
+                                          <div class="mal mal-zombie">
+                                            <div class="mech-zombie"></div>
+                                          </div>
+                                </div>
+                              </div>
+                    </div>
+                    <div class="row">
+                              <h2 id="mechText3" data-500-bottom-center="display:none;" data-bottom-center="display:block; animation-name: bounceInLeft;" class="mech-text animated"><span class="pop">remove zombies</span>by matching the brain they're on</h2>
+                              <div id="mechAnim3" data-500-bottom-center="display:none;" data-bottom-center="display:block; animation-name: bounceInRight;" class="mech-animation animated">
+                                <div class="mal-container">
+                                          <div class="mal mal-replacement-brains">
+                                            <div class="mech-brain brainB"></div>
+                                            <div class="mech-brain brainA"></div>
+                                            <div class="mech-brain brainC"> </div>
+                                          </div>
+                                          <div class="mal mal-brains">
+                                            <div class="mech-brain brain-pos1 brainD"></div>
+                                            <div class="mech-brain brain-pos2 brainA"></div>
+                                            <div class="mech-brain brain-pos3 brainC"></div>
+                                            <div class="mech-brain brain-pos4 brainA"></div>
+                                            <div class="mech-brain brain-pos5 brainA"></div>
+                                          </div>
+                                          <div class="mal mal-zombie">
+                                            <div class="mech-zombie mech-zombie-death"></div>
+                                          </div>
+                                </div>
+                              </div>
+                    </div>
+                    <div class="row">
+                              <h2 id="mechText4" data-500-bottom-center="display:none;" data-bottom-center="display:block; animation-name: bounceInLeft;" class="mech-text animated"><span class="pop">you lose if a zombie</span>escapes out an open door</h2>
+                              <div id="mechAnim4" data-500-bottom-center="display:none;" data-bottom-center="display:block; animation-name: bounceInRight;" class="mech-animation animated">
+                                <div class="mal-container">
+                                          <div class="mal mal-brains">
+                                            <div class="mech-door mech-door-open"></div>
+                                            <div class="mech-brain brain-pos3 brainB"></div>
+                                            <div class="mech-brain brain-pos4 brainC"></div>
+                                            <div class="mech-brain brain-pos5 brainD"></div>
+                                          </div>
+                                          <div class="mal mal-zombie">
+                                            <div class="mech-zombie mech-zombie-escape"></div>
+                                          </div>
+                                </div>
+                              </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="powerups-strip" class="strip">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-40">
+                        <div id="powerups" data-bottom-center="transform:scale(0)" data-center-center="transform:scale(1)"></div>
+                      </div>
+                      <div class="col-60">
+                        <h2 id="powerups-text"><span class="pop">Don't worry!</span>You'll have items to help you out</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="prescreen-strip" class="strip">
+                  <div class="container">
+                    <div class="row">
+                      <h2 data-bottom-center="transform:scale(.8)" data-100-center-center="transform:scale(1.2)" data-center-center="transform:scale(1)" class="large"><span class="pop">Unless these guys</span>have something to say about it</h2>
+                    </div>
+                  </div>
+                </div>
+                <div id="screenshot-strip" class="strip">
+                  <div class="container"><img id="screenshot-bg" src="img/screenshot01.jpg">
+                    <div id="screenshot-zombie-layer"><img src="img/ZombieA.png" data-200-center-center="opacity:0;" data-199-center-center="opacity:1;transform[cubic]:scale(1.2)" data-170-center-center="transform[cubic]:scale(1)" class="ss-zombie ssz-0"><img src="img/ZombieB.png" data-200-center-center="opacity:0;" data-199-center-center="opacity:1;transform[cubic]:scale(1.2)" data-170-center-center="transform[cubic]:scale(1)" class="ss-zombie ssz-1"><img src="img/ZombieA.png" data-200-center-center="opacity:0;" data-199-center-center="opacity:1;transform[cubic]:scale(1.2)" data-170-center-center="transform[cubic]:scale(1)" class="ss-zombie ssz-2"><img src="img/ZombieA.png" data-200-center-center="opacity:0;" data-199-center-center="opacity:1;transform[cubic]:scale(1.2)" data-170-center-center="transform[cubic]:scale(1)" class="ss-zombie ssz-3"><img src="img/ZombieC.png" data-200-center-center="opacity:0;" data-199-center-center="opacity:1;transform[cubic]:scale(1.2)" data-170-center-center="transform[cubic]:scale(1)" class="ss-zombie ssz-4"><img src="img/ZombieB.png" data-200-center-center="opacity:0;" data-199-center-center="opacity:1;transform[cubic]:scale(1.2)" data-170-center-center="transform[cubic]:scale(1)" class="ss-zombie ssz-5"><img src="img/ZombieA.png" data-200-center-center="opacity:0;" data-199-center-center="opacity:1;transform[cubic]:scale(1.2)" data-170-center-center="transform[cubic]:scale(1)" class="ss-zombie ssz-6"><img src="img/ZombieB.png" data-200-center-center="opacity:0;" data-199-center-center="opacity:1;transform[cubic]:scale(1.2)" data-170-center-center="transform[cubic]:scale(1)" class="ss-zombie ssz-7"><img src="img/ZombieD.png" data-200-center-center="opacity:0;" data-199-center-center="opacity:1;transform[cubic]:scale(1.2)" data-170-center-center="transform[cubic]:scale(1)" class="ss-zombie ssz-8"><img src="img/ZombieA.png" data-200-center-center="opacity:0;" data-199-center-center="opacity:1;transform[cubic]:scale(1.2)" data-170-center-center="transform[cubic]:scale(1)" class="ss-zombie ssz-9">
+                    </div>
+                  </div>
+                </div>
+                <div id="conclusion-strip" class="strip">
+                  <div class="container">
+                    <div class="row row-padded">
+                      <div class="col-40"><img id="main-brand-logo" src="img/ZMD_Logo.png" alt="Zombie Match Defense"></div>
+                      <div class="col-60">
+                        <h2><span>Coming soon to the</span><span><strong class="pop">App Store </strong>and                               <strong class="pop">Google Play</strong></span></h2>
+                        <div id="mailing-list-container"><img id="store-scientist" src="img/scientist_1_victory.png">
+                          <div id="mc_embed_signup">
+                            <form id="mc-embedded-subscribe-form" action="//zombiematchdefense.us10.list-manage.com/subscribe/post?u=c35d259ebf37bc503411c3b85&amp;id=362292b854" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="" class="validate">
+                              <div id="mc_embed_signup_scroll">
+                                <label for="mce-EMAIL">Subscribe to our mailing list</label>
+                                <input id="mce-EMAIL" type="email" value="" name="EMAIL" placeholder="email address" required="" class="email">
+                                <div style="display: none;">
+                                  <input type="text" name="b_c35d259ebf37bc503411c3b85_362292b854" tabindex="-1" value="">
+                                </div>
+                                <div class="clear">
+                                  <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="button">
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <footer>               
+                      <h3>
+                         
+                        &copy; 2015 Shovelware Games
+                      </h3>
+                    </footer>
+                  </div>
+                </div>
+      </div>
+    </div>
+    <script src="scripts/jquery.min.js">   </script>
+    <script src="scripts/scrollr.min.js"></script>
+    <script src="scripts/tooltips.js"></script>
+    <script>
+      // preloader
+      $(window).load(function() {
+          $("#ballContainer").fadeOut();
+          $("#preloader").delay(350).fadeOut("slow");
+      });
+      
+      // skrollr
+      $(function(){
+          var s = skrollr.init({
+              forceHeight: true,
+              smoothScrolling: true
+          });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+extends ./layout.jade
+
+block content
+    include ./util.jade
+
+
+    +strip('mechanics')
+        .row
+            +mechText(1, 'match 3 brains', 'to remove them')
+            +mechAnimation(1)
+
+        .row
+            +mechText(2, 'zombies move', 'every time you move a brain')
+            +mechAnimation(2)
+
+        .row
+            +mechText(3, 'remove zombies', 'by matching the brain they\'re on')
+            +mechAnimation(3)
+
+        .row
+            +mechText(4, 'you lose if a zombie', 'escapes out an open door')
+            +mechAnimation(4)
+
+
+    +strip('powerups')
+        .row
+            .col-40
+                #powerups(
+                    data-bottom-center='transform:scale(0)', 
+                    data-center-center='transform:scale(1)'
+                )
+
+            .col-60
+                h2#powerups-text
+                    span.pop Don't worry!
+                    | You'll have items to help you out
+
+
+    +strip('prescreen')
+        .row
+            h2.large(
+                data-bottom-center='transform:scale(.8)', 
+                data-100-center-center='transform:scale(1.2)',
+                data-center-center='transform:scale(1)'
+            )
+                span.pop Unless these guys
+                | have something to say about it
+
+    +strip('screenshot')
+        img#screenshot-bg(src='img/screenshot01.jpg')
+        #screenshot-zombie-layer
+            - var ssZombies = ['A','B','A','A','C','B','A','B','D','A']
+            each type, index in ssZombies
+                +ssZombie(index,type)
+
+
+    +strip('conclusion')
+        .row.row-padded
+            .col-40
+                img#main-brand-logo(
+                    src='img/ZMD_Logo.png', 
+                    alt='Zombie Match Defense'
+                )
+
+            .col-60
+                h2
+                    span Coming soon to the
+                    span
+                        strong.pop App Store 
+                        | and                               
+                        strong.pop Google Play
+                      
+                #mailing-list-container
+                    img#store-scientist(src='img/scientist_1_victory.png')
+                    include ./mailing-list-signup.jade
+
+        footer                
+            h3 
+                | &copy; 2015 Shovelware Games

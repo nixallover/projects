@@ -1,0 +1,32 @@
+//- mailchimp signup form
+#mc_embed_signup
+    form#mc-embedded-subscribe-form.validate(
+        action='//zombiematchdefense.us10.list-manage.com/subscribe/post?u=c35d259ebf37bc503411c3b85&id=362292b854', 
+        method='post', 
+        name='mc-embedded-subscribe-form', 
+        target='_blank', 
+        novalidate=''
+    )
+        #mc_embed_signup_scroll
+            label(for='mce-EMAIL') Subscribe to our mailing list
+            input#mce-EMAIL.email(
+                type='email', 
+                value='', 
+                name='EMAIL', 
+                placeholder='email address', 
+                required=''
+            )
+            //- real people should not fill this in and expect good things - do not remove this or risk form bot signups
+            div(style='display: none;')
+                input(
+                    type='text', 
+                    name='b_c35d259ebf37bc503411c3b85_362292b854', 
+                    tabindex='-1', 
+                    value=''
+                )    
+            .clear
+                input#mc-embedded-subscribe.button(
+                    type='submit', 
+                    value='Subscribe', 
+                    name='subscribe'
+                )
