@@ -1,0 +1,324 @@
+// mechanics animation classes and keyframes
+
+// animation stuff
+// $width-mech-asset: 64px;
+
+
+// mixins (specific to mechanic animations)
+@mixin origPos() {
+    @include translateX(0);
+}
+
+@mixin moveRight($numSquares) {
+    @include translateX($width-mech-asset * $numSquares);
+}
+// @include moveRight(4);
+
+@mixin moveLeft($numSquares) {
+    @include translateX(-($width-mech-asset * $numSquares));
+}
+// @include moveLeft(4);
+
+@mixin spritePos($place) {
+    background-position: 0 (-($width-mech-asset * $place));
+}
+// @include spritePos(4);
+
+
+// psuedo-classes
+%mech-asset {
+    //border: dotted 1px #B0C2CC;
+    display: inline-block;
+    height: $width-mech-asset;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+}
+
+.mech-brain,
+.mech-zombie {
+    @extend %mech-asset;
+    width: $width-mech-asset;
+}
+
+.mech-door {
+    @extend %mech-asset;
+    background: transparent url('../img/doors.png') 0 0 no-repeat;
+    width: $width-mech-asset * 2;
+
+    &.mech-door-open {
+        background-position: 0 (-$width-mech-asset);
+    }
+}
+
+// zombie move
+.mech-zombie {
+    @extend %mech-asset;
+    background: transparent url('../img/ZombieA-move.png') 0 0 no-repeat;
+    //FIXME not sure why this is not offsetting
+    //margin: -25px -25px 0 0;
+    @include moveRight(4);
+
+    &.mech-zombie-death {
+        background-image: url('../img/ZombieA-death.png');
+    }
+    &.mech-zombie-escape {
+        //border: dotted 1px #B0C2CC;
+        background-image: url('../img/ZombieA-escape.png');
+        height: 136px;
+        width: 400px;
+        margin-top: -30px;
+        margin-left: 30px;
+        @include moveLeft(1);
+    }
+
+}
+
+
+// brain explode
+.mech-brain {
+    @extend %mech-asset;
+    background: transparent url('../img/brains.png') 0 0 no-repeat;
+
+    &.brainA { 
+        background: transparent url('../img/BrainA-anim.png');
+        @include spritePos(0);
+    }
+    &.brainB { @include spritePos(1) }
+    &.brainC { @include spritePos(2) }
+    &.brainD { @include spritePos(3) }
+    &.brainB { @include spritePos(4) }
+}
+
+
+
+// INDIVIDUAL ANIMATIONS
+
+// MECHANIC #1
+@include keyframes(mech1-brain1) {
+    40% { 
+        @include spritePos(0);
+    }
+    60% { 
+        @include spritePos(16);
+    }
+    61%,
+    99.9%   { 
+        @include spritePos(17);
+    }
+}
+
+@include keyframes(mech1-brain4) {
+    30% { @include origPos() }
+    40% { 
+        @include moveLeft(1);
+        @include spritePos(0);
+    }
+    60% { 
+        @include moveLeft(1);
+        @include spritePos(16);
+    }
+    61%,
+    99.9% { 
+        @include moveLeft(1);
+        @include spritePos(17);
+    }
+}
+
+@include keyframes(mech1-brain3) {
+    30%     { @include origPos() }
+    40%     { @include moveRight(1) }
+    60%     { @include moveRight(1) }
+    99.9%   { @include moveRight(1) }
+}
+
+@include keyframes(mech1-replacement-brains) {
+    0%     { @include moveLeft(4) }
+    50%     { @include moveLeft(4) }
+    60%     { @include origPos() }
+    99.9%   { @include origPos() }
+}
+
+#mechAnim1 {
+    .mal-replacement-brains {
+        .mech-brain {
+            @include animation('mech1-replacement-brains 5s infinite');
+        }
+    }
+    .brain-pos1,
+    .brain-pos2 {
+        @include animation('mech1-brain1 5s steps(16) infinite');
+    }
+    .brain-pos3 {
+        @include animation('mech1-brain3 5s infinite');
+    }
+    .brain-pos4 {
+        @include animation('mech1-brain4 5s steps(16) infinite');
+    }
+}
+
+
+
+// MECHANIC #2
+@include keyframes(mech2-brain2) {
+    40%     { @include origPos(); }
+    50%     { @include moveRight(1); }
+    99.9%   { @include moveRight(1); }
+}
+
+@include keyframes(mech2-brain3) {
+    10%     { @include origPos(); }
+    20%     { @include moveRight(1); }
+    99.9%   { @include moveRight(1); }
+}
+
+@include keyframes(mech2-brain4) {
+    10%     { @include origPos(); }
+    20%     { @include moveLeft(1); }
+    40%     { @include moveLeft(1); }
+    50%     { @include moveLeft(2); }
+    99.9%   { @include moveLeft(2); }
+}
+
+@include keyframes(mech2-zombie) {
+    // start move
+    30%     { 
+        @include spritePos(0);
+        @include moveRight(4); 
+    }
+    40%     { 
+        @include spritePos(9);
+        @include moveRight(3); 
+    }
+    // start move
+    40.01%,
+    50%     { 
+        @include spritePos(0);
+        @include moveRight(3); 
+    }
+    60%     { 
+        @include spritePos(9);
+        @include moveRight(2); 
+    }
+    60.01%,
+    99.9%   { 
+        @include spritePos(0);
+        @include moveRight(2); 
+    }
+}
+
+
+#mechAnim2 {
+    .brain-pos2 {
+        @include animation('mech2-brain2 5s infinite');
+    }
+    .brain-pos3 {
+        @include animation('mech2-brain3 5s infinite');
+    }
+    .brain-pos4 {
+        @include animation('mech2-brain4 5s infinite');
+    }
+    .mech-zombie {
+        @include animation('mech2-zombie 5s steps(9) infinite');
+    }
+}
+
+
+// MECHANIC #3
+@include keyframes(mech3-brain1) {
+    50%     { @include origPos() }
+    70%,
+    99.9%   { @include moveRight(3) }
+}
+
+@include keyframes(mech3-brain2) {
+    30%     { @include origPos(); }
+    40%     { 
+        @include spritePos(0);
+        @include moveRight(1);
+    }
+    50% {
+        @include spritePos(16);
+        @include moveRight(1);
+    }
+    50.01%,
+    99.9%   { 
+        @include spritePos(17);
+        @include moveRight(1);
+    }
+}
+
+@include keyframes(mech3-brain3) {
+    30%     { @include origPos() }
+    40%,
+    50%     { @include moveLeft(1) }
+    70%,
+    99.9%   { @include moveRight(2) }
+}
+
+@include keyframes(mech3-brain4) {
+    40%     { @include spritePos(0); }
+    50%     { @include spritePos(16); }
+    50.01%,
+    99.9%   { @include spritePos(17); }
+}
+
+@include keyframes(mech3-zombie) {
+    40%     { @include spritePos(0); }
+    70%     { @include spritePos(16); }
+    70.01%,
+    99.9%   { 
+        @include spritePos(17);
+    }
+}
+
+@include keyframes(mech3-replacement-brains) {
+    0%,
+    40%     { @include moveLeft(4) }
+    50%     { @include moveLeft(3) }
+    70%,
+    99.9%   { @include origPos() }
+}
+
+
+#mechAnim3 {
+    .mal-replacement-brains {
+        .mech-brain {
+            @include animation('mech3-replacement-brains 5s infinite');
+        }
+    }
+    .brain-pos1 {
+        @include animation('mech3-brain1 5s infinite');
+    }
+    .brain-pos2 {
+        @include animation('mech3-brain2 5s steps(16) infinite');
+    }
+    .brain-pos3 {
+        @include animation('mech3-brain3 5s infinite');
+    }
+    .brain-pos4,
+    .brain-pos5 {
+        @include animation('mech3-brain4 5s steps(16) infinite');
+    }
+    .mech-zombie {
+        @include animation('mech3-zombie 5s steps(16) infinite');
+    }
+}
+
+
+// MECHANIC #4
+@include keyframes(mech4-zombie) {
+    20%     { 
+        background-position: 0 0;
+    }
+    70%,
+    99.9%     { 
+        background-position: 0 -4068px;
+    }
+}
+
+#mechAnim4 {
+    .mech-zombie {
+        @include animation('mech4-zombie 5s steps(30) infinite');
+    }
+}

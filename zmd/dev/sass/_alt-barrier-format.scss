@@ -1,0 +1,10 @@
+body {
+    background-color: $cWhite;
+}
+
+#main-container {
+    @extend %block;
+    background: $cNeutral url('../img/bg02.png') 0 0 repeat;
+    margin: 0 auto;
+    max-width: 900px;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "zmd",
+  "version": "0.0.0",
+  "authors": [
+    "Nicole Oliver <nicole.oliver.42@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

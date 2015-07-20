@@ -1,0 +1,205 @@
+// preloader
+#preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $cMainBg;
+    z-index: 98; 
+}
+
+#ballContainer {
+    //border: dotted 1px #B0C2CC;
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -100px; 
+}
+
+#theBall {
+    background-color:$cMain;
+    position:absolute;
+    top:0;
+    left:0;
+    width:69px;
+    height:69px;
+
+    -moz-border-radius:35px;
+    -moz-animation-name:bounce_escapingBallG;
+    -moz-animation-duration:1.3s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:linear;
+    -moz-animation-delay:0s;
+    -moz-transform:scale(0.5, 1);
+
+    -webkit-border-radius:35px;
+    -webkit-animation-name:bounce_escapingBallG;
+    -webkit-animation-duration:1.3s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-delay:0s;
+    -webkit-transform:scale(0.5, 1);
+
+    -ms-border-radius:35px;
+    -ms-animation-name:bounce_escapingBallG;
+    -ms-animation-duration:1.3s;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-timing-function:linear;
+    -ms-animation-delay:0s;
+    -ms-transform:scale(0.5, 1);
+
+    -o-border-radius:35px;
+    -o-animation-name:bounce_escapingBallG;
+    -o-animation-duration:1.3s;
+    -o-animation-iteration-count:infinite;
+    -o-animation-timing-function:linear;
+    -o-animation-delay:0s;
+    -o-transform:scale(0.5, 1);
+
+    border-radius:35px;
+    animation-name:bounce_escapingBallG;
+    animation-duration:1.3s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    transform:scale(0.5, 1);
+}
+
+@-moz-keyframes bounce_escapingBallG{
+    0%{
+        left:0px;
+        -moz-transform:scale(0.5, 1);
+    }
+
+    25%{
+        left:66px;
+        -moz-transform:scale(1, 0.5);
+    }
+
+    50%{
+        left:166px;
+        -moz-transform:scale(0.5, 1);
+    }
+
+    75%{
+        left:66px;
+        -moz-transform:scale(1, 0.5);
+    }
+
+    100%{
+        left:0px;
+        -moz-transform:scale(0.5, 1);
+    }
+}
+
+@-webkit-keyframes bounce_escapingBallG{
+    0%{
+        left:0px;
+        -webkit-transform:scale(0.5, 1);
+    }
+
+    25%{
+        left:66px;
+        -webkit-transform:scale(1, 0.5);
+    }
+
+    50%{
+        left:166px;
+        -webkit-transform:scale(0.5, 1);
+    }
+
+    75%{
+        left:66px;
+        -webkit-transform:scale(1, 0.5);
+    }
+
+    100%{
+        left:0px;
+        -webkit-transform:scale(0.5, 1);
+    }
+}
+
+@-ms-keyframes bounce_escapingBallG{
+    0%{
+        left:0px;
+        -ms-transform:scale(0.5, 1);
+    }
+
+    25%{
+        left:66px;
+        -ms-transform:scale(1, 0.5);
+    }
+
+    50%{
+        left:166px;
+        -ms-transform:scale(0.5, 1);
+    }
+
+    75%{
+        left:66px;
+        -ms-transform:scale(1, 0.5);
+    }
+
+    100%{
+        left:0px;
+        -ms-transform:scale(0.5, 1);
+    }
+}
+
+@-o-keyframes bounce_escapingBallG{
+    0%{
+        left:0px;
+        -o-transform:scale(0.5, 1);
+    }
+
+    25%{
+        left:66px;
+        -o-transform:scale(1, 0.5);
+    }
+
+    50%{
+        left:166px;
+        -o-transform:scale(0.5, 1);
+    }
+
+    75%{
+        left:66px;
+        -o-transform:scale(1, 0.5);
+    }
+
+    100%{
+        left:0px;
+        -o-transform:scale(0.5, 1);
+    }
+}
+
+@keyframes bounce_escapingBallG{
+    0%{
+        left:0px;
+        transform:scale(0.5, 1);
+    }
+
+    25%{
+        left:66px;
+        transform:scale(1, 0.5);
+    }
+
+    50%{
+        left:166px;
+        transform:scale(0.5, 1);
+    }
+
+    75%{
+        left:66px;
+        transform:scale(1, 0.5);
+    }
+
+    100%{
+        left:0px;
+        transform:scale(0.5, 1);
+    }
+
+}

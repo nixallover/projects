@@ -1,0 +1,111 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(description='Zombie Match Defense blends the casual match-3 genre with the strategic nature of a lane defense game')
+        // site designed & developed by Nicole Oliver (nixallover.com) 
+        meta(
+            name='viewport',
+            content='width=device-width, initial-scale=0.5, maximum-scale=1.0, user-scalable=0'
+        )
+        link(rel='icon',href='img/zmd-icon.png')
+
+        title Zombie Match Defense | A game coming to iOS and Android
+        
+        block styles
+            link(rel='stylesheet', href='styles/animate.css')
+            link(rel='stylesheet', href='styles/style.css')
+            //- <!--[if IE]>
+            //- link(rel='stylesheet', href='styles/ie-only.css')
+            //- <![endif]-->
+
+    body
+        #preloader
+            #ballContainer
+                #theBall
+
+        img#scroll-indicator(
+            class='animated bounce'
+            src='img/arrow.png',
+            data-0='display:block;',
+            data-200='display:none;'
+        )
+
+        //- top-nav
+        #nav-container
+            .chevron.animated.bounceInDown
+            nav#top-nav.animated.bounceInDown
+                #brand-links.icon-links
+                    a#shovelware-website(
+                        href='http://shovelware.com/', 
+                        title='Shovelware Games', 
+                        rel='tooltip'
+                    )
+                        img(
+                            src='img/Shovelware_Logo.png', 
+                            alt='Shovelware Games'
+                        )
+                    a#presskit(
+                        href='http://shovelware.com/press/', 
+                        title='Presskit', 
+                        rel='tooltip'
+                    )
+                    a#email(
+                        href='mailto:hello@shovelware.com', 
+                        title='Email', 
+                        rel='tooltip'
+                    )
+
+                #social-links.icon-links
+                    a#tumblr(
+                        href='http://blog.zombiematchdefense.com/', 
+                        title='Dev blog', 
+                        rel='tooltip'
+                    )
+                    a#twitter(
+                        href='https://twitter.com/shovelware', 
+                        title='Twitter', 
+                        rel='tooltip'
+                    )
+                    a#facebook(
+                        href='https://www.facebook.com/pages/Zombie-Match-Defense/430837240409375', 
+                        title='Facebook', 
+                        rel='tooltip'
+                        )
+
+                h1#nav-brand-logo
+                    img(
+                        src='img/ZMD_Logo.png', 
+                        alt='Zombie Match Defense'
+                    )
+
+            
+        //- content
+        #main-container
+            #skrollr-body
+                block content
+
+
+        block scripts
+            script(src='scripts/jquery.min.js')    
+            script(src='scripts/scrollr.min.js')
+            //- script(src='scripts/scrollr.ie.min.js')
+            //- <!--[if lt IE 8]><!-->
+            //- script(src='scripts/html5shiv.min.js')
+            //- <!--<![endif]-->
+            //- script(src='scripts/flowtype.js')
+            script(src='scripts/tooltips.js')
+            script.
+                // preloader
+                $(window).load(function() {
+                    $("#ballContainer").fadeOut();
+                    $("#preloader").delay(350).fadeOut("slow");
+                });
+                
+                // skrollr
+                $(function(){
+                    var s = skrollr.init({
+                        forceHeight: true,
+                        smoothScrolling: true
+                    });
+                });

@@ -1,0 +1,401 @@
+/******
+ZMD promo website styles 
+Author: Nicole Oliver
+Create date: 5/23/15
+Email: nicole@nixallover.com
+Comments: this stylesheet was generated from sass, I don't recommend trying to edit it by hand -- please request source if changes are needed
+******/
+
+
+
+// COLOR/HEIGHT VARIABLES
+// colors (explicit)
+$white      : #FFFFFF;
+$eggshell   : #cfb991;
+
+$slate      : #253d3e;
+$foggy      : #7F9992;
+
+$icyBlue    : #d8f5f7;
+$powderBlue : #a7e0e3;
+$lightSlate : #6d8f9c;
+
+
+// colors (applicable)
+$cWhite     : $white;
+$cNeutral   : $eggshell;
+
+$cMain      : $powderBlue;
+$cMainHi    : $lightSlate;
+$cMainBg    : $icyBlue;
+
+$cMainDark  : darken($cMain, 10);
+$cMainDarker: darken($cMain, 20);
+
+$cAlt       : $slate;
+$cAltHi     : $foggy;
+$cAltDark   : darken($cAlt, 4);
+$cAltMed    : darken($cAltHi, 15);
+
+
+// nums
+$height-top-nav: 220px;
+$height-mech-row: 600px;
+$width-mech-asset: 100px;
+$width-items: 256px;
+$width-social: 50px;
+$width-sz: 90px;
+
+
+
+// IMPORTS
+@import 'reset';
+@import 'base';
+@import 'baveuse-font';
+@import 'mixins';
+@import 'tooltips';
+@import 'mailing-list';
+@import 'preloader';
+@import 'top-nav';
+
+
+// PSUEDO CLASSES
+%block {
+    //border: dotted 1px #D72FAE;
+    display: block;
+    position: relative;
+}
+
+%section {
+    @extend %block;
+    padding: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+body {
+    background-color: $cAlt;
+    color: $cWhite;
+    height: 100% !important;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6 {
+    color: $cAltHi;
+    font-family: Baveuse-Regular;
+    text-align: center;
+
+    .pop {
+        color: $cWhite;
+        //display: block;
+        font-size: 130%;
+    }
+
+    span {
+        display: block;
+    }
+}
+.large {
+    font-size: 200%;
+}
+
+
+
+/* LAYOUT AND CONTAINERS */
+#main-container {
+    @extend %block;
+}
+.strip {
+    @extend %block;
+    @include clearfix();
+    width: 100%;
+}
+.container {
+    @extend %block;
+    @include clearfix();
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.row {
+    @extend %block;
+    @include clearfix();
+    padding: 25px;
+    margin: 20px;
+
+    &.row-padded {
+        padding: 75px 0;
+    }
+}
+.col-60 {
+    @extend %block;
+    float: left;
+    width: 60%;
+}
+.col-40 {
+    @extend %block;
+    float: left;
+    width: 40%;
+}
+footer {
+    @extend %block;
+    @include clearfix();
+    text-align: center;
+    min-height: 100px;
+    //padding: 100px 0;
+}
+
+
+#scroll-indicator {
+    @extend %block;
+    bottom: 10px;
+    height: auto;
+    position: fixed;
+    right: 10px;
+    width: 75px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    z-index: 50;
+}
+
+/** STRIP-SPECIFIC **/
+
+/* MECHANICS STRIP */
+#mechanics-strip {
+    background-color: $cMainBg;
+    height: $height-mech-row * 4 + 300px;
+    padding-top: $height-top-nav;
+    overflow: hidden;
+
+    .row {
+        @extend %block;
+        @include clearfix();
+        height: $height-mech-row;
+        padding-top: 100px;
+    }
+}
+.mech-text,
+.mech-animation {
+    @extend %block;
+    margin: 15px auto;
+    min-width: 450px;
+    width: 90%;
+}
+.mech-text {
+    animation-delay: .3s;
+    background-color: darken($cMain, 5);
+    color: $cMainHi;
+    //top: 50%;
+    padding: 20px 15px;
+}
+
+.mech-animation {
+    animation-delay: .5s;
+    background-color: lighten($cMain, 5);
+    font-size: 0; // remove space between inline block brains
+    height: 260px;
+    padding: 50px;
+}
+
+.mal-container {
+    @extend %block;
+    margin: 0 auto 20px;
+    //overflow: hidden;
+    height: 100%;
+    width: ($width-mech-asset * 5) + 10;
+}
+
+/* mechanic animation layer */
+.mal {
+    display: block;
+    padding: 20px 0;
+    overflow-x: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+//- hack to show zombie escaping on the last animation
+#mechAnim4 .mal { overflow-x: visible; }
+.mal-zombie {
+    margin-top: -30px;
+    margin-left: 30px;
+}
+
+@import 'animations';
+
+
+
+/* POWERUPS STRIP */
+#powerups-strip {
+    background-color: $cAlt;
+}
+
+#powerups {
+    @extend %block;
+    @include border-radius(50%);
+    @include animation('powerupsLoop 5s steps(5) infinite');
+    background: $cMainBg url(../img/powerups.png) 0 0 no-repeat;
+    float: right;
+    height: 256px;
+    margin: 15px;
+    width: 256px;
+}
+
+@include keyframes(powerupsLoop) {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 (-($width-items * 5)); }
+}
+
+#powerups-text {
+    text-align: center;
+    padding: 75px;
+}
+
+
+
+/* SCREENSHOT STRIP */
+#prescreen-strip {
+    background-color: darken($cAlt, 5);
+}
+
+#screenshot-strip {
+    background-color: $cNeutral;
+}
+
+#screenshot-bg {
+    float: right;
+    max-width: none;
+    width: 900px;
+    opacity: 0.7;
+}
+
+#screenshot-zombie-layer {
+    @include clearfix();
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+
+@mixin ssz-pos($top, $right) {
+    right: 0px + ($width-sz * $right);
+    top: -10px + ($width-sz * $top);
+}
+
+/* screenshot zombie positioning */
+.ss-zombie {
+    height: auto;
+    width: $width-sz;
+    position: absolute;
+
+    &.ssz-0 { @include ssz-pos(0,1); }
+    &.ssz-1 { @include ssz-pos(0,3); }
+    &.ssz-2 { @include ssz-pos(1,2); }
+    &.ssz-3 { @include ssz-pos(1,6); }
+    &.ssz-4 { @include ssz-pos(2,0); }
+    &.ssz-5 { @include ssz-pos(2,7); }
+    &.ssz-6 { @include ssz-pos(3,2); }
+    &.ssz-7 { @include ssz-pos(3,4); }
+    &.ssz-8 { @include ssz-pos(4,5); }
+    &.ssz-9 { @include ssz-pos(4,7); }
+}
+
+
+/* CONCLUSION STRIP */
+#conclusion-strip {
+    background-color: $cAlt;
+}
+
+#main-brand-logo {
+    @extend %block;
+    float: left;
+    height: auto;
+    margin: 20px;
+    width: 300px;
+}
+
+#store-info {
+    @extend %block;
+    margin: 20px;
+}
+
+#store-scientist {
+    float: left;
+    height: auto;
+    margin-left: -133px;
+    margin-top: -25px;
+    margin-bottom: -25px;
+    width: 200px;
+}
+
+#mailing-list-container {
+    @extend %block;
+    @include clearfix();
+    background-color: darken($cAlt, 5);
+    margin-left: 75px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+
+
+/*** MEDIA QUERIES ***/
+
+@media screen and (min-width: 900px) {
+    body {
+        font-size: 130%;
+    }
+    // .mal-container {
+    //     @include scale(1, 1);
+    // }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    #store-scientist {
+        margin-left: -70px;
+        width: 100px;
+    }
+    .mal-container {
+        @include scale(.8, .8);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        font-size: 90%;
+    }
+    .mech-animation {
+        height: 220px;
+        padding: 20px 0;
+    }
+    .mal-container {
+        @include scale(.7, .7);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #store-scientist {
+        margin-left: -70px;
+        width: 100px;
+    }
+    .mech-animation {
+        height: 200px;
+        padding: 0;
+    }
+    .mal-container {
+        float: left;
+        margin-left: -20px;
+        @include scale(.6, .6);
+    }
+}
+
+
+/*** PRINT STYLES ***/
+@media print {
+
+
+
+}

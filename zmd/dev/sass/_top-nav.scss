@@ -1,0 +1,118 @@
+// top nav
+%chevron-slant {
+    content: '';
+    position: absolute;
+    top: 20px;
+    height: 150%;
+    width: 50%;
+    background-color: $cMain;
+}
+
+.chevron {
+    @include animated(.9s, both);
+    display: block;
+    position: fixed;
+    top: 0;
+    background-color: $cMain;
+    padding: 12px;
+    margin-bottom: 6px;
+    margin-top: -20px;
+    height: 80px;
+    width: 100%;
+    z-index: 99;
+
+    &:before {
+        @extend %chevron-slant;
+        left: 0;
+        @include skew(0deg, 5deg);
+    }
+
+    &:after {
+        @extend %chevron-slant;
+        right: 0;
+        @include skew(0deg, -5deg);
+    }
+}
+
+#nav-container {
+    //display: block;
+    //position: fixed;
+    //min-width: 450px;
+}
+
+#top-nav {
+    //border: dotted 2px blue;
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#nav-brand-logo {
+    @extend %block;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 170px;
+}
+
+.icon-links {
+    @extend %block;
+    margin: 10px;
+    float: left;
+
+    a {
+        @extend %block;
+        @include border-radius(50%);
+        background: $cMainHi url(../img/social.png) 0 0 no-repeat;
+        float: left;
+        height: $width-social;
+        margin: 5px;
+        opacity: .8;
+        width: $width-social;
+        @include transition(all, .5s, ease-in);
+
+        &:hover,
+        &:focus {
+            background-color: $cMainHi;
+            opacity: 1;
+        }
+    }
+}
+
+#shovelware-website { 
+    background: transparent none;
+    @include border-radius(0%);
+    height: 65px;
+    width: 65px;
+    background-position: 0 (-$width-social * 0);
+
+    // img {
+    //     height: 65px;
+    //     width: 65px;
+    // }
+}
+#presskit   { background-position: 0 (-$width-social * 0) }
+#tumblr     { background-position: 0 (-$width-social * 1) }
+#twitter    { background-position: 0 (-$width-social * 2) }
+#facebook   { background-position: 0 (-$width-social * 3) }
+#email      { background-position: 0 (-$width-social * 4) }
+
+// #email      { 
+//     @extend %block;
+//     background: transparent url(../img/social.png) 0 0 no-repeat;
+//     background-position: 0 (-$width-social * 4); 
+//     height: $width-social;
+//     width: $width-social;
+// }
+
+#social-links {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    #nav-brand-logo {
+        width: 90px;
+    }        
+}
