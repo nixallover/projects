@@ -398,10 +398,11 @@ th {
   position: relative;
 }
 
-.title-banner-icon, .title-banner-text, .top-level-nav a, .row .col-1,
-.row .col-2 {
+.title-banner-icon, .title-banner-text, .top-level-nav a, .med-button, .row .col-1,
+.row .col-2, .project .project-image, .project .project-content, .project .project-description {
   display: inline-block;
   position: relative;
+  vertical-align: top;
 }
 
 .container {
@@ -428,8 +429,27 @@ body * {
   box-sizing: border-box;
 }
 
+p a,
+li a {
+  border-bottom: dotted 2px #0fb985;
+  color: #0fb985;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+p a:hover, p a:focus,
+li a:hover,
+li a:focus {
+  border-bottom: dotted 2px #3FEFB9;
+  color: #3FEFB9;
+}
+
 footer {
   border-top: solid 6px #EFEBDC;
+  text-align: center;
 }
 
 .title-banner {
@@ -499,7 +519,7 @@ footer {
   width: 0;
 }
 .top-level-nav a:hover {
-  color: #de2b14;
+  color: #c72712;
 }
 
 .leading-content {
@@ -521,7 +541,7 @@ footer {
   width: 100%;
 }
 .big-button:hover {
-  background-color: #de2b14;
+  background-color: #c72712;
 }
 .big-button .big-button-icon {
   background: url("../img/dragon-icon.png") transparent 0 0 no-repeat;
@@ -557,6 +577,22 @@ footer {
   font-weight: normal;
 }
 
+.med-button {
+  -webkit-transition: background-color 0.5s ease-in;
+  -moz-transition: background-color 0.5s ease-in;
+  -ms-transition: background-color 0.5s ease-in;
+  -o-transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
+  background-color: #EF6250;
+  color: #fff;
+  margin: 0 10px 10px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.med-button:hover {
+  background-color: #c72712;
+}
+
 .row .col-1,
 .row .col-2 {
   width: 50%;
@@ -566,6 +602,31 @@ footer {
 }
 .row .col-2 {
   padding-left: 1em;
+}
+
+.project {
+  background-color: #e7e1cb;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.project .project-image {
+  background-color: #EF6250;
+  width: 30%;
+  height: 200px;
+}
+.project .project-content {
+  padding: 20px;
+  width: 70%;
+}
+.project .project-content h2 {
+  margin-top: 0;
+}
+.project .project-description {
+  background-color: #EFEBDC;
+  border-top: solid 6px #3FEFB9;
+  padding: 10px 20px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
