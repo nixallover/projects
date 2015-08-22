@@ -172,7 +172,7 @@ $height-dragon: 200px;
 
 .leading-content {
     @extend %block;
-    padding: 3em 0;
+    padding: 3em 1em;
 }
 
 
@@ -184,7 +184,7 @@ $height-big-button: 175px;
     background-color: $accent;
     color: $neutral;
     min-height: $height-big-button;
-    margin: 2em auto;
+    margin: 0 0 1em 0;
     text-decoration: none;
     width: 100%;
     
@@ -251,8 +251,8 @@ $height-big-button: 175px;
         width: 50%;
     }
     
-    .col-1 { padding-right: 1em; }
-    .col-2 { padding-left: 1em; }
+    .col-1 { padding-right: .5em; }
+    .col-2 { padding-left: .5em; }
 }
 
 .project {
@@ -261,30 +261,57 @@ $height-big-button: 175px;
     padding: 0;
     width: 100%;
     margin-bottom: 30px;
+}
 
-    .project-image {
-        @extend %inline-block;
-        background-color: $accent;
-        width: 30%;
-        height: 200px;
+.project-image {
+    @extend %inline-block;
+    //background-color: $accent;
+    width: 30%;
+    height: 200px;
+    overflow: hidden;
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.project-content {
+    @extend %inline-block;
+    padding: 20px;
+    width: 70%;
+
+    h2 {
+        margin-top: 0;
+    }
+}
+
+.project-description {
+    @extend %inline-block;
+    background-color: $neutral;
+    border-top: solid 6px $highlight;
+    //color: $lightest;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+@media (max-width:1000px) {
+    .project {
+        box-sizing: border-box;
+        margin: 0 0 1em 0;
+        width: auto;
     }
 
-    .project-content {
-        @extend %inline-block;
-        padding: 20px;
-        width: 70%;
-
-        h2 {
-            margin-top: 0;
+    .row {
+        .col-1, 
+        .col-2 {
+            width: 100%;
+            padding: 0;
         }
     }
 
-    .project-description {
-        @extend %inline-block;
-        background-color: $neutral;
-        border-top: solid 6px $highlight;
-        //color: $lightest;
-        padding: 10px 20px;
-        width: 100%;
+    .project-image img {
+        height: 100%;
+        width: auto;
     }
 }
