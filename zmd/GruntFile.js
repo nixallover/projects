@@ -16,7 +16,8 @@ module.exports = function (grunt) {
                     pretty: true
                 },
                 files: {
-                    "dist/index.html" : "dev/jade/index.jade"
+                    "dist/index.html" : "dev/jade/index.jade",
+                    "dist/blog-nav.html" : "dev/jade/blog-nav.jade"
                 }
             }
         },

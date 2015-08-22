@@ -53,8 +53,8 @@
     @extend %block;
     height: auto;
     margin: 0 auto;
-    margin-top: 20px;
-    width: 170px;
+    // margin-top: 20px;
+    width: 220px;
 }
 
 .icon-links {
@@ -111,8 +111,14 @@
     float: right;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     #nav-brand-logo {
-        width: 90px;
+        width: 160px;
     }        
+}
+
+@media screen and (max-width: 600px) {
+    .chevron {
+        height: 120px;
+    }      
 }
