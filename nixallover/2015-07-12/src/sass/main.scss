@@ -24,6 +24,7 @@ $test: $pink;
 // imports
 @import 'normalize';
 @import 'mixins';
+@import 'buttons';
 
 %block {
     //border: dotted 1px $test;
@@ -238,28 +239,6 @@ $height-big-button: 175px;
 //     }
 // }
 
-.med-button {
-    float: left;
-    min-width: 150px;
-    max-width: 250px;
-    display: block;
-    margin: 1em;
-    padding: 1em 2em;
-    border: none;
-    background: none;
-    color: inherit;
-    vertical-align: middle;
-    position: relative;
-    z-index: 1;
-}
-
-.button:focus {
-    outline: none;
-}
-
-.button > span {
-    vertical-align: middle;
-}
 
 // columns (2)
 
