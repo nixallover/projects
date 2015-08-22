@@ -429,21 +429,15 @@ body * {
   box-sizing: border-box;
 }
 
-p a,
-li a {
-  border-bottom: dotted 2px #0fb985;
+a {
   color: #0fb985;
-  text-decoration: none;
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
   -ms-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
-p a:hover, p a:focus,
-li a:hover,
-li a:focus {
-  border-bottom: dotted 2px #3FEFB9;
+a:hover, a:focus {
   color: #3FEFB9;
 }
 
@@ -528,13 +522,8 @@ footer {
 
 /*a*/
 .big-button {
-  -webkit-transition: background-color 0.5s ease-in;
-  -moz-transition: background-color 0.5s ease-in;
-  -ms-transition: background-color 0.5s ease-in;
-  -o-transition: background-color 0.5s ease-in;
-  transition: background-color 0.5s ease-in;
   background-color: #EF6250;
-  color: #fff;
+  color: #EFEBDC;
   min-height: 175px;
   margin: 2em auto;
   text-decoration: none;
@@ -542,6 +531,7 @@ footer {
 }
 .big-button:hover {
   background-color: #c72712;
+  color: #fff;
 }
 .big-button .big-button-icon {
   background: url("../img/dragon-icon.png") transparent 0 0 no-repeat;
@@ -578,11 +568,6 @@ footer {
 }
 
 .med-button {
-  -webkit-transition: background-color 0.5s ease-in;
-  -moz-transition: background-color 0.5s ease-in;
-  -ms-transition: background-color 0.5s ease-in;
-  -o-transition: background-color 0.5s ease-in;
-  transition: background-color 0.5s ease-in;
   background-color: #EF6250;
   color: #fff;
   margin: 0 10px 10px 0;
@@ -591,6 +576,7 @@ footer {
 }
 .med-button:hover {
   background-color: #c72712;
+  color: #fff;
 }
 
 .row .col-1,

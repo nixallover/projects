@@ -61,17 +61,24 @@ body {
     }
 }
 
-p a,
-li a {
-    border-bottom: dotted 2px hover-base($highlight);
+a {
     color: hover-base($highlight);
-    text-decoration: none;
     @include transition(all, .5s, ease-in);
 
     &:hover, 
     &:focus {
-        border-bottom: dotted 2px $highlight;
         color: $highlight;
+    }
+}
+
+p a,
+li a {
+    //border-bottom: dotted 2px hover-base($highlight);
+    //text-decoration: none;
+
+    &:hover, 
+    &:focus {
+        //border-bottom: dotted 2px $highlight;
     }
 }
 
@@ -173,9 +180,8 @@ $height-big-button: 175px;
 
 /*a*/.big-button {
     @extend %block;
-    @include transition(background-color, .5s, ease-in);
     background-color: $accent;
-    color: $lightest;
+    color: $neutral;
     min-height: $height-big-button;
     margin: 2em auto;
     text-decoration: none;
@@ -183,6 +189,7 @@ $height-big-button: 175px;
     
     &:hover {
         background-color: hover-base($accent);
+        color: $lightest;
     }
     
     .big-button-icon {
@@ -219,7 +226,6 @@ $height-big-button: 175px;
 
 .med-button {
     @extend %inline-block;
-    @include transition(background-color, .5s, ease-in);
     background-color: $accent;
     color: $lightest;
     margin: 0 10px 10px 0;
@@ -228,6 +234,7 @@ $height-big-button: 175px;
 
     &:hover {
         background-color: hover-base($accent);
+        color: $lightest;
     }
 }
 
