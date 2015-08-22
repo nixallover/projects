@@ -398,7 +398,7 @@ th {
   position: relative;
 }
 
-.title-banner-icon, .title-banner-text, .top-level-nav a, .med-button, .row .col-1,
+.title-banner-icon, .title-banner-text, .top-level-nav a, .row .col-1,
 .row .col-2, .project .project-image, .project .project-content, .project .project-description {
   display: inline-block;
   position: relative;
@@ -568,15 +568,26 @@ footer {
 }
 
 .med-button {
-  background-color: #EF6250;
-  color: #fff;
-  margin: 0 10px 10px 0;
-  padding: 10px 20px;
-  text-decoration: none;
+  float: left;
+  min-width: 150px;
+  max-width: 250px;
+  display: block;
+  margin: 1em;
+  padding: 1em 2em;
+  border: none;
+  background: none;
+  color: inherit;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
 }
-.med-button:hover {
-  background-color: #c72712;
-  color: #fff;
+
+.button:focus {
+  outline: none;
+}
+
+.button > span {
+  vertical-align: middle;
 }
 
 .row .col-1,

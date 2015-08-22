@@ -27,9 +27,15 @@ html(lang="en")
         nav.top-level-nav(role='navigation')
             .container
                 block topNav
-                    a(href='dev.html') Web Dev
-                    a(href='illustration.html') Illustration
-                    a(href='games.html') Games
+                    a(href='dev.html') 
+                        i.icon.icon-code
+                        |  Web Dev
+                    a(href='illustration.html') 
+                        i.icon.icon-paint-brush
+                        |  Illustration
+                    a(href='games.html')
+                        i.icon.icon-gamepad
+                        |  Games
         
 
         .leading-content
@@ -44,3 +50,4 @@ html(lang="en")
         block scripts
             //- scripts: libs 
             script(src='scripts/jquery.min.js')
+            script(src='https://use.fonticons.com/fff61f37.js')
