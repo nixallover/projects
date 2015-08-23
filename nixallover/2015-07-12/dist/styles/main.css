@@ -573,7 +573,7 @@ body * {
 }
 
 a {
-  color: #0fb985;
+  color: #28f4d0;
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
   -ms-transition: all 0.5s ease-in;
@@ -581,7 +581,7 @@ a {
   transition: all 0.5s ease-in;
 }
 a:hover, a:focus {
-  color: #3FEFB9;
+  color: #89F9E5;
 }
 
 footer {
@@ -622,7 +622,7 @@ footer {
 
 .top-level-nav {
   background-color: #EFEBDC;
-  border-top: solid 6px #3FEFB9;
+  border-top: solid 6px #89F9E5;
   color: #EF6250;
   text-transform: lowercase;
   z-index: 20;
@@ -751,12 +751,33 @@ footer {
 
 .project-description {
   background-color: #EFEBDC;
-  border-top: solid 6px #3FEFB9;
+  border-top: solid 6px #89F9E5;
   padding: 10px 20px;
   width: 100%;
 }
 
 @media (max-width: 1000px) {
+  .title-banner {
+    height: 100px;
+  }
+
+  .title-banner-icon {
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .title-banner-text {
+    padding: 0;
+    height: 100px;
+  }
+  .title-banner-text h1 {
+    font-size: 200%;
+  }
+  .title-banner-text h1.sub {
+    font-size: 150%;
+  }
+
   .project {
     box-sizing: border-box;
     margin: 0 0 1em 0;

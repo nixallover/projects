@@ -5,7 +5,7 @@
 $white: #fff;
 $cream: #EFEBDC;
 $red: #EF6250;
-$mint: #3FEFB9;
+$mint: #89F9E5;
 $pink: #EC1E74;
 
 // color assignments
@@ -295,6 +295,29 @@ $height-big-button: 175px;
 }
 
 @media (max-width:1000px) {
+    $height-dragon-sm: 100px;
+
+    .title-banner {
+        height: $height-dragon-sm;
+    }
+    .title-banner-icon {
+        background-size: $height-dragon-sm $height-dragon-sm;
+        height: $height-dragon-sm;
+        width: $height-dragon-sm;
+    }
+    .title-banner-text {
+        padding: 0;
+        height: $height-dragon-sm;
+
+        h1 { 
+            font-size: 200%;
+            
+            &.sub {
+                font-size: 150%;
+            }
+        }
+    }
+
     .project {
         box-sizing: border-box;
         margin: 0 0 1em 0;
