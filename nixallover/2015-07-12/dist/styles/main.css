@@ -471,6 +471,71 @@ th {
   transform: scale3d(0.8, 0.8, 1);
 }
 
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0.5;
+    -webkit-transform: translate3d(0, -5%, 0);
+    transform: translate3d(0, -5%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0.5;
+    -webkit-transform: translate3d(0, -5%, 0);
+    transform: translate3d(0, -5%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0.5;
+    -webkit-transform: translate3d(-5%, 0, 0);
+    transform: translate3d(-5%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0.5;
+    -webkit-transform: translate3d(-5%, 0, 0);
+    transform: translate3d(-5%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
 .container, .title-banner, .top-level-nav, .leading-content, .big-button, .row, .project {
   display: block;
   position: relative;
@@ -528,6 +593,7 @@ footer {
   background-color: #EF6250;
   color: #fff;
   height: 200px;
+  z-index: 21;
 }
 
 .title-banner-icon {
@@ -559,6 +625,7 @@ footer {
   border-top: solid 6px #3FEFB9;
   color: #EF6250;
   text-transform: lowercase;
+  z-index: 20;
 }
 .top-level-nav a {
   -webkit-transition: color 0.5s ease-in;
@@ -596,6 +663,7 @@ footer {
 
 .leading-content {
   padding: 3em 1em;
+  min-height: 500px;
 }
 
 /*a*/

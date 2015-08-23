@@ -25,6 +25,7 @@ $test: $pink;
 @import 'normalize';
 @import 'mixins';
 @import 'buttons';
+@import 'animate-css-snippets';
 
 %block {
     //border: dotted 1px $test;
@@ -38,11 +39,6 @@ $test: $pink;
     position: relative;
     vertical-align: top;
 }
-
-// border for testing
-// .leading-content {
-//     @extend %block;
-// }
 
 .container {
     @extend %block;
@@ -96,6 +92,7 @@ $height-dragon: 200px;
     background-color: $accent;
     color: $lightest;
     height: $height-dragon;
+    z-index: 21;
 }
 
 .title-banner-icon {
@@ -132,6 +129,7 @@ $height-dragon: 200px;
     border-top: solid 6px $highlight;
     color: $accent;
     text-transform: lowercase;
+    z-index: 20;
         
     a {
         @extend %inline-block;
@@ -173,6 +171,7 @@ $height-dragon: 200px;
 .leading-content {
     @extend %block;
     padding: 3em 1em;
+    min-height: 500px;
 }
 
 
