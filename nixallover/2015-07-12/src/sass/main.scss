@@ -5,7 +5,7 @@
 $white: #fff;
 $cream: #EFEBDC;
 $red: #EF6250;
-$mint: #89F9E5;
+$mint: #3FEFB9;
 $pink: #EC1E74;
 
 // color assignments
@@ -90,7 +90,7 @@ $height-dragon: 200px;
 .title-banner {
     @extend %block;
     background-color: $accent;
-    color: $lightest;
+    color: $neutral;
     height: $height-dragon;
     z-index: 21;
 }
@@ -119,6 +119,12 @@ $height-dragon: 200px;
             font-size: 220%;
             font-weight: normal;
             margin: 0 0;
+
+            a {
+                color: $lightest;
+                text-decoration: none;
+                // border-bottom: dotted 3px $lightest;
+            }
         }
     }
 }
@@ -187,10 +193,10 @@ $height-big-button: 175px;
     text-decoration: none;
     width: 100%;
     
-    &:hover {
-        background-color: hover-base($accent);
-        color: $lightest;
-    }
+    // &:hover {
+    //     background-color: hover-base($accent);
+    //     color: $lightest;
+    // }
     
     .big-button-icon {
         background: url('../img/dragon-icon.png') transparent 0 0 no-repeat;
