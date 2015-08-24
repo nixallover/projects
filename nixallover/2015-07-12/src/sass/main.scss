@@ -90,7 +90,7 @@ $height-dragon: 200px;
 .title-banner {
     @extend %block;
     background-color: $accent;
-    color: $lightest;
+    color: $neutral;
     height: $height-dragon;
     z-index: 21;
 }
@@ -119,6 +119,12 @@ $height-dragon: 200px;
             font-size: 220%;
             font-weight: normal;
             margin: 0 0;
+
+            a {
+                color: $lightest;
+                text-decoration: none;
+                // border-bottom: dotted 3px $lightest;
+            }
         }
     }
 }
@@ -187,10 +193,10 @@ $height-big-button: 175px;
     text-decoration: none;
     width: 100%;
     
-    &:hover {
-        background-color: hover-base($accent);
-        color: $lightest;
-    }
+    // &:hover {
+    //     background-color: hover-base($accent);
+    //     color: $lightest;
+    // }
     
     .big-button-icon {
         background: url('../img/dragon-icon.png') transparent 0 0 no-repeat;
@@ -295,6 +301,29 @@ $height-big-button: 175px;
 }
 
 @media (max-width:1000px) {
+    $height-dragon-sm: 100px;
+
+    .title-banner {
+        height: $height-dragon-sm;
+    }
+    .title-banner-icon {
+        background-size: $height-dragon-sm $height-dragon-sm;
+        height: $height-dragon-sm;
+        width: $height-dragon-sm;
+    }
+    .title-banner-text {
+        padding: 0;
+        height: $height-dragon-sm;
+
+        h1 { 
+            font-size: 200%;
+            
+            &.sub {
+                font-size: 150%;
+            }
+        }
+    }
+
     .project {
         box-sizing: border-box;
         margin: 0 0 1em 0;

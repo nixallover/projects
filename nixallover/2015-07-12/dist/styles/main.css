@@ -471,6 +471,45 @@ th {
   transform: scale3d(0.8, 0.8, 1);
 }
 
+/* Isi for big buttons */
+.button-isi {
+  padding: 1.2em 2em;
+  color: #fff;
+  background: #EF6250;
+  overflow: hidden;
+}
+
+.button-isi::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin: -15px 0 0 1px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #c72712;
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transform: scale3d(1, 2, 1);
+  transform: scale3d(1, 2, 1);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.9, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.9, 1);
+}
+
+.button-isi > span {
+  vertical-align: middle;
+  padding-left: 0.75em;
+}
+
+.button-isi:hover::before {
+  -webkit-transform: scale3d(9, 9, 1);
+  transform: scale3d(9, 9, 1);
+}
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -591,7 +630,7 @@ footer {
 
 .title-banner {
   background-color: #EF6250;
-  color: #fff;
+  color: #EFEBDC;
   height: 200px;
   z-index: 21;
 }
@@ -618,6 +657,10 @@ footer {
   font-size: 220%;
   font-weight: normal;
   margin: 0 0;
+}
+.title-banner-text h1.sub a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .top-level-nav {
@@ -674,10 +717,6 @@ footer {
   margin: 0 0 1em 0;
   text-decoration: none;
   width: 100%;
-}
-.big-button:hover {
-  background-color: #c72712;
-  color: #fff;
 }
 .big-button .big-button-icon {
   background: url("../img/dragon-icon.png") transparent 0 0 no-repeat;
@@ -757,6 +796,27 @@ footer {
 }
 
 @media (max-width: 1000px) {
+  .title-banner {
+    height: 100px;
+  }
+
+  .title-banner-icon {
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .title-banner-text {
+    padding: 0;
+    height: 100px;
+  }
+  .title-banner-text h1 {
+    font-size: 200%;
+  }
+  .title-banner-text h1.sub {
+    font-size: 150%;
+  }
+
   .project {
     box-sizing: border-box;
     margin: 0 0 1em 0;
