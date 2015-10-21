@@ -17,7 +17,7 @@
     padding: 12px;
     margin-bottom: 6px;
     margin-top: -20px;
-    height: 80px;
+    height: 90px;
     width: 100%;
     z-index: 99;
 
@@ -34,14 +34,7 @@
     }
 }
 
-#nav-container {
-    //display: block;
-    //position: fixed;
-    //min-width: 450px;
-}
-
 #top-nav {
-    //border: dotted 2px blue;
     display: block;
     position: fixed;
     top: 0;
@@ -49,49 +42,115 @@
     z-index: 100;
 }
 
+%nav-block {
+    @extend %block;
+    float: left;
+}
+
+.top-left-nav,
+.top-right-nav {
+    @extend %nav-block;
+    width: 40%;
+}
+
+.top-center-nav {
+    @extend %nav-block;
+    width: 20%;
+}
+
 #nav-brand-logo {
     @extend %block;
     height: auto;
     margin: 0 auto;
-    // margin-top: 20px;
-    width: 220px;
+    max-width: 220px;
+    min-width: 180px;
 }
 
-.icon-links {
+.brand-and-social,
+.brand {
     @extend %block;
+    float: left;
+}
+
+.top-nav-links {
+    @extend %block;
+    //border: dotted 1px blue;
     margin: 10px;
     float: left;
 
-    a {
-        @extend %block;
-        @include border-radius(50%);
-        background: $cMainHi url(../img/social.png) 0 0 no-repeat;
-        float: left;
-        height: $width-social;
-        margin: 5px;
-        opacity: .8;
-        width: $width-social;
-        @include transition(all, .5s, ease-in);
+    &.right {
+        float: right;
 
-        &:hover,
-        &:focus {
-            background-color: $cMainHi;
-            opacity: 1;
+        .store-link {
+            margin: 5px 0 5px 10px;
         }
     }
 }
 
+%top-nav-link {
+    @extend %block;
+    float: left;
+    margin: 5px 10px 5px 0;
+    opacity: .8;
+    @include transition(background-color, .5s, ease-in);
+
+    &:hover,
+    &:focus {
+        opacity: 1;
+    }
+}
+
+$width-social: 50px;
+.icon-link {
+    @extend %top-nav-link;
+    @include border-radius(50%);
+    background: $cMainHi url(../img/social.png) 0 0 no-repeat;
+    height: $width-social;
+    width: $width-social;
+}
+
+/*a*/.store-link {
+    @extend %top-nav-link;
+    border-radius: 10px;
+    background-image: none;
+    background-color: $cAltDark;
+    float: right;
+    height: auto;
+    opacity: 1;
+    overflow: hidden;
+    width: auto;
+
+    img {
+        width: 200px;
+    }
+
+    &.disabled {
+        cursor: context-menu;
+        opacity: .7;
+
+        &:hover,
+        &:focus {
+            opacity: .7;
+        }
+    }
+}
+
+$height-shovelware-logo: 90px;
+
 #shovelware-website { 
     background: transparent none;
     @include border-radius(0%);
-    height: 65px;
-    width: 65px;
-    background-position: 0 (-$width-social * 0);
+    //border: dotted 1px blue;
+    float: left;
+    margin: 0 0 0 10px;
+    height: $height-shovelware-logo;
+    width: $height-shovelware-logo;
 
-    // img {
-    //     height: 65px;
-    //     width: 65px;
-    // }
+    img {
+        margin-top: -5px;
+        // max-height: $height-shovelware-logo;
+        // max-width: $height-shovelware-logo;
+    }
 }
 #presskit   { background-position: 0 (-$width-social * 0) }
 #tumblr     { background-position: 0 (-$width-social * 1) }
@@ -99,26 +158,56 @@
 #facebook   { background-position: 0 (-$width-social * 3) }
 #email      { background-position: 0 (-$width-social * 4) }
 
-// #email      { 
-//     @extend %block;
-//     background: transparent url(../img/social.png) 0 0 no-repeat;
-//     background-position: 0 (-$width-social * 4); 
-//     height: $width-social;
-//     width: $width-social;
-// }
 
-#social-links {
-    float: right;
-}
-
-@media screen and (max-width: 650px) {
-    #nav-brand-logo {
-        width: 160px;
-    }        
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1120px) {
+    .social {
+        //max-width: 190px;
+    }       
+    .store-link {
+        display: block;
+    }
     .chevron {
-        height: 120px;
-    }      
+        height: 110px;
+
+        &:before {
+            @include skew(0deg, 0deg);
+        }
+
+        &:after {
+            @include skew(0deg, 0deg);
+        }
+    }  
+}
+
+@media screen and (max-width: 810px) {
+    .brand { 
+        width: 40%;
+    }
+    .top-nav-links.social {
+        margin: 10px 0 0 0;
+        width: 60%;
+    }
+    $width-social: 40px;
+    .icon-link {
+        background-size: $width-social ($width-social*5);
+        height: $width-social;
+        margin: 4px;
+        width: $width-social;
+    }
+
+    #presskit   { background-position: 0 (-$width-social * 0) }
+    #tumblr     { background-position: 0 (-$width-social * 1) }
+    #twitter    { background-position: 0 (-$width-social * 2) }
+    #facebook   { background-position: 0 (-$width-social * 3) }
+    #email      { background-position: 0 (-$width-social * 4) }
+}
+
+@media screen and (max-width: 650px) {  
+    .brand { width: 100%; }
+    .top-nav-links.social {
+        margin: 0;
+        width: 100%; 
+    }
+    .top-nav-links { width: auto; } 
+    .store-link img { width: 150px; }
 }

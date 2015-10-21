@@ -35,55 +35,77 @@ html(lang='en')
         #nav-container
             .chevron.animated.bounceInDown
             nav#top-nav.animated.bounceInDown
-                #brand-links.icon-links
-                    a#shovelware-website(
-                        href='http://shovelware.com/', 
-                        title='Shovelware Games', 
-                        rel='tooltip'
-                    )
+                .top-left-nav
+                    .brand
+                        a.icon-link#shovelware-website(
+                            href='http://shovelware.com/', 
+                            title='Shovelware Games', 
+                            rel='tooltip'
+                        )
+                            img(
+                                src='img/Shovelware_Logo.png', 
+                                alt='Shovelware Games'
+                            )
+                    .top-nav-links.social
+                        a.icon-link#presskit(
+                            href='http://shovelware.com/press/', 
+                            title='Presskit', 
+                            rel='tooltip'
+                        )
+                        a.icon-link#email(
+                            href='mailto:hello@shovelware.com', 
+                            title='Email', 
+                            rel='tooltip'
+                        )
+                        a.icon-link#tumblr(
+                            href='http://blog.zombiematchdefense.com/', 
+                            title='Dev blog', 
+                            rel='tooltip'
+                        )
+                        a.icon-link#twitter(
+                            href='https://twitter.com/shovelware', 
+                            title='Twitter', 
+                            rel='tooltip'
+                        )
+                        a.icon-link#facebook(
+                            href='https://www.facebook.com/pages/Zombie-Match-Defense/430837240409375', 
+                            title='Facebook', 
+                            rel='tooltip'
+                        )
+
+                .top-center-nav
+                    h1#nav-brand-logo
                         img(
-                            src='img/Shovelware_Logo.png', 
-                            alt='Shovelware Games'
+                            src='img/ZMD_Logo.png', 
+                            alt='Zombie Match Defense'
                         )
-                    a#presskit(
-                        href='http://shovelware.com/press/', 
-                        title='Presskit', 
-                        rel='tooltip'
-                    )
-                    a#email(
-                        href='mailto:hello@shovelware.com', 
-                        title='Email', 
-                        rel='tooltip'
-                    )
-
-                #social-links.icon-links
-                    a#tumblr(
-                        href='http://blog.zombiematchdefense.com/', 
-                        title='Dev blog', 
-                        rel='tooltip'
-                    )
-                    a#twitter(
-                        href='https://twitter.com/shovelware', 
-                        title='Twitter', 
-                        rel='tooltip'
-                    )
-                    a#facebook(
-                        href='https://www.facebook.com/pages/Zombie-Match-Defense/430837240409375', 
-                        title='Facebook', 
-                        rel='tooltip'
+                        
+                .top-right-nav
+                    .top-nav-links.right
+                        a.store-link#app-store.store(
+                            href='https://itunes.apple.com/us/app/zombie-match-defense/id952938642', 
+                            title='Get the game on the App Store'
                         )
+                            img(
+                                src='img/app-store.png', 
+                                alt='Available on the App Store'
+                            )
 
-                h1#nav-brand-logo
-                    img(
-                        src='img/ZMD_Logo.png', 
-                        alt='Zombie Match Defense'
-                    )
+                        div.store-link.disabled#google-play.store(
+                            title='Coming soon to Google Play'
+                        )
+                            img(
+                                src='img/google-play-coming-soon.png', 
+                                alt='Available on Google Play'
+                            )
+                    
 
             
         //- content
         #main-container
             #skrollr-body
                 block content
+
 
 
         block scripts

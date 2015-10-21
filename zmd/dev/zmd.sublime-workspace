@@ -108,23 +108,6 @@
 	"buffers":
 	[
 		{
-			"file": "jade/layout.jade",
-			"settings":
-			{
-				"buffer_size": 3873,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "sass/_preloader.scss",
-			"settings":
-			{
-				"buffer_size": 3713,
-				"line_ending": "Windows",
-				"name": "#escapingBallG{"
-			}
-		},
-		{
 			"file": "jade/index.jade",
 			"settings":
 			{
@@ -133,88 +116,19 @@
 			}
 		},
 		{
-			"file": "sass/_mixins.scss",
+			"file": "jade/layout.jade",
 			"settings":
 			{
-				"buffer_size": 2735,
+				"buffer_size": 4092,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "sass/style.scss",
+			"file": "/C/Users/Nicole/Documents/GitHub/projects/zmd/dist/blog-nav.html",
 			"settings":
 			{
-				"buffer_size": 6895,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "jade/mailing-list-signup.jade",
-			"settings":
-			{
-				"buffer_size": 1213,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "jade/util.jade",
-			"settings":
-			{
-				"buffer_size": 3000,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Searching 19 files for \"64\" (case sensitive)\n\nC:\\Users\\Nicole\\Desktop\\zmd\\dev\\sass\\_animations.scss:\n    2  \n    3  // animation stuff\n    4: $width-mech-asset: 64px;\n    5  \n    6  \n\nC:\\Users\\Nicole\\Desktop\\zmd\\dev\\zmd.sublime-workspace:\n  261  		\"/C/Users/Nicole/Desktop/zmd/bower_components/animate.css/animate.css\",\n  262  		\"/C/Users/Nicole/Desktop/zmd/dev/sass/style.scss\",\n  263: 		\"/C/Users/Nicole/AppData/Local/Temp/Rar$DR05.648/css/bootstrap.css\",\n  264  		\"/C/Users/Nicole/Desktop/zmd/dev/sass/_mixins.scss\",\n  265  		\"/C/Users/Nicole/Desktop/zmd/dev/sass/_tooltips.scss\",\n\n2 matches across 2 files\n",
-			"settings":
-			{
-				"buffer_size": 610,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "sass/_top-nav.scss",
-			"settings":
-			{
-				"buffer_size": 2361,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "sass/_tooltips.scss",
-			"settings":
-			{
-				"buffer_size": 843,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "sass/_animations.scss",
-			"settings":
-			{
-				"buffer_size": 6865,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Nicole/Desktop/zmd/GruntFile.js",
-			"settings":
-			{
-				"buffer_size": 1105,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "#mc_embed_signup {\n    form {\n        display:block; \n        float: left;\n        position:relative; \n        text-align:left; \n        padding:10px 0 10px 3%\n    }\n    h2 {\n\n        font-weight:bold; \n        padding:0; \n        margin:15px 0; \n        font-size:1.4em;\n    }\n    input {\n        @include border-radius(4px);\n        border:1px solid #999; \n        -webkit-appearance:none;\n        font-size: 16px;\n\n            &[type=checkbox]{\n                -webkit-appearance:checkbox;\n            }\n            &[type=radio]{\n                -webkit-appearance:radio;\n            }\n            &:focus {\n                border-color:#333;\n            }\n    }\n    .button {\n        //@include transition('background-color', .5, 'ease-in');\n        clear: both; \n        background-color: $cAltMed; \n        border: 0 none; \n        border-radius:4px; \n        color: $cWhite; \n        cursor: pointer; \n        display: inline-block; \n        font-size:15px; \n        font-weight: bold; \n        height: 32px; \n        line-height: 32px; \n        margin: 0 5px 10px 0; \n        padding:0; \n        text-align: center; \n        text-decoration: none; \n        vertical-align: top; \n        white-space: nowrap; \n        width: auto;\n\n        &:hover {\n            background-color: darken($cAltMed, 5);\n        }\n    }\n    .small-meta {\n        font-size: 11px;\n    }\n    .nowrap {\n        white-space:nowrap;\n    }     \n    .clear {\n        clear:none; \n        display:inline;\n    }\n    label {\n        display:block; \n        font-size:16px; \n        padding-bottom:10px; \n        font-weight:bold;\n    }\n    input.email {\n        display:block; \n        padding:8px 0; \n        margin:0 4% 10px 0; \n        text-indent:5px; \n        width:100%; \n        min-width:130px;\n    }\n    input.button {\n        display:block; \n        width:35%; \n        margin:0 0 10px 0; \n        min-width:90px;\n    }\n    div#mce-responses {\n        float:left; \n        top:-1.4em; \n        padding:0em .5em 0em .5em; \n        overflow:hidden; \n        width:90%;margin: 0 5%; \n        clear: both;\n    }\n    div.response {\n        margin:1em 0; \n        padding:1em .5em .5em 0; \n        font-weight:bold; \n        float:left; \n        top:-1.5em; \n        z-index:1; \n        width:80%;\n    }\n    #mce-error-response {\n        display:none;\n    }\n    #mce-success-response {\n        color:#529214; \n        display:none;\n    }\n    label.error {\n        display:block; \n        float:none; \n        width:auto; \n        margin-left:1.05em; \n        text-align:left; \n        padding:.5em 0;\n    }\n}",
-			"file": "sass/_mailing-list.scss",
-			"file_size": 2897,
-			"file_write_time": 130790629290701571,
-			"settings":
-			{
-				"buffer_size": 2590,
-				"line_ending": "Windows"
+				"buffer_size": 1256,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -262,6 +176,19 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dist/index.html",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/jade/util.jade",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/sass/_top-nav.scss",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/sass/_tooltips.scss",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/sass/_animations.scss",
+		"/C/Users/Nicole/Desktop/zmd/GruntFile.js",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/sass/_mailing-list.scss",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/jade/layout.jade",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/sass/_preloader.scss",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/jade/index.jade",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/sass/_mixins.scss",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/sass/style.scss",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/jade/mailing-list-signup.jade",
 		"/C/Users/Nicole/Desktop/zmd/dev/sass/ie-only.scss",
 		"/C/Users/Nicole/Desktop/zmd/dist/styles/style.css",
 		"/C/Users/Nicole/Desktop/zmd/dev/sass/_reset.scss",
@@ -275,7 +202,6 @@
 		"/C/Users/Nicole/Desktop/zmd/dev/sass/_tooltips.scss",
 		"/C/Users/Nicole/Desktop/zmd/dist/index.html",
 		"/C/Users/Nicole/Desktop/zmd/dist/scripts/tooltips.js",
-		"/C/Users/Nicole/Desktop/zmd/GruntFile.js",
 		"/C/Users/Nicole/Desktop/zmd/dist/mech-animation-test.html",
 		"/C/Users/Nicole/Desktop/zmd/dev/sass/_base.scss",
 		"/C/Users/Nicole/Desktop/zmd/dist/draft/sections.html",
@@ -377,19 +303,7 @@
 		"/E/game-projects/animix/.gitignore",
 		"/E/game-projects/animix/.gitignore.txt",
 		"/F/web-projects/websites/nixallover/2014-03/index.html",
-		"/C/Users/Nicole/Dropbox/animix/psuedocode/animix.js",
-		"/C/Users/Nicole/Dropbox/animix/psuedocode/main-menu.js",
-		"/C/Users/Nicole/Dropbox/animix/psuedocode/hud.js",
-		"/C/Users/Nicole/Dropbox/animix/psuedocode/round.js",
-		"/C/Users/Nicole/Dropbox/Preferences.sublime-settings",
-		"/C/Users/Nicole/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Nicole/Documents/GitHub/staff/nicole/chat-server/index.js",
-		"/C/Users/Nicole/Documents/GitHub/tunnel-vision/index-new.htm",
-		"/C/Users/Nicole/Desktop/wordpress/wp-config.php",
-		"/C/Users/Nicole/Desktop/shadowbox.css",
-		"/C/Users/Nicole/Desktop/Cards and Castles/splash/splash.htm",
-		"/F/blue/tools-web/tools.htm",
-		"/C/Users/Nicole/AppData/Roaming/Sublime Text 2/Packages/User/starter-html.sublime-snippet"
+		"/C/Users/Nicole/Dropbox/animix/psuedocode/animix.js"
 	],
 	"find":
 	{
@@ -568,23 +482,28 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"sheets":
+			[
+			]
+		},
+		{
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "jade/layout.jade",
+					"file": "jade/index.jade",
 					"settings":
 					{
-						"buffer_size": 3873,
+						"buffer_size": 2307,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								408,
-								408
+								0,
+								0
 							]
 						],
 						"settings":
@@ -601,363 +520,56 @@
 				},
 				{
 					"buffer": 1,
-					"file": "sass/_preloader.scss",
+					"file": "jade/layout.jade",
 					"settings":
 					{
-						"buffer_size": 3713,
+						"buffer_size": 4092,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2914,
+								2914
 							]
 						],
 						"settings":
 						{
-							"auto_name": "#escapingBallG{",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1191.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "jade/index.jade",
+					"file": "/C/Users/Nicole/Documents/GitHub/projects/zmd/dist/blog-nav.html",
 					"settings":
 					{
-						"buffer_size": 2307,
+						"buffer_size": 1256,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1777,
-								1777
+								1238,
+								270
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 645.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "sass/_mixins.scss",
-					"settings":
-					{
-						"buffer_size": 2735,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1793,
-								1793
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 794.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "sass/style.scss",
-					"settings":
-					{
-						"buffer_size": 6895,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6850,
-								6850
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 7142.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "jade/mailing-list-signup.jade",
-					"settings":
-					{
-						"buffer_size": 1213,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								328,
-								328
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 4,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 6,
-			"sheets":
-			[
-				{
-					"buffer": 6,
-					"file": "jade/util.jade",
-					"settings":
-					{
-						"buffer_size": 3000,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								120,
-								120
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"settings":
-					{
-						"buffer_size": 610,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										161,
-										163
-									],
-									[
-										434,
-										436
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								174,
-								174
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "sass/_top-nav.scss",
-					"settings":
-					{
-						"buffer_size": 2361,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								117,
-								117
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "sass/_tooltips.scss",
-					"settings":
-					{
-						"buffer_size": 843,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								397,
-								397
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "sass/_animations.scss",
-					"settings":
-					{
-						"buffer_size": 6865,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6593,
-								6593
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5432.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "/C/Users/Nicole/Desktop/zmd/GruntFile.js",
-					"settings":
-					{
-						"buffer_size": 1105,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "sass/_mailing-list.scss",
-					"settings":
-					{
-						"buffer_size": 2590,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2590,
-								2590
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1742.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

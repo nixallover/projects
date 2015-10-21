@@ -63,17 +63,29 @@ block content
                 )
 
             .col-60
-                h2
-                    span Coming soon to the
-                    span
-                        strong.pop App Store 
-                        | and                               
-                        strong.pop Google Play
+                #store-info
+                    a.store-link.store-link-major.store(
+                        href='https://itunes.apple.com/us/app/zombie-match-defense/id952938642', 
+                        title='Get the game on the App Store'
+                    )
+                        img(
+                            src='img/app-store.png', 
+                            alt='Available on the App Store'
+                        )
+                        
+                    div.store-link.store-link-major.disabled.store(
+                        title='Coming soon to Google Play'
+                    )
+                        img(
+                            src='img/google-play-coming-soon.png', 
+                            alt='Available on Google Play'
+                        )
+
                       
                 #mailing-list-container
                     img#store-scientist(src='img/scientist_1_victory.png')
                     include ./mailing-list-signup.jade
 
-        footer                
+        footer(data-center-center='top: 0%;')
             h3 
                 | &copy; 2015 Shovelware Games
