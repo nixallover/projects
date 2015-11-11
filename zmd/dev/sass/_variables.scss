@@ -1,0 +1,36 @@
+// COLOR/HEIGHT VARIABLES
+// colors (explicit)
+$white      : #FFFFFF;
+$eggshell   : #cfb991;
+
+$slate      : #253d3e;
+$foggy      : #7F9992;
+
+$icyBlue    : #d8f5f7;
+$powderBlue : #a7e0e3;
+$lightSlate : #6d8f9c;
+
+
+// colors (applicable)
+$cWhite     : $white;
+$cNeutral   : $eggshell;
+
+$cMain      : $powderBlue;
+$cMainHi    : $lightSlate;
+$cMainBg    : $icyBlue;
+
+$cMainDark  : darken($cMain, 10);
+$cMainDarker: darken($cMain, 20);
+
+$cAlt       : $slate;
+$cAltHi     : $foggy;
+$cAltDark   : darken($cAlt, 4);
+$cAltMed    : darken($cAltHi, 15);
+
+
+// nums
+$height-top-nav: 220px;
+$height-mech-row: 600px;
+$width-mech-asset: 100px;
+$width-items: 256px;
+$width-sz: 90px;

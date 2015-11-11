@@ -108,52 +108,29 @@
 	"buffers":
 	[
 		{
-			"file": "jade/layout.jade",
+			"contents": "<!DOCTYPE html>\n<html>\n  <head>\n    \n    <!--\n    \n	\n		Simple Two Theme 1.0 - A tumblr theme by catatan-sederhana.tumblr.com\n    \n    \n    -->\n    \n    <meta charset=\"utf-8\">\n    <title>{Title}{block:SearchPage} ({lang:Search results for SearchQuery}){/block:SearchPage}{block:PermalinkPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}{/block:PermalinkPage}</title>\n    <meta name = \"viewport\" content = \"width=device-width, initial-scale=0.5, maximum-scale=1.0 /\">\n<meta name=\"apple-mobile-web-app-capable\" content=\"yes\"/>\n    <meta name=\"description\" content=\"{block:IndexPage}{block:Description}{MetaDescription}{/block:Description}{/block:IndexPage}{block:PermalinkPage}{block:PostSummary}{PostSummary}{/block:PostSummary}{/block:PermalinkPage}\">\n    \n    <meta name=\"text:Primary Font URL\" content=\"http://fonts.googleapis.com/css?family=Lily+Script+One\">\n    <meta name=\"text:Primary Font Name\" content=\"Lily Script One\">\n    <meta name=\"text:Secondary Font URL\" content=\"http://fonts.googleapis.com/css?family=Open+Sans\">\n    <meta name=\"text:Secondary Font Name\" content=\"Open Sans\">\n    <meta name=\"text:Header Height\" content=\"250px\">\n    <meta name=\"text:Content Font Size\" content=\"15px\">\n    <meta name=\"text:BgColorHeaderOpacity\" content=\"0\">\n    <meta name=\"text:BgColorFooterOpacity\" content=\"0.9\">\n    \n    <meta name=\"color:ColorScheme\" content=\"#6f5d01\">\n    <meta name=\"color:Text\" content=\"#333333\">\n    <meta name=\"color:BackgroundBody\" content=\"#f5f5f5\">\n    <meta name=\"color:BlogName\" content=\"#6f5d01\">    \n    <meta name=\"color:BlogDescription\" content=\"#333333\">\n    <meta name=\"color:MenuLink\" content=\"#ffffff\">\n    \n    <meta name=\"if:Show Archive Link\" content=\"1\">\n    <meta name=\"if:Show Random Link\" content=\"1\">\n    <meta name=\"if:Show Ask Link\" content=\"1\">\n    <meta name=\"if:Show Submit Link\" content=\"1\">\n    <meta name=\"if:Show RSS Link\" content=\"1\">\n    \n    <meta name=\"if:Use Primary Font\" content=\"1\">\n    <meta name=\"if:Use Secondary Font\" content=\"1\">\n    \n    <meta name=\"if:Image Bg Header\" content=\"1\">\n    <meta name=\"if:Image Bg Header Full Size\" content=\"1\">\n    <meta name=\"if:Image Bg Body\" content=\"0\">\n    <meta name=\"if:Image Bg Body Full Size\" content=\"0\">\n    <meta name=\"if:Image Bg Body Attachment Fixed\" content=\"1\">\n    <meta name=\"if:Image Bg Footer\" content=\"0\">\n    <meta name=\"if:Image Bg Footer Full Size\" content=\"0\">\n    \n    <meta name=\"image:BgHeader\" content=\"http://static.tumblr.com/e26118756ddbcd7096b7146e9b753cbb/ezbezay/jivmza7mh/tumblr_static_bg_tumblr_header_6.jpg\">\n    <meta name=\"image:BgBody\" content=\"http://static.tumblr.com/ezbezay/369mz2x0h/subtlenet2-a.png\">\n    <meta name=\"image:BgFooter\" content=\"http://static.tumblr.com/ezbezay/369mz2x0h/subtlenet2-a.png\">\n    \n    <meta name=\"select:Bg Header Position Horizontal\" content=\"center\" title=\"Center\">\n    <meta name=\"select:Bg Header Position Horizontal\" content=\"left\" title=\"Left\">\n    <meta name=\"select:Bg Header Position Horizontal\" content=\"right\" title=\"Right\">\n    <meta name=\"select:Bg Header Position Vertical\" content=\"center\" title=\"Center\">\n    <meta name=\"select:Bg Header Position Vertical\" content=\"top\" title=\"Top\">\n    <meta name=\"select:Bg Header Position Vertical\" content=\"bottom\" title=\"Bottom\">\n    <meta name=\"select:Bg Header Repeat\" content=\"repeat\" title=\"Repeat\">\n    <meta name=\"select:Bg Header Repeat\" content=\"repeat-x\" title=\"Repeat-X\">\n    <meta name=\"select:Bg Header Repeat\" content=\"repeat-y\" title=\"Repeat-Y\">\n    <meta name=\"select:Bg Header Repeat\" content=\"no-repeat\" title=\"No-Repeat\">\n    \n    <meta name=\"select:Bg Body Position Horizontal\" content=\"left\" title=\"Left\">\n    <meta name=\"select:Bg Body Position Horizontal\" content=\"center\" title=\"Center\">\n    <meta name=\"select:Bg Body Position Horizontal\" content=\"right\" title=\"Right\">\n    <meta name=\"select:Bg Body Position Vertical\" content=\"top\" title=\"Top\">\n    <meta name=\"select:Bg Body Position Vertical\" content=\"center\" title=\"Center\">\n    <meta name=\"select:Bg Body Position Vertical\" content=\"bottom\" title=\"Bottom\">\n    <meta name=\"select:Bg Body Repeat\" content=\"repeat\" title=\"Repeat\">\n    <meta name=\"select:Bg Body Repeat\" content=\"repeat-x\" title=\"Repeat-X\">\n    <meta name=\"select:Bg Body Repeat\" content=\"repeat-y\" title=\"Repeat-Y\">\n    <meta name=\"select:Bg Body Repeat\" content=\"no-repeat\" title=\"No-Repeat\">\n    \n    <meta name=\"select:Bg Footer Position Horizontal\" content=\"left\" title=\"Left\">\n    <meta name=\"select:Bg Footer Position Horizontal\" content=\"center\" title=\"Center\">\n    <meta name=\"select:Bg Footer Position Horizontal\" content=\"right\" title=\"Right\">\n    <meta name=\"select:Bg Footer Position Vertical\" content=\"top\" title=\"Top\">\n    <meta name=\"select:Bg Footer Position Vertical\" content=\"center\" title=\"Center\">\n    <meta name=\"select:Bg Footer Position Vertical\" content=\"bottom\" title=\"Bottom\">\n    <meta name=\"select:Bg Footer Repeat\" content=\"repeat\" title=\"Repeat\">\n    <meta name=\"select:Bg Footer Repeat\" content=\"repeat-x\" title=\"Repeat-X\">\n    <meta name=\"select:Bg Footer Repeat\" content=\"repeat-y\" title=\"Repeat-Y\">\n    <meta name=\"select:Bg Footer Repeat\" content=\"no-repeat\" title=\"No-Repeat\">\n    \n    {block:ifUsePrimaryFont}<link href=\"{text:Primary Font URL}\" rel=\"stylesheet\">{/block:ifUsePrimaryFont}\n    {block:ifUseSecondaryFont}<link href=\"{text:Secondary Font URL}\" rel=\"stylesheet\">{/block:ifUseSecondaryFont}\n    <link rel=\"shortcut icon\" href=\"{Favicon}\" >\n    <link rel=\"apple-touch-icon-precomposed\" href=\"{PortraitURL-128}\">\n    <link rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS\" href=\"{RSS}\">\n    \n    <style type=\"text/css\">\n\n    *, *:before, *:after {\n	  box-sizing: border-box; }\n\n	img {\n	  margin: 0;\n	  padding: 0;\n	  border: 0;\n	  font-size: 100%;\n	  font-weight: normal;\n	  vertical-align: baseline;\n	  background: transparent;\n	  display: block;\n	  max-width: 100%;\n	  height: auto; \n	}\n	\n	body {\n		color:{color:Text};\n		background:{color:BackgroundBody} {block:IfImageBgBody} url({image:BgBody}) {select:Bg Body Position Horizontal} {select:Bg Body Position Vertical} {select:Bg Body Repeat} {block:IfImageBgBodyAttachmentFixed}fixed{/block:IfImageBgBodyAttachmentFixed} {/block:IfImageBgBody};\n		{block:IfImageBgBodyFullSize}\n		background-size:cover;\n		{/block:IfImageBgBodyFullSize}\n		font-size:{text:Content Font Size};\n		line-height:1.7em;\n		font-family:{block:ifUseSecondaryFont}'{text:Secondary Font Name}', {/block:ifUseSecondaryFont}Arial;\n	}\n	body, div {\n		margin:0;\n		padding:0;\n	}\n	.clear {\n		clear:both;\n		height:0px;\n		overflow:hidden;\n	}\n	\n	a, button, input, .date, .reblogged, .notes, .source-url {\n		-webkit-transition:all ease 0.2s;\n		-moz-transition:all ease 0.2s;\n		-ms-transition:all ease 0.2s;\n		-o-transition:all ease 0.2s;\n		transition:all ease 0.2s;\n	}\n	\n	a:hover {\n		text-decoration:none;\n	}\n	\n	a img {\n		border:none;\n	}\n	\n	.nav, .search, .post {\n		box-shadow:0 -0 5px rgba(0,0,0,0.2);\n		-o-box-shadow:0 0 5px rgba(0,0,0,0.2);\n		-moz-box-shadow:0 0 5px rgba(0,0,0,0.2);\n		-webkit-box-shadow:0 0 5px rgba(0,0,0,0.2);\n	}\n	\n	.header-wide {\n		color:#fff;\n		width:100%;\n		height:{text:Header Height};\n		position:relative;\n		{block:IfImageBgHeader}\n		background:url({image:BgHeader}) {select:Bg Header Position Horizontal} {select:Bg Header Position Vertical} {select:Bg Header Repeat};\n		{block:IfImageBgHeaderFullSize}\n		background-size:cover;\n		{/block:IfImageBgHeaderFullSize}\n		{/block:IfImageBgHeader}\n	}\n	\n	.trans-bg-head, .trans-bg-foot {\n		position:absolute;\n		left:0;\n		top:0;\n		right:0;\n		bottom:0;\n		z-index:2;\n		filter:alpha(opacity=80);\n		-ms-filter:\"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)\";\n	}\n	\n	.trans-bg-head {\n		opacity:{text:BgColorHeaderOpacity};\n		background-color:{color:ColorScheme};\n	}\n	\n	.trans-bg-foot {\n		opacity:{text:BgColorFooterOpacity};\n		background-color:{color:ColorScheme};\n	}\n	\n	.ava {\n		border:5px solid {color:BackgroundBody};\n		margin:-53px auto 10px;\n		width:96px;\n		height:96px;\n		display:block;\n		overflow:hidden;\n		border-radius:500px;\n		-o-border-radius:500px;\n		-ms-border-radius:500px;\n		-moz-border-radius:500px;\n		-webkit-border-radius:500px;\n		background:{color:BackgroundBody} url({PortraitURL-96}) center center no-repeat;\n	}\n	\n	.ava:hover {\n		border:5px solid {color:ColorScheme};\n	}\n	\n	.wrapper {\n		width:560px;\n		margin:0 auto;\n		position:relative;\n		z-index:3;\n	}\n	\n	.title {\n		font-size:50px;\n		line-height:1.2em;\n		letter-spacing:-1px;\n		text-align:center;\n		{block:ifUsePrimaryFont}font-family:'{text:Primary Font Name}', Arial;{/block:ifUsePrimaryFont}\n	}\n	\n	.title a {\n		color:{color:BlogName};\n		text-decoration:none;\n	}\n	.title a:hover {\n		opacity:0.7;\n		filter:alpha(opacity=70);\n		-ms-filter:\"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)\";\n	}\n		\n	.desc {\n		color:{color:BlogDescription};\n		font-size:14px;\n		text-align:center;\n		margin:0 auto 60px;\n	}\n	\n	.nav {\n		margin:0;\n		padding:0;\n		text-align:center;\n		position:relative;\n		z-index:5;\n		background-color:{color:ColorScheme};\n	}\n	\n	.nav li {\n		margin:0;\n		padding:0;\n		list-style:none;\n		display:inline-block;\n	}\n	\n	.nav li a {\n		color:{color:MenuLink};\n		padding:13px 10px;\n		display:block;\n		text-decoration:none;\n		opacity:1;\n		filter:alpha(opacity=100);\n		-ms-filter:\"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)\";\n	}\n	\n	.nav li a:hover {\n		opacity:0.8;\n		filter:alpha(opacity=80);\n		-ms-filter:\"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)\";\n	}\n	\n	.content {\n		width:100%;\n		float:left;\n		margin-top:-5px;\n	}\n		\n	.search {\n		width:auto;\n		font-size:18px;\n		padding:30px 30px 0;\n		text-align:center;\n		margin:5px 0 -6px;\n		position:relative;\n		z-index:4;\n		background-color:#fff;\n	}\n	\n	\n	.post {\n		width:auto;\n		background:#fff;\n		position:relative;\n		padding:30px;\n		border-top:5px solid {color:ColorScheme};\n	}\n				\n	.post .media {\n		text-align:center;\n		margin-bottom:10px;\n		display:block;\n		overflow:hidden;\n		position:relative;\n	}\n	\n	.video-container {\n		position:relative;\n		padding-bottom:56.25%;\n		padding-top:30px;\n		height:0;\n		overflow:hidden;\n	}\n	\n	.video-container iframe, .video-container object, .video-container embed {\n		position:absolute;\n		top:0;\n		left:0;\n		width:100%;\n		height:100%;\n	}\n	\n	.post .photoset {\n	    margin-bottom:10px;\n	}\n	\n	.post .quotebg {\n		font-family:Tahoma, Geneva, sans-serif;\n		font-size:180px;\n		color:{color:ColorScheme};\n		opacity:0.2;\n		filter:alpha(opacity=20);\n		-ms-filter:\"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)\";\n		position:absolute;\n		top:95px;\n		left:25px;\n	}\n	\n	.post .quote {\n		color:{color:Text};\n		font-weight:700;\n		line-height:1.4em;\n		padding:20px 20px 10px 20px;\n	}\n	\n	.post .quote.short {\n		font-size:33px;\n	}\n	\n	.post .quote.medium {\n		font-size:25px;\n	}\n	\n	.post .quote.long {\n		font-size:18px;\n	}\n									\n	.post .quote_source *:first-child {\n		margin-top:0px;\n	}\n	\n	.post .quote_source *:last-child {\n		margin-bottom:0px;\n	}\n	\n	.post .quote *:first-child {\n		margin-top:0px;\n	}\n	\n	.post .quote *:last-child {\n		margin-bottom:0px;\n	}\n					\n	.post .copy {\n		color:{color:Text};\n	}\n					\n	.post .copy a {\n		color:{color:ColorScheme};\n		text-decoration:underline;\n	}\n	\n	.post .copy p {\n		margin:20px 0 0 0;\n		padding:0;\n	}\n	\n	.post .copy pre {\n		margin:10px 0px 10px 0px;\n		padding:10px;\n		background-color:#e6e6e6;\n		font:normal 11px Courier, monospace;\n		overflow:auto;\n	}\n	\n	.post .copy > p:first-child {\n		margin-top:0;\n	}\n	\n	.post .copy img {\n		width:auto;\n		max-width:100%;\n	}\n				\n	.post .audio {\n		background:#eaeaea;\n		float:left;\n		padding:7px;\n		margin-bottom:10px;\n	}\n													\n	.audio .player {\n		float:left;\n	}\n	\n	.player .audio_player embed {\n		border:1px solid #c8c8c8;\n	}\n					\n	.audio .meta {\n		padding:4px 13px;\n		height:13px;\n		float:left;\n		color:#333;\n		font-size:11px;\n	}\n	\n	.meta a {\n		color:{color:ColorScheme};\n		text-decoration:none;\n	}\n				\n	.post .album_art {\n		text-align:center;\n	}\n	\n	.post .question {\n		color:#555;\n		font-weight:bold;\n		background:#f5f5f5;\n		margin:0 0 15px 0;\n		padding:15px 20px;\n		position:relative;\n	}\n	\n	.question .nipple {\n		width:13px;\n		height:7px;\n		background:#f5f5f5 url('http://assets.tumblr.com/themes/redux/ask-mask.png');\n		position:absolute;\n		bottom:-7px;\n		left:30px;\n	}\n					\n	.post .asker_container {\n		margin:0 0 20px 24px;\n	}\n	\n	.post .asker_container img {\n		margin:0 12px -7px 0;\n		width:24px;\n		height:24px;\n	}\n	\n	.post .asker_container a.asker {\n		color:#555;\n	}\n				\n	.post .title-post {\n		color:#333;\n		font-size:26px;\n		margin-bottom:20px;\n		{block:ifUsePrimaryFont}font-family:'{text:Primary Font Name}', Arial;{/block:ifUsePrimaryFont}\n	}\n	\n	.post img, .post .media img {\n		width:100%;\n	}\n						\n	.post .chat {\n		background-color:#fff;\n		border-left:5px solid #ddd;\n	}\n						\n	.chat .lines {\n		margin-left:3px;\n	}\n					\n	.lines .line {\n		background-color:#eee;\n		color:#333;\n		margin-bottom:3px;\n		padding:3px 5px;\n	}\n	\n	.lines .line.even {\n		background-color:#ddd;\n	}\n	\n	.post .link {\n	    font-size:18px;\n		margin:4px 0 20px 0;\n		{block:ifUsePrimaryFont}font-family:'{text:Primary Font Name}', Arial;{/block:ifUsePrimaryFont}\n	}\n						\n	.post .link a {\n		background-color:{color:ColorScheme};\n		color:#fff;\n		padding:8px 13px;\n		text-decoration:none;\n	}\n	\n	.post .link a:hover {\n		opacity:0.9;\n		filter:alpha(opacity=90);\n		-ms-filter:\"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)\";\n	}\n				\n	.post .footer {\n		display:none;\n		font-size:10px;\n		color:#333;\n		text-transform:uppercase;\n		margin-top:10px;\n	}\n	\n	.footer.for_permalink.show {\n		display:block;\n	}\n		\n	.footer .date, .footer .reblogged, .footer .notes, .footer .tags a, .footer .source-url {\n		width:auto;\n		float:left;\n		color:#333;\n		margin-top:10px;\n		margin-right:10px;\n		text-decoration:underline;\n	}\n	\n	.footer .source-url {\n		margin-right:0;\n	}\n						\n	a .date:hover, a .reblogged:hover, a .notes:hover, a .source-url:hover, .footer .tags a:hover {\n		text-decoration:none;\n	}\n	\n	.tags .tag-commas:last-child {\n		display:none;\n	}\n	\n	.footer.with_source_url .tags {\n		max-width:330px;\n		float:left;\n	}\n	\n	.footer.with_source_url .source_url {\n		float:right;\n		max-width:160px;\n		overflow:hidden;\n		white-space:nowrap;\n		\n	}\n						\n	.footer.with_source_url .source_url img {\n		vertical-align:top;\n		-moz-opacity:0.5;\n		opacity:0.5;\n	}\n	\n	.footer.with_source_url .source_url:hover img {\n		-moz-opacity:0.7;\n		opacity:0.7;\n	}\n	\n	.post a {\n		color:#333;\n	}\n					\n	.post a:hover {\n		text-decoration:none;\n	}\n	\n	.post .copy blockquote, .post blockquote {\n		margin:10px 0px 10px 20px;\n		padding-left:15px;\n		border-left:solid 4px #dcdcdc;\n	}\n	\n	.copy blockquote blockquote {\n		border-left:solid 4px #cccccc;\n	}\n	\n	.copy blockquote blockquote blockquote {\n		border-left:solid 4px #bcbcbc;\n	}\n	\n	.copy blockquote blockquote blockquote blockquote {\n		border-left:solid 4px #acacac;\n	}\n	\n	.copy blockquote blockquote blockquote blockquote blockquote {\n		border-left:solid 4px #9c9c9c;\n	}\n	\n	.copy blockquote blockquote blockquote blockquote blockquote blockquote {\n		border-left:solid 4px #8c8c8c;\n	}\n				\n	.shadow {\n		background:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0)));\n		-webkit-mask-box-image:-webkit-gradient(linear, left top, right top, color-stop(0, rgba(0, 0, 0, 0)), color-stop(0.5, rgba(0, 0, 0, 0.5)), color-stop(1, rgba(0, 0, 0, 0)));\n		width:auto;\n		height:10px;\n		margin:0 auto 30px;\n	}\n	\n	.navigation {\n	    text-align:center;\n	    padding-top:15px;\n	}\n	\n	.navigation a, .navigation .current-page {\n		background-color:{color:ColorScheme};\n		color:#fff;\n		padding:8px 13px;\n		text-decoration:none;\n	}\n	\n	.navigation a {\n		opacity:0.8;\n		filter:alpha(opacity=80);\n		-ms-filter:\"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)\";\n	}\n	\n	.navigation .current-page, .navigation a:hover {\n		opacity:1;\n		filter:alpha(opacity=100);\n		-ms-filter:\"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)\";\n	}\n	\n	.post .notecontainer {\n		font-size:10px;\n		color:#333;\n		margin-top:20px;\n		border-top:3px solid #eee;\n		padding-top:17px;\n	}\n						\n	.notecontainer a {\n		color:#333;\n		text-decoration:underline;\n	}\n	\n	.notecontainer a:hover {\n		text-decoration:none;\n	}\n	\n	.notecontainer ol.notes {\n		padding:0;\n		margin:0;\n		list-style-type:none;\n		font-size:10px;\n		text-transform:uppercase;\n	}\n	\n	ol.notes li.note {\n		\n	}\n									\n	ol.notes li.note img.avatar {\n		vertical-align:-4px;\n		margin-right:10px;\n		width:16px;\n		height:16px;\n	}\n	\n	ol.notes li.note span.action {\n		font-weight:normal;\n	}\n	\n	ol.notes li.note .answer_content {\n		font-weight:normal;\n	}\n	\n	ol.notes li.note blockquote {\n		border-left:1px solid #ddd;\n		padding:0 10px;\n		display:inline-block;\n		margin:0 0px 0px 25px;\n		text-transform:initial;\n		line-height:1.7em;\n	}\n	\n	ol.notes li.note blockquote a {\n		text-decoration:none;\n	}\n			\n	.footer-wide {\n		color:#fff;\n		width:100%;\n		height:auto;\n		font-size:14px;\n		padding:50px 0;\n		margin-top:60px;\n		text-align:center;\n		position:relative;\n		{block:IfImageBgFooter}\n		background:url({image:BgFooter}) {select:Bg Footer Position Horizontal} {select:Bg Footer Position Vertical} {select:Bg Footer Repeat};\n		{block:IfImageBgFooterFullSize}\n		background-size:cover;\n		{/block:IfImageBgFooterFullSize}\n		{/block:IfImageBgFooter}\n	}\n	\n	.footer-wide a {\n		color:#fff;\n	}\n					\n	@media all and (max-width:620px){\n		.wrapper {\n			width:auto;\n			margin-left:20px;\n			margin-right:20px;\n		}\n		.content {\n			width:auto;\n			float:none;\n		}\n		.footer .reblogged {\n			clear:both;\n			margin-left:0;\n		}\n	}\n					\n	@media all and (min-width:1280px){\n		.wrapper {\n			width:720px;\n		}\n	}\n\n	.animated {\n  -webkit-animation-duration: 1s;\n  animation-duration: 1s;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both; }\n\n@-webkit-keyframes bounceInDown {\n  0%, 60%, 75%, 90%, 100% {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -3000px, 0);\n    transform: translate3d(0, -3000px, 0); }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 25px, 0);\n    transform: translate3d(0, 25px, 0); }\n  75% {\n    -webkit-transform: translate3d(0, -10px, 0);\n    transform: translate3d(0, -10px, 0); }\n  90% {\n    -webkit-transform: translate3d(0, 5px, 0);\n    transform: translate3d(0, 5px, 0); }\n  100% {\n    -webkit-transform: none;\n    transform: none; } }\n@keyframes bounceInDown {\n  0%, 60%, 75%, 90%, 100% {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -3000px, 0);\n    transform: translate3d(0, -3000px, 0); }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 25px, 0);\n    transform: translate3d(0, 25px, 0); }\n  75% {\n    -webkit-transform: translate3d(0, -10px, 0);\n    transform: translate3d(0, -10px, 0); }\n  90% {\n    -webkit-transform: translate3d(0, 5px, 0);\n    transform: translate3d(0, 5px, 0); }\n  100% {\n    -webkit-transform: none;\n    transform: none; } }\n.bounceInDown {\n  -webkit-animation-name: bounceInDown;\n  animation-name: bounceInDown; }\n\n@font-face {\n  font-family: 'Baveuse-Regular';\n  src: url(\"webfonts/baveuse.eot\");\n  src: url(\"webfonts/baveuse.eot?#iefix\") format(\"embedded-opentype\"), url(\"webfonts/baveuse.woff2\") format(\"woff2\"), url(\"webfonts/baveuse.woff\") format(\"woff\"), url(\"webfonts/baveuse.ttf\") format(\"truetype\"); }\n  \n#tooltip {\n  background: #5ac5ca;\n  color: #FFFFFF;\n  font-family: Baveuse-Regular;\n  padding: 15px;\n  position: absolute;\n  text-align: center;\n  z-index: 100; }\n  #tooltip:after {\n    width: 0;\n    height: 0;\n    border-left: 10px solid transparent;\n    border-right: 10px solid transparent;\n    border-top: 10px solid #5ac5ca;\n    content: '';\n    position: absolute;\n    left: 50%;\n    bottom: -10px;\n    margin-left: -10px; }\n  #tooltip.top:after {\n    border-top-color: transparent;\n    border-bottom: 10px solid #5ac5ca;\n    top: -20px;\n    bottom: auto; }\n  #tooltip.left:after {\n    left: 10px;\n    margin: 0; }\n  #tooltip.right:after {\n    right: 10px;\n    left: auto;\n    margin: 0; }\n\n.chevron:before, .chevron:after {\n  content: '';\n  position: absolute;\n  top: 20px;\n  height: 150%;\n  width: 50%;\n  background-color: #a7e0e3; }\n\n.chevron {\n  -webkit-animation-duration: 0.9s;\n  animation-duration: 0.9s;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both;\n  display: block;\n  position: fixed;\n  top: 0;\n  background-color: #a7e0e3;\n  padding: 12px;\n  margin-bottom: 6px;\n  margin-top: -20px;\n  height: 90px;\n  width: 100%;\n  z-index: 99; }\n  .chevron:before {\n    left: 0;\n    -webkit-transform: skew(0deg, 5deg);\n    -moz-transform: skew(0deg, 5deg);\n    -ms-transform: skew(0deg, 5deg);\n    -o-transform: skew(0deg, 5deg);\n    transform: skew(0deg, 5deg); }\n  .chevron:after {\n    right: 0;\n    -webkit-transform: skew(0deg, -5deg);\n    -moz-transform: skew(0deg, -5deg);\n    -ms-transform: skew(0deg, -5deg);\n    -o-transform: skew(0deg, -5deg);\n    transform: skew(0deg, -5deg); }\n\n#top-nav {\n  display: block;\n  position: fixed;\n  top: 0;\n  width: 100%;\n  z-index: 100; }\n\n.top-left-nav,\n.top-right-nav, .top-center-nav {\n  float: left; }\n\n.top-left-nav,\n.top-right-nav {\n  width: 40%; }\n\n.top-center-nav {\n  width: 20%; }\n\n#nav-brand-logo {\n  height: auto;\n  margin: 0 auto;\n  max-width: 220px;\n  min-width: 180px; }\n\n.brand-and-social,\n.brand {\n  float: left; }\n\n.top-nav-links {\n  margin: 10px;\n  float: left; }\n  .top-nav-links.right {\n    float: right; }\n    .top-nav-links.right .store-link {\n      margin: 5px 0 5px 10px; }\n\n.icon-link, .store-link {\n  float: left;\n  margin: 5px 10px 5px 0;\n  opacity: .8;\n  -webkit-transition: background-color 0.5s ease-in;\n  -moz-transition: background-color 0.5s ease-in;\n  -ms-transition: background-color 0.5s ease-in;\n  -o-transition: background-color 0.5s ease-in;\n  transition: background-color 0.5s ease-in; }\n  .icon-link:hover, .store-link:hover, .icon-link:focus, .store-link:focus {\n    opacity: 1; }\n\n.icon-link {\n  -webkit-border-radius: 50%;\n  -moz-border-radius: 50%;\n  -ms-border-radius: 50%;\n  border-radius: 50%;\n  background: #6d8f9c url(http://zombiematchdefense.com/img/social.png) 0 0 no-repeat;\n  height: 50px;\n  width: 50px; }\n\n/*a*/\n.store-link {\n  border-radius: 10px;\n  background-image: none;\n  background-color: #1d3031;\n  float: right;\n  height: auto;\n  opacity: 1;\n  overflow: hidden;\n  width: auto; }\n  .store-link img {\n    width: 200px; }\n  .store-link.disabled {\n    cursor: context-menu;\n    opacity: .7; }\n    .store-link.disabled:hover, .store-link.disabled:focus {\n      opacity: .7; }\n\n#shovelware-website {\n  background: transparent none;\n  -webkit-border-radius: 0%;\n  -moz-border-radius: 0%;\n  -ms-border-radius: 0%;\n  border-radius: 0%;\n  float: left;\n  margin: 0 0 0 10px;\n  height: 90px;\n  width: 90px; }\n  #shovelware-website img {\n    margin-top: -5px; }\n\n#presskit {\n  background-position: 0 0px; }\n\n#tumblr {\n  background-position: 0 -50px; }\n\n#twitter {\n  background-position: 0 -100px; }\n\n#facebook {\n  background-position: 0 -150px; }\n\n#email {\n  background-position: 0 -200px; }\n\n@media screen and (max-width: 1120px) {\n  .store-link {\n    display: block; }\n\n  .chevron {\n    height: 130px; }\n    .chevron:before {\n      -webkit-transform: skew(0deg, 0deg);\n      -moz-transform: skew(0deg, 0deg);\n      -ms-transform: skew(0deg, 0deg);\n      -o-transform: skew(0deg, 0deg);\n      transform: skew(0deg, 0deg); }\n    .chevron:after {\n      -webkit-transform: skew(0deg, 0deg);\n      -moz-transform: skew(0deg, 0deg);\n      -ms-transform: skew(0deg, 0deg);\n      -o-transform: skew(0deg, 0deg);\n      transform: skew(0deg, 0deg); } }\n@media screen and (max-width: 810px) {\n  .brand {\n    width: 40%; }\n\n  .top-nav-links.social {\n    margin: 10px 0 0 0;\n    width: 60%; }\n\n  .icon-link {\n    background-size: 40px 200px;\n    height: 40px;\n    margin: 4px;\n    width: 40px; }\n\n  #presskit {\n    background-position: 0 0px; }\n\n  #tumblr {\n    background-position: 0 -40px; }\n\n  #twitter {\n    background-position: 0 -80px; }\n\n  #facebook {\n    background-position: 0 -120px; }\n\n  #email {\n    background-position: 0 -160px; } }\n@media screen and (max-width: 650px) {\n  .brand {\n    width: 100%; }\n\n  .top-nav-links.social {\n    margin: 0;\n    width: 100%; }\n\n  .top-nav-links {\n    width: auto; }\n\n  .store-link img {\n    width: 150px; } }\n.top-left-nav,\n.top-right-nav, .top-center-nav, #nav-brand-logo, .brand-and-social,\n.brand, .top-nav-links, .icon-link, .store-link {\n  display: block;\n  position: relative; }\n\n.chevron {\n  margin-top: -50px; }\n	\n	</style>\n  </head>\n\n  <body>\n\n  <!-- BEGIN CUSTOM ZMD NAV -->\n  <script src=\"http://zombiematchdefense.com/scripts/jquery.min.js\"> </script>\n  <script src=\"http://zombiematchdefense.com/scripts/tooltips.js\"></script>\n\n  <div id=\"nav-container\">\n      <div class=\"chevron animated bounceInDown\"></div>\n      <nav id=\"top-nav\" class=\"animated bounceInDown\">\n        <div class=\"top-left-nav\">\n          <div class=\"brand\"><a id=\"shovelware-website\" href=\"http://shovelware.com/\" title=\"Shovelware Games\" rel=\"tooltip\" class=\"icon-link\"><img src=\"http://zombiematchdefense.com/img/Shovelware_Logo.png\" alt=\"Shovelware Games\"></a></div>\n          <div class=\"top-nav-links social\"><a id=\"presskit\" href=\"http://shovelware.com/press/\" title=\"Presskit\" rel=\"tooltip\" class=\"icon-link\"></a><a id=\"email\" href=\"mailto:hello@shovelware.com\" title=\"Email\" rel=\"tooltip\" class=\"icon-link\"></a><a id=\"twitter\" href=\"https://twitter.com/shovelware\" title=\"Twitter\" rel=\"tooltip\" class=\"icon-link\"></a><a id=\"facebook\" href=\"https://www.facebook.com/pages/Zombie-Match-Defense/430837240409375\" title=\"Facebook\" rel=\"tooltip\" class=\"icon-link\"></a></div>\n        </div>\n        <div class=\"top-center-nav\">\n          <h1 id=\"nav-brand-logo\"><a href=\"http://zombiematchdefense.com\"><img src=\"http://zombiematchdefense.com/img/ZMD_Logo.png\" alt=\"Zombie Match Defense\"></a></h1>\n        </div>\n        <div class=\"top-right-nav\">\n          <div class=\"top-nav-links right\"><a id=\"app-store\" href=\"https://itunes.apple.com/us/app/zombie-match-defense/id952938642\" title=\"Get the game on the App Store\" class=\"store-link store\"><img src=\"http://zombiematchdefense.com/img/app-store.png\" alt=\"Available on the App Store\"></a>\n            <div id=\"google-play\" title=\"Coming soon to Google Play\" class=\"store-link disabled store\"><img src=\"http://zombiematchdefense.com/img/google-play-coming-soon.png\" alt=\"Available on Google Play\"></div>\n          </div>\n        </div>\n      </nav>\n    </div>\n    <!-- END CUSTOM ZMD NAV -->\n  \n  <div class=\"header-wide\">\n	<div class=\"trans-bg-head\"></div>\n  </div>\n\n  <div class=\"wrapper\">\n	  <!--<a href=\"{BlogURL}\" class=\"ava\"></a>\n	  <div class=\"title\">\n		<a href=\"{BlogURL}\">\n		  {Title}\n		</a>\n	  </div>\n	  <div class=\"desc\">{block:Description}{Description}{/block:Description}</div>-->\n	  <ul class=\"nav\">\n		<li><a href=\"{BlogURL}\">Home</a></li>\n        {block:HasPages}{block:Pages}<li><a href=\"{URL}\">{Label}</a></li>{/block:Pages}{/block:HasPages}\n		{block:IfShowArchiveLink}<li><a href=\"/archive\">{lang:Archive}</a></li>{/block:IfShowArchiveLink}\n		{block:IfShowRandomLink}<li><a href=\"/random\">{lang:Random}</a></li>{block:IfShowRandomLink}\n		{block:IfShowAskLink}{block:AskEnabled}<li><a href=\"/ask\">{AskLabel}</a></li>{/block:AskEnabled}{block:IfShowAskLink}\n		{block:IfShowSubmitLink}{block:SubmissionsEnabled}<li><a href=\"/submit\">{SubmitLabel}</a></li>{/block:SubmissionsEnabled}{block:IfShowSubmitLink}\n		{block:IfShowRSSLink}<li><a href=\"{RSS}\">{lang:RSS}</a></li>{block:IfShowRSSLink}\n	  </ul>\n    <div class=\"content\">\n	\n      {block:SearchPage}\n        <div class=\"search\">\n		\n		  {block:SearchResults}\n			{SearchResultCount} results for \"<em>{SearchQuery}</em>\"\n		  {/block:SearchResults}\n		  \n		  {block:NoSearchResults}\n			Sorry, no search results for \"<em>{SearchQuery}</em>\"<br>\n			<img src=\"http://static.tumblr.com/ezbezay/aDXmz2wx9/sorry.gif\" alt=\"sorry, nothing found\">\n		  {/block:NoSearchResults}\n		</div>\n      {/block:SearchPage}\n	  \n      {block:Posts}\n		<div class=\"post\">			\n          {block:Photo}\n            <div class=\"media\">{LinkOpenTag}<img src=\"{PhotoURL-500}\" alt=\"{PhotoAlt}\">{LinkCloseTag}</div>\n            {block:Caption}<div class=\"copy\">{Caption}</div>{/block:Caption}\n          {/block:Photo}\n          {block:Photoset}         \n            <div class=\"photoset\">{Photoset}</div>\n            {block:Caption}\n                {Caption}\n            {/block:Caption}\n          {/block:Photoset}\n          {block:Video}\n            <div class=\"media\">\n			  <div class=\"video-container\">{Video-500}</div>\n			</div>\n            {block:Caption}<div class=\"copy\">{Caption}</div>{/block:Caption}\n          {/block:Video}\n          {block:Audio}\n            {block:AlbumArt}\n              <div class=\"album_art\">\n                <img src=\"{AlbumArtURL}\" alt=\"{block:Artist}{Artist}{/block:Artist}{block:TrackName} - {TrackName}{/block:TrackName}\" style=\"margin-bottom:10px;\">\n              </div>\n            {/block:AlbumArt}\n            <div class=\"audio\">\n              <div class=\"player\">{AudioPlayerWhite}</div>\n              <div class=\"meta\">{PlayCountWithLabel}{block:ExternalAudio}<span class=\"download_external_audio\"> &bull; <a href=\"{ExternalAudioURL}\">{lang:Download}</a></span>{/block:ExternalAudio}</div>\n              <div class=\"clear\"></div>\n            </div>\n            <div class=\"clear\"></div>\n            {block:Caption}<div class=\"copy\">{Caption}</div>{/block:Caption}\n          {/block:Audio}\n          {block:Quote}\n            <div class=\"quote {Length}\">{Quote}</div>\n            <div class=\"copy\">\n              <div class=\"quotebg\">\"</div>\n              {block:Source}\n                &mdash; {Source}\n              {/block:Source}\n            </div>\n          {/block:Quote}\n          {block:Text}\n            {block:Title}<div class=\"title-post\">{Title}</div>{/block:Title}\n            <div class=\"copy\">{Body}</div>\n          {/block:Text}\n          {block:Answer}\n            <div class=\"question\">\n              <div class=\"nipple\"></div>\n              {Question}\n            </div>\n            <div class=\"asker_container\"><img src=\"{AskerPortraitURL-24}\">{Asker}</div>\n            <div class=\"copy\">{Answer}</div>\n          {/block:Answer}\n          {block:Chat}\n            {block:Title}<div class=\"title-post\">{Title}</div>{/block:Title}\n            <div class=\"chat\">\n              <div class=\"lines\">\n                {block:Lines}\n                  <div class=\"line {Alt}\">{block:Label}<strong>{Label}</strong>{/block:Label} {Line}</div>\n                {/block:Lines}\n              </div>\n            </div>\n            <div class=\"clear\"></div>\n            <div style=\"height:10px;\"></div>\n          {/block:Chat}\n          {block:Link}\n            <div class=\"link\"><a href=\"{URL}\" {Target}>{Name} &raquo;</a></div>\n            {block:Description}<div class=\"copy\">{Description}</div>{/block:Description}\n          {/block:Link}\n          \n		  \n		  <div class=\"footer for_permalink {block:Date}show{/block:Date}\">\n			<a href=\"{Permalink}\">\n			<div class=\"date\">\n			  {block:Date}\n				{TimeAgo}\n			  {/block:Date}\n			</div>\n			</a>\n			{block:NoteCount}\n			  <a href=\"{Permalink}\">\n			  <div class=\"notes\">&#9829; {NoteCount}</div>\n			  </a>\n			{/block:NoteCount}\n			{block:HasTags}<div class=\"tags\">{block:Tags}<a href=\"{TagURL}\">{Tag}</a> {/block:Tags}</div>{/block:HasTags}\n			\n			{block:RebloggedFrom}\n			  <a href=\"{ReblogParentURL}\">\n			  <div class=\"reblogged\">\n				Reblogged from {ReblogParentName}\n			  </div>\n			  </a>\n			{/block:RebloggedFrom}\n			\n			{block:ContentSource}\n			  <a href=\"{SourceURL}\" class=\"source_url\">\n				<div class=\"source-url\">{lang:Source}: {SourceTitle}</div>\n			  </a>\n			{/block:ContentSource}\n			<div class=\"clear\"></div>\n		  </div>\n		  \n		  \n          {block:PostNotes}<div class=\"notecontainer\">{PostNotes}</div>{/block:PostNotes}\n        </div>\n        <div class=\"shadow\"></div>\n      {/block:Posts}\n      \n      {block:Pagination}\n        <div class=\"navigation\">\n          {block:PreviousPage}<a href=\"{PreviousPage}\">&laquo;</a>{/block:PreviousPage}\n          {block:JumpPagination length=\"5\"}\n            {block:CurrentPage}\n                <span class=\"current-page\">{PageNumber}</span>\n            {/block:CurrentPage}\n\n            {block:JumpPage}\n                <a href=\"{URL}\">{PageNumber}</a>\n            {/block:JumpPage}\n            {/block:JumpPagination}\n          {block:NextPage}<a href=\"{NextPage}\">&raquo;</a>{/block:NextPage}\n        </div>\n      {/block:Pagination}\n      \n    </div>\n    <div class=\"clear\"></div>\n  </div>\n  \n  <div class=\"footer-wide\">\n    <div class=\"trans-bg-foot\"></div>\n    <div class=\"wrapper\">\n      We Love <a href=\"http://www.tumblr.com\">Tumblr</a> and <a href=\"http://goo.gl/o09euW\">S2 Theme</a> by <a href=\"http://goo.gl/IfzsFJ\">Catatan Sederhana</a>\n    </div>\n  </div>\n  \n  </body>\n</html>",
 			"settings":
 			{
-				"buffer_size": 3873,
+				"buffer_size": 33088,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "sass/_preloader.scss",
+			"file": "sass/_variables.scss",
 			"settings":
 			{
-				"buffer_size": 3713,
+				"buffer_size": 664,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 15 files for \"img\" (case sensitive)\n\nC:\\Users\\Nicole\\Documents\\GitHub\\projects\\zmd\\dev\\sass\\_alt-barrier-format.scss:\n    5  #main-container {\n    6      @extend %block;\n    7:     background: $cNeutral url('../img/bg02.png') 0 0 repeat;\n    8      margin: 0 auto;\n    9      max-width: 900px;\n\nC:\\Users\\Nicole\\Documents\\GitHub\\projects\\zmd\\dev\\sass\\_animations.scss:\n   44  .mech-door {\n   45      @extend %mech-asset;\n   46:     background: transparent url('../img/doors.png') 0 0 no-repeat;\n   47      width: $width-mech-asset * 2;\n   48  \n   ..\n   55  .mech-zombie {\n   56      @extend %mech-asset;\n   57:     background: transparent url('../img/ZombieA-move.png') 0 0 no-repeat;\n   58      //FIXME not sure why this is not offsetting\n   59      //margin: -25px -25px 0 0;\n   ..\n   61  \n   62      &.mech-zombie-death {\n   63:         background-image: url('../img/ZombieA-death.png');\n   64      }\n   65      &.mech-zombie-escape {\n   66          //border: dotted 1px #B0C2CC;\n   67:         background-image: url('../img/ZombieA-escape.png');\n   68          height: 136px;\n   69          width: 400px;\n   ..\n   79  .mech-brain {\n   80      @extend %mech-asset;\n   81:     background: transparent url('../img/brains.png') 0 0 no-repeat;\n   82  \n   83      &.brainA { \n   84:         background: transparent url('../img/BrainA-anim.png');\n   85          @include spritePos(0);\n   86      }\n\nC:\\Users\\Nicole\\Documents\\GitHub\\projects\\zmd\\dev\\sass\\_image-links.scss:\n    1  // images\n    2  \n    3: $img-doors          : '../img/doors.png'        ;\n    4: $img-zombie-move    : '../img/ZombieA-move.png' ;\n    5: $img-zombie-death   : '../img/ZombieA-death.png';\n    6: $img-brains         : '../img/brains.png'       ;\n    7: $img-brainA         : '../img/BrainA-anim.png'  ;\n\nC:\\Users\\Nicole\\Documents\\GitHub\\projects\\zmd\\dev\\sass\\_reset.scss:\n    9      \n   10  /* RESET - thank you! - https://github.com/murtaugh/HTML5-Reset */\n   11: html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {\n   12      margin: 0;\n   13      padding: 0;\n   ..\n   19  }\n   20  \n   21: article, aside, figure, footer, header, nav, section, details, summary, img {display: block;}\n   22  \n   23  *, *:before, *:after {box-sizing: border-box; }\n   24  \n   25: img,\n   26  object,\n   27  embed {max-width: 100%;}\n   ..\n   72  strong {font-weight: bold;}\n   73  \n   74: td, td img {vertical-align: top;} \n   75  \n   76  sub, sup {font-size: 75%; line-height: 0; position: relative;}\n   ..\n   92  input[type=button] {width: auto; overflow: visible;}\n   93   \n   94: .ie7 img {-ms-interpolation-mode: bicubic;}\n   95  \n   96  .ie6 html {filter: expression(document.execCommand(\"BackgroundImageCache\", false, true));}\n\nC:\\Users\\Nicole\\Documents\\GitHub\\projects\\zmd\\dev\\sass\\_top-nav.scss:\n  105      @extend %top-nav-link;\n  106      @include border-radius(50%);\n  107:     background: $cMainHi url(../img/social.png) 0 0 no-repeat;\n  108      height: $width-social;\n  109      width: $width-social;\n  ...\n  121      width: auto;\n  122  \n  123:     img {\n  124          width: 200px;\n  125      }\n  ...\n  147      width: $height-shovelware-logo;\n  148  \n  149:     img {\n  150          margin-top: -5px;\n  151          // max-height: $height-shovelware-logo;\n  ...\n  210      }\n  211      .top-nav-links { width: auto; } \n  212:     .store-link img { width: 150px; }\n  213  }\n\nC:\\Users\\Nicole\\Documents\\GitHub\\projects\\zmd\\dev\\sass\\blog-nav.scss:\n  101  }\n  102  \n  103: img {\n  104  	display: block;\n  105  	max-width: 100%;\n\nC:\\Users\\Nicole\\Documents\\GitHub\\projects\\zmd\\dev\\sass\\style.scss:\n  204      @include border-radius(50%);\n  205      @include animation('powerupsLoop 5s steps(5) infinite');\n  206:     background: $cMainBg url(../img/powerups.png) 0 0 no-repeat;\n  207      float: right;\n  208      height: 256px;\n  ...\n  294      width: 400px;\n  295  \n  296:     img {\n  297          width: 400px;\n  298      }\n  ...\n  341          width: 300px;\n  342  \n  343:         img {\n  344              width: 300px;\n  345          }\n  ...\n  377          width: 250px;\n  378  \n  379:         img {\n  380              width: 250px;\n  381          }\n\n31 matches across 7 files\n",
+			"settings":
+			{
+				"buffer_size": 4509,
 				"line_ending": "Windows",
-				"name": "#escapingBallG{"
-			}
-		},
-		{
-			"file": "jade/index.jade",
-			"settings":
-			{
-				"buffer_size": 2307,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "sass/_mixins.scss",
-			"settings":
-			{
-				"buffer_size": 2735,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "sass/style.scss",
-			"settings":
-			{
-				"buffer_size": 6895,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "jade/mailing-list-signup.jade",
-			"settings":
-			{
-				"buffer_size": 1213,
-				"line_ending": "Windows"
+				"name": "Find Results",
+				"scratch": true
 			}
 		},
 		{
@@ -165,55 +142,98 @@
 			}
 		},
 		{
-			"contents": "Searching 19 files for \"64\" (case sensitive)\n\nC:\\Users\\Nicole\\Desktop\\zmd\\dev\\sass\\_animations.scss:\n    2  \n    3  // animation stuff\n    4: $width-mech-asset: 64px;\n    5  \n    6  \n\nC:\\Users\\Nicole\\Desktop\\zmd\\dev\\zmd.sublime-workspace:\n  261  		\"/C/Users/Nicole/Desktop/zmd/bower_components/animate.css/animate.css\",\n  262  		\"/C/Users/Nicole/Desktop/zmd/dev/sass/style.scss\",\n  263: 		\"/C/Users/Nicole/AppData/Local/Temp/Rar$DR05.648/css/bootstrap.css\",\n  264  		\"/C/Users/Nicole/Desktop/zmd/dev/sass/_mixins.scss\",\n  265  		\"/C/Users/Nicole/Desktop/zmd/dev/sass/_tooltips.scss\",\n\n2 matches across 2 files\n",
+			"file": "jade/index.jade",
 			"settings":
 			{
-				"buffer_size": 610,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
+				"buffer_size": 2874,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sass/style.scss",
+			"settings":
+			{
+				"buffer_size": 6645,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sass/_reset.scss",
+			"settings":
+			{
+				"buffer_size": 3068,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "jade/layout.jade",
+			"settings":
+			{
+				"buffer_size": 5065,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sass/blog-nav.scss",
+			"settings":
+			{
+				"buffer_size": 2407,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Nicole/Documents/GitHub/projects/zmd/dist/blog-nav.html",
+			"settings":
+			{
+				"buffer_size": 2148,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "jade/blog-nav.jade",
+			"settings":
+			{
+				"buffer_size": 3362,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "sass/_top-nav.scss",
 			"settings":
 			{
-				"buffer_size": 2361,
+				"buffer_size": 4079,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "sass/_tooltips.scss",
+			"file": "sass/_mixins.scss",
 			"settings":
 			{
-				"buffer_size": 843,
+				"buffer_size": 2945,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "sass/_animations.scss",
+			"contents": "// for chevron\n@mixin rotate($degrees) {\n    -webkit-transform: rotate($degrees);\n       -moz-transform: rotate($degrees);\n        -ms-transform: rotate($degrees);\n         -o-transform: rotate($degrees);\n            transform: rotate($degrees);\n}",
 			"settings":
 			{
-				"buffer_size": 6865,
+				"buffer_size": 247,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Nicole/Desktop/zmd/GruntFile.js",
+			"file": "/C/Users/Nicole/Documents/GitHub/projects/zmd/dist/styles/blog-nav.css",
 			"settings":
 			{
-				"buffer_size": 1105,
+				"buffer_size": 8366,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "#mc_embed_signup {\n    form {\n        display:block; \n        float: left;\n        position:relative; \n        text-align:left; \n        padding:10px 0 10px 3%\n    }\n    h2 {\n\n        font-weight:bold; \n        padding:0; \n        margin:15px 0; \n        font-size:1.4em;\n    }\n    input {\n        @include border-radius(4px);\n        border:1px solid #999; \n        -webkit-appearance:none;\n        font-size: 16px;\n\n            &[type=checkbox]{\n                -webkit-appearance:checkbox;\n            }\n            &[type=radio]{\n                -webkit-appearance:radio;\n            }\n            &:focus {\n                border-color:#333;\n            }\n    }\n    .button {\n        //@include transition('background-color', .5, 'ease-in');\n        clear: both; \n        background-color: $cAltMed; \n        border: 0 none; \n        border-radius:4px; \n        color: $cWhite; \n        cursor: pointer; \n        display: inline-block; \n        font-size:15px; \n        font-weight: bold; \n        height: 32px; \n        line-height: 32px; \n        margin: 0 5px 10px 0; \n        padding:0; \n        text-align: center; \n        text-decoration: none; \n        vertical-align: top; \n        white-space: nowrap; \n        width: auto;\n\n        &:hover {\n            background-color: darken($cAltMed, 5);\n        }\n    }\n    .small-meta {\n        font-size: 11px;\n    }\n    .nowrap {\n        white-space:nowrap;\n    }     \n    .clear {\n        clear:none; \n        display:inline;\n    }\n    label {\n        display:block; \n        font-size:16px; \n        padding-bottom:10px; \n        font-weight:bold;\n    }\n    input.email {\n        display:block; \n        padding:8px 0; \n        margin:0 4% 10px 0; \n        text-indent:5px; \n        width:100%; \n        min-width:130px;\n    }\n    input.button {\n        display:block; \n        width:35%; \n        margin:0 0 10px 0; \n        min-width:90px;\n    }\n    div#mce-responses {\n        float:left; \n        top:-1.4em; \n        padding:0em .5em 0em .5em; \n        overflow:hidden; \n        width:90%;margin: 0 5%; \n        clear: both;\n    }\n    div.response {\n        margin:1em 0; \n        padding:1em .5em .5em 0; \n        font-weight:bold; \n        float:left; \n        top:-1.5em; \n        z-index:1; \n        width:80%;\n    }\n    #mce-error-response {\n        display:none;\n    }\n    #mce-success-response {\n        color:#529214; \n        display:none;\n    }\n    label.error {\n        display:block; \n        float:none; \n        width:auto; \n        margin-left:1.05em; \n        text-align:left; \n        padding:.5em 0;\n    }\n}",
-			"file": "sass/_mailing-list.scss",
-			"file_size": 2897,
-			"file_write_time": 130790629290701571,
+			"file": "/C/Users/Nicole/Documents/GitHub/projects/zmd/GruntFile.js",
 			"settings":
 			{
-				"buffer_size": 2590,
+				"buffer_size": 1259,
 				"line_ending": "Windows"
 			}
 		}
@@ -262,6 +282,22 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/sass/_baveuse-font.scss",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/sass/style.scss",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dist/blog-nav.html",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/GruntFile.js",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dist/index.html",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/jade/util.jade",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/sass/_top-nav.scss",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/sass/_tooltips.scss",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/sass/_animations.scss",
+		"/C/Users/Nicole/Desktop/zmd/GruntFile.js",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/sass/_mailing-list.scss",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/jade/layout.jade",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/sass/_preloader.scss",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/jade/index.jade",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/sass/_mixins.scss",
+		"/C/Users/Nicole/Documents/GitHub/projects/zmd/dev/jade/mailing-list-signup.jade",
 		"/C/Users/Nicole/Desktop/zmd/dev/sass/ie-only.scss",
 		"/C/Users/Nicole/Desktop/zmd/dist/styles/style.css",
 		"/C/Users/Nicole/Desktop/zmd/dev/sass/_reset.scss",
@@ -275,7 +311,6 @@
 		"/C/Users/Nicole/Desktop/zmd/dev/sass/_tooltips.scss",
 		"/C/Users/Nicole/Desktop/zmd/dist/index.html",
 		"/C/Users/Nicole/Desktop/zmd/dist/scripts/tooltips.js",
-		"/C/Users/Nicole/Desktop/zmd/GruntFile.js",
 		"/C/Users/Nicole/Desktop/zmd/dist/mech-animation-test.html",
 		"/C/Users/Nicole/Desktop/zmd/dev/sass/_base.scss",
 		"/C/Users/Nicole/Desktop/zmd/dist/draft/sections.html",
@@ -374,22 +409,7 @@
 		"/E/game-projects/animix/html/scripts/createGrid.js",
 		"/E/game-projects/animix/html/animix.js",
 		"/E/game-projects/animix/html/util.js",
-		"/E/game-projects/animix/.gitignore",
-		"/E/game-projects/animix/.gitignore.txt",
-		"/F/web-projects/websites/nixallover/2014-03/index.html",
-		"/C/Users/Nicole/Dropbox/animix/psuedocode/animix.js",
-		"/C/Users/Nicole/Dropbox/animix/psuedocode/main-menu.js",
-		"/C/Users/Nicole/Dropbox/animix/psuedocode/hud.js",
-		"/C/Users/Nicole/Dropbox/animix/psuedocode/round.js",
-		"/C/Users/Nicole/Dropbox/Preferences.sublime-settings",
-		"/C/Users/Nicole/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Nicole/Documents/GitHub/staff/nicole/chat-server/index.js",
-		"/C/Users/Nicole/Documents/GitHub/tunnel-vision/index-new.htm",
-		"/C/Users/Nicole/Desktop/wordpress/wp-config.php",
-		"/C/Users/Nicole/Desktop/shadowbox.css",
-		"/C/Users/Nicole/Desktop/Cards and Castles/splash/splash.htm",
-		"/F/blue/tools-web/tools.htm",
-		"/C/Users/Nicole/AppData/Roaming/Sublime Text 2/Packages/User/starter-html.sublime-snippet"
+		"/E/game-projects/animix/.gitignore"
 	],
 	"find":
 	{
@@ -400,6 +420,9 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"C:\\Users\\Nicole\\Documents\\GitHub\\projects\\zmd\\dev\\sass",
+			"C:\\Users\\Nicole\\Documents\\GitHub\\projects\\zmd\\dev",
+			"C:\\Users\\Nicole\\Documents\\GitHub\\projects\\zmd\\dev\\jade",
 			"C:\\Users\\Nicole\\Desktop\\zmd\\dev",
 			"C:\\dev\\animix\\public\\scripts\\game",
 			"F:\\game-projects\\animix\\app\\public\\scripts\\game",
@@ -411,6 +434,21 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			".chevron",
+			"img",
+			"http://zmd.nixallover.com",
+			"Baveuse",
+			"baveuse",
+			"top-nav",
+			"bounce",
+			"script",
+			"$degrees",
+			"sdeg",
+			"$start, $end",
+			"skew",
+			"pull-right",
+			"social-links",
+			"brand-links",
 			";\n",
 			"64",
 			"fixed",
@@ -523,22 +561,7 @@
 			"currMove",
 			"activeTurn",
 			"update",
-			"<img",
-			"<img ",
-			"<img(.*)>",
-			"statusLog",
-			"debugLog",
-			"console.log",
-			"selectedDomNodes",
-			"move.",
-			"selectedDomNodes",
-			"move.positions",
-			"positions",
-			"$square",
-			"$ui",
-			"generatePart",
-			"numberOfAnimals",
-			"console"
+			"<img"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -568,59 +591,54 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "jade/layout.jade",
 					"settings":
 					{
-						"buffer_size": 3873,
+						"buffer_size": 33088,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								408,
-								408
+								22860,
+								22860
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1410.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "sass/_preloader.scss",
+					"file": "sass/_variables.scss",
 					"settings":
 					{
-						"buffer_size": 3713,
+						"buffer_size": 664,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								541,
+								541
 							]
 						],
 						"settings":
 						{
-							"auto_name": "#escapingBallG{",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -630,74 +648,241 @@
 				},
 				{
 					"buffer": 2,
-					"file": "jade/index.jade",
 					"settings":
 					{
-						"buffer_size": 2307,
+						"buffer_size": 4509,
 						"regions":
 						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										0,
+										0
+									],
+									[
+										221,
+										224
+									],
+									[
+										473,
+										476
+									],
+									[
+										656,
+										659
+									],
+									[
+										875,
+										878
+									],
+									[
+										1033,
+										1036
+									],
+									[
+										1220,
+										1223
+									],
+									[
+										1330,
+										1333
+									],
+									[
+										1512,
+										1515
+									],
+									[
+										1537,
+										1540
+									],
+									[
+										1569,
+										1572
+									],
+									[
+										1594,
+										1597
+									],
+									[
+										1626,
+										1629
+									],
+									[
+										1651,
+										1654
+									],
+									[
+										1683,
+										1686
+									],
+									[
+										1708,
+										1711
+									],
+									[
+										1740,
+										1743
+									],
+									[
+										1765,
+										1768
+									],
+									[
+										2080,
+										2083
+									],
+									[
+										2496,
+										2499
+									],
+									[
+										2596,
+										2599
+									],
+									[
+										2711,
+										2714
+									],
+									[
+										2904,
+										2907
+									],
+									[
+										3233,
+										3236
+									],
+									[
+										3380,
+										3383
+									],
+									[
+										3496,
+										3499
+									],
+									[
+										3676,
+										3679
+									],
+									[
+										3802,
+										3805
+									],
+									[
+										4072,
+										4075
+									],
+									[
+										4206,
+										4209
+									],
+									[
+										4312,
+										4315
+									],
+									[
+										4426,
+										4429
+									]
+								],
+								"scope": ""
+							}
 						},
 						"selection":
 						[
 							[
-								1777,
-								1777
+								1849,
+								1849
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"detect_indentation": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 645.0,
+						"translation.y": 956.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "sass/_mixins.scss",
+					"file": "jade/util.jade",
 					"settings":
 					{
-						"buffer_size": 2735,
+						"buffer_size": 3000,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1793,
-								1793
+								581,
+								581
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 794.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "sass/style.scss",
+					"file": "jade/index.jade",
 					"settings":
 					{
-						"buffer_size": 6895,
+						"buffer_size": 2874,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6850,
-								6850
+								2874,
+								2853
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "sass/style.scss",
+					"settings":
+					{
+						"buffer_size": 6645,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								331,
+								338
 							]
 						],
 						"settings":
@@ -707,30 +892,30 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 7142.0,
+						"translation.y": 39.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "jade/mailing-list-signup.jade",
+					"buffer": 6,
+					"file": "sass/_reset.scss",
 					"settings":
 					{
-						"buffer_size": 1213,
+						"buffer_size": 3068,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								328,
-								328
+								962,
+								816
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -743,23 +928,23 @@
 			]
 		},
 		{
-			"selected": 6,
+			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 6,
-					"file": "jade/util.jade",
+					"buffer": 7,
+					"file": "jade/layout.jade",
 					"settings":
 					{
-						"buffer_size": 3000,
+						"buffer_size": 5065,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								120,
-								120
+								483,
+								483
 							]
 						],
 						"settings":
@@ -775,101 +960,191 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"settings":
-					{
-						"buffer_size": 610,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										161,
-										163
-									],
-									[
-										434,
-										436
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								174,
-								174
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
 					"buffer": 8,
-					"file": "sass/_top-nav.scss",
+					"file": "sass/blog-nav.scss",
 					"settings":
 					{
-						"buffer_size": 2361,
+						"buffer_size": 2407,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								117,
-								117
+								2407,
+								2407
 							]
 						],
 						"settings":
 						{
+							"auto_name": "",
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1949.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 9,
-					"file": "sass/_tooltips.scss",
+					"file": "/C/Users/Nicole/Documents/GitHub/projects/zmd/dist/blog-nav.html",
 					"settings":
 					{
-						"buffer_size": 843,
+						"buffer_size": 2148,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								397,
-								397
+								550,
+								550
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "jade/blog-nav.jade",
+					"settings":
+					{
+						"buffer_size": 3362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1470,
+								1470
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 78.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "sass/_top-nav.scss",
+					"settings":
+					{
+						"buffer_size": 4079,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								839,
+								839
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 638.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "sass/_mixins.scss",
+					"settings":
+					{
+						"buffer_size": 2945,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								292,
+								292
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"settings":
+					{
+						"buffer_size": 247,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14,
+								14
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/C/Users/Nicole/Documents/GitHub/projects/zmd/dist/styles/blog-nav.css",
+					"settings":
+					{
+						"buffer_size": 8366,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								250,
+								250
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -879,47 +1154,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "sass/_animations.scss",
+					"buffer": 15,
+					"file": "/C/Users/Nicole/Documents/GitHub/projects/zmd/GruntFile.js",
 					"settings":
 					{
-						"buffer_size": 6865,
+						"buffer_size": 1259,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6593,
-								6593
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5432.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "/C/Users/Nicole/Desktop/zmd/GruntFile.js",
-					"settings":
-					{
-						"buffer_size": 1105,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								488,
+								488
 							]
 						],
 						"settings":
@@ -930,34 +1177,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "sass/_mailing-list.scss",
-					"settings":
-					{
-						"buffer_size": 2590,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2590,
-								2590
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1742.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -993,7 +1212,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.451793062904,
 			1.0
 		],
 		"rows":

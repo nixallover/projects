@@ -6,49 +6,8 @@ Email: nicole@nixallover.com
 Comments: this stylesheet was generated from sass, I don't recommend trying to edit it by hand -- please request source if changes are needed
 ******/
 
-
-
-// COLOR/HEIGHT VARIABLES
-// colors (explicit)
-$white      : #FFFFFF;
-$eggshell   : #cfb991;
-
-$slate      : #253d3e;
-$foggy      : #7F9992;
-
-$icyBlue    : #d8f5f7;
-$powderBlue : #a7e0e3;
-$lightSlate : #6d8f9c;
-
-
-// colors (applicable)
-$cWhite     : $white;
-$cNeutral   : $eggshell;
-
-$cMain      : $powderBlue;
-$cMainHi    : $lightSlate;
-$cMainBg    : $icyBlue;
-
-$cMainDark  : darken($cMain, 10);
-$cMainDarker: darken($cMain, 20);
-
-$cAlt       : $slate;
-$cAltHi     : $foggy;
-$cAltDark   : darken($cAlt, 4);
-$cAltMed    : darken($cAltHi, 15);
-
-
-// nums
-$height-top-nav: 220px;
-$height-mech-row: 600px;
-$width-mech-asset: 100px;
-$width-items: 256px;
-$width-social: 50px;
-$width-sz: 90px;
-
-
-
 // IMPORTS
+@import 'variables';
 @import 'reset';
 @import 'base';
 @import 'baveuse-font';
@@ -103,6 +62,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 200%;
 }
 
+#skrollr-spacer-hack {
+    @extend %block;
+
+}
+
 
 
 /* LAYOUT AND CONTAINERS */
@@ -146,6 +110,7 @@ footer {
     @include clearfix();
     text-align: center;
     min-height: 100px;
+    margin-bottom: 20px;
     //padding: 100px 0;
 }
 
@@ -319,7 +284,18 @@ footer {
 
 #store-info {
     @extend %block;
-    margin: 20px;
+    @include clearfix();
+    margin: 0;
+}
+
+.store-link-major {
+    float: none;
+    margin: 15px auto;
+    width: 400px;
+
+    img {
+        width: 400px;
+    }
 }
 
 #store-scientist {
@@ -336,7 +312,7 @@ footer {
     @include clearfix();
     background-color: darken($cAlt, 5);
     margin-left: 75px;
-    margin-top: 50px;
+    margin-top: 25px;
     padding: 20px;
 }
 
@@ -360,6 +336,13 @@ footer {
     }
     .mal-container {
         @include scale(.8, .8);
+    }
+    .store-link-major {
+        width: 300px;
+
+        img {
+            width: 300px;
+        }
     }
 }
 
@@ -389,6 +372,13 @@ footer {
         float: left;
         margin-left: -20px;
         @include scale(.6, .6);
+    }
+    .store-link-major {
+        width: 250px;
+
+        img {
+            width: 250px;
+        }
     }
 }
 

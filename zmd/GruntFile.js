@@ -6,7 +6,8 @@ module.exports = function (grunt) {
             dist: {
                 files: {
                     'dist/styles/style.css' : 'dev/sass/style.scss',
-                    'dist/styles/ie-only.css' : 'dev/sass/ie-only.scss'
+                    'dist/styles/blog-nav.css' : 'dev/sass/blog-nav.scss',
+                    'dist/styles/baveuse-font.css' : 'dev/sass/baveuse-font.scss'
                 }
             }
         },

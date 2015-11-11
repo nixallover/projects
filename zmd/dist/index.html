@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta description="Zombie Match Defense blends the casual match-3 genre with the strategic nature of a lane defense game">
+    <meta description="Zombie Match Defense is a game that blends the casual match-3 genre with the strategic nature of a lane defense game">
     <!-- site designed & developed by Nicole Oliver (nixallover.com) -->
     <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0, user-scalable=0">
     <link rel="icon" href="img/zmd-icon.png">
-    <title>Zombie Match Defense | A game coming to iOS and Android</title>
+    <title>Zombie Match Defense | Available on iOS, coming soon to Android</title>
     <link rel="stylesheet" href="styles/animate.css">
     <link rel="stylesheet" href="styles/style.css">
   </head>
@@ -19,9 +19,18 @@
     <div id="nav-container">
       <div class="chevron animated bounceInDown"></div>
       <nav id="top-nav" class="animated bounceInDown">
-        <div id="brand-links" class="icon-links"><a id="shovelware-website" href="http://shovelware.com/" title="Shovelware Games" rel="tooltip"><img src="img/Shovelware_Logo.png" alt="Shovelware Games"></a><a id="presskit" href="http://shovelware.com/press/" title="Presskit" rel="tooltip"></a><a id="email" href="mailto:hello@shovelware.com" title="Email" rel="tooltip"></a></div>
-        <div id="social-links" class="icon-links"><a id="tumblr" href="http://blog.zombiematchdefense.com/" title="Dev blog" rel="tooltip"></a><a id="twitter" href="https://twitter.com/shovelware" title="Twitter" rel="tooltip"></a><a id="facebook" href="https://www.facebook.com/pages/Zombie-Match-Defense/430837240409375" title="Facebook" rel="tooltip"></a></div>
-        <h1 id="nav-brand-logo"><img src="img/ZMD_Logo.png" alt="Zombie Match Defense"></h1>
+        <div class="top-left-nav">
+          <div class="brand"><a id="shovelware-website" href="http://shovelware.com/" title="Shovelware Games" rel="tooltip" class="icon-link"><img src="img/Shovelware_Logo.png" alt="Shovelware Games"></a></div>
+          <div class="top-nav-links social"><a id="presskit" href="http://shovelware.com/press/" title="Presskit" rel="tooltip" class="icon-link"></a><a id="email" href="mailto:hello@shovelware.com" title="Email" rel="tooltip" class="icon-link"></a><a id="tumblr" href="http://blog.zombiematchdefense.com/" title="Dev blog" rel="tooltip" class="icon-link"></a><a id="twitter" href="https://twitter.com/shovelware" title="Twitter" rel="tooltip" class="icon-link"></a><a id="facebook" href="https://www.facebook.com/pages/Zombie-Match-Defense/430837240409375" title="Facebook" rel="tooltip" class="icon-link"></a></div>
+        </div>
+        <div class="top-center-nav">
+          <h1 id="nav-brand-logo"><img src="img/ZMD_Logo.png" alt="Zombie Match Defense"></h1>
+        </div>
+        <div class="top-right-nav">
+          <div class="top-nav-links right"><a id="app-store" href="https://itunes.apple.com/us/app/zombie-match-defense/id952938642" title="Get the game on the App Store" class="store-link store"><img src="img/app-store.png" alt="Available on the App Store"></a>
+            <div id="google-play" title="Coming soon to Google Play" class="store-link disabled store"><img src="img/google-play-coming-soon.png" alt="Available on Google Play"></div>
+          </div>
+        </div>
       </nav>
     </div>
     <div id="main-container">
@@ -135,7 +144,9 @@
                     <div class="row row-padded">
                       <div class="col-40"><img id="main-brand-logo" src="img/ZMD_Logo.png" alt="Zombie Match Defense"></div>
                       <div class="col-60">
-                        <h2><span>Coming soon to the</span><span><strong class="pop">App Store </strong>and                               <strong class="pop">Google Play</strong></span></h2>
+                        <div id="store-info"><a href="https://itunes.apple.com/us/app/zombie-match-defense/id952938642" title="Get the game on the App Store" class="store-link store-link-major store"><img src="img/app-store.png" alt="Available on the App Store"></a>
+                          <div title="Coming soon to Google Play" class="store-link store-link-major disabled store"><img src="img/google-play-coming-soon.png" alt="Available on Google Play"></div>
+                        </div>
                         <div id="mailing-list-container"><img id="store-scientist" src="img/scientist_1_victory.png">
                           <div id="mc_embed_signup">
                             <form id="mc-embedded-subscribe-form" action="//zombiematchdefense.us10.list-manage.com/subscribe/post?u=c35d259ebf37bc503411c3b85&amp;id=362292b854" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="" class="validate">
@@ -154,7 +165,7 @@
                         </div>
                       </div>
                     </div>
-                    <footer>               
+                    <footer data-center-center="top: 0%;">
                       <h3>
                          
                         &copy; 2015 Shovelware Games

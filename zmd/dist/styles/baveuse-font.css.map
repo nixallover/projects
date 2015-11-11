@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;AA0BQ,oDAA4C;AAMpD,UAIC;EAHG,WAAW,EAAE,iBAAiB;EAC9B,GAAG,EAAE,2BAA2B;EAChC,GAAG,EAAE,0MAA8D",
+"sources": ["../../dev/sass/baveuse-font.scss"],
+"names": [],
+"file": "baveuse-font.css"
+}
