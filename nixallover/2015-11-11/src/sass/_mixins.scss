@@ -1,0 +1,114 @@
+// mixins
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin translateX($distance) {
+    -webkit-transform: translateX($distance);
+        -ms-transform: translateX($distance);
+            transform: translateX($distance);
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}
+
+
+@mixin rotate($deg) {
+    -webkit-transform: rotate($deg);
+       -moz-transform: rotate($deg);
+        -ms-transform: rotate($deg);
+         -o-transform: rotate($deg);
+            transform: rotate($deg);
+}
+
+// for chevron
+@mixin skew($start, $end) {
+    -webkit-transform: skew($start, $end);
+       -moz-transform: skew($start, $end);
+        -ms-transform: skew($start, $end);
+         -o-transform: skew($start, $end);
+            transform: skew($start, $end);
+}
+
+@mixin animated($duration, $fillmode) {
+    -webkit-animation-duration: $duration;
+            animation-duration: $duration;
+    -webkit-animation-fill-mode: $fillmode;
+            animation-fill-mode: $fillmode;
+}
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+       -moz-transition: $transition-property $transition-time $method;
+        -ms-transition: $transition-property $transition-time $method;
+         -o-transition: $transition-property $transition-time $method;
+            transition: $transition-property $transition-time $method;
+}
+
+@mixin scale($x, $y){
+    -webkit-transform: scale($x, $y);
+    -moz-transform   : scale($x, $y);
+    -o-transform     : scale($x, $y);
+    -ms-transform    : scale($x, $y);
+    transform        : scale($x, $y);
+}
+
+// animations
+// how to use
+// @include keyframes(move-the-object) {
+//   0%   { left: 100px; }
+//   100% { left: 200px; }
+// }
+
+// .object-to-animate {
+//   @include animation('move-the-object .5s 1', 'move-the-object-again .5s 1 .5s');
+// } 
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}

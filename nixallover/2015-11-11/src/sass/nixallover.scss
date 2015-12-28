@@ -1,0 +1,278 @@
+// nixallover.com
+// created 7/17/2015 by nicole@nixallover.com
+
+// colors
+$white: #fff;
+$cream: #EFEFEE;
+$red: #EF6250;
+$mint: #27D6A0;
+$pink: #EC1E74;
+$gold: #F5AA1C;
+$charcoal: #2E3442;
+
+// color assignments
+$lightest: $white;
+$neutral: $cream;
+$darkest: $charcoal;
+$interactive: $red;
+$active: $mint;
+$test: $pink;
+
+// default color functions
+@function hover-base($color){
+  @return darken($color, 10);
+}
+
+// imports
+@import 'normalize';
+@import 'mixins';
+@import 'buttons';
+@import 'tooltips';
+@import 'animate-css-snippets';
+
+%block {
+    //border: dotted 1px $test;
+    display: block;
+    position: relative;
+}
+
+%inline-block {
+    //border: dotted 1px $test;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+%border-style {
+    background-image: url(../img/zag.svg);
+    background-size: 50px 25px;
+    display: block;
+    height: 25px;
+    text-indent: -9999px;
+    width: 100%;
+}
+
+// GENERAL CONTAINERS
+.content-block {
+    @extend %block;
+    @include clearfix();
+    margin: 0 auto;
+    width: 100%;
+
+    &.alt {
+        background-color: $neutral;
+    }
+
+    &:before {
+        @extend %border-style;
+        @include rotate(180deg);
+    }
+
+    &:after {
+        @extend %border-style;
+    }
+}
+
+// #header {
+//     @include transition(height, 1s, ease-in);
+//     height: 408px;
+
+//     &.expanded {
+//         height: 1000px;
+
+//         &:after {
+//             background: none;
+//         } 
+//     }
+// }
+
+#header,
+#footer {
+    background: url(../img/bg.gif);
+    background-color: $darkest;
+    color: $neutral;
+}
+
+// no zigzags at very top or bottom
+#header:before,
+#footer:after {
+    background: none;
+}
+
+.content-block-body {
+    @extend %block;
+    @include clearfix();
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 4em 4em;
+}
+
+body {
+    background-color: $lightest;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: $darkest;
+    
+    * {
+        @include box-sizing(border-box);
+    }
+}
+
+// TYPOGRAPHY
+h1, h2, h3, h4, h5, h6 {
+    // color: darken($accent, 20);
+    text-align: center;
+}
+
+p, small {
+    text-align: center;
+}
+
+.site-title {
+    font-size: 275%;
+    color: $lightest;
+}
+
+a {
+    color: $interactive;
+    @include transition(all, .1s, ease-in);
+
+    &:hover, 
+    &:focus {
+        color: $active;
+    }
+}
+
+// bubble links
+$width-bubble: 50px;
+
+.bubble-links {
+    @extend %block;
+    text-align: center;
+
+    a {
+        @extend %inline-block;
+        @include border-radius(50%);
+        border: solid 3px $interactive;
+        color: $interactive;
+        height: $width-bubble;
+        margin: 5px;
+        width: $width-bubble;
+
+        .icon {
+            font-size: 120%;
+            line-height: 1.8em;
+        }
+
+        &:hover {
+            // background-color: $lightest;
+            // color: $lowlight;
+            //background-color: lighten($active,10);
+            border-color: $active;
+            color: $active;
+        }
+    }
+}
+
+
+// COLUMNS
+.row {
+    @extend %block;
+    
+    .col-1, 
+    .col-2 {
+        @extend %inline-block;
+        width: 50%;
+    }
+    
+    .col-1 { padding-right: .5em; }
+    .col-2 { padding-left: .5em; }
+}
+
+// PROJECTS
+.project-container {
+    @extend %block;
+    padding: 0;
+    min-height: 50px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.project {
+    @extend %block;
+    background-color: $lightest;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.project-image {
+    @extend %inline-block;
+    //background-color: $accent;
+    width: 30%;
+    // width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.project-content {
+    @extend %inline-block;
+    height: 100%;
+    padding: 20px;
+    width: 70%;
+
+    h3 small {
+        color: darken($neutral, 40);
+        font-weight: normal;
+        // font-style: italic;
+    }
+}
+
+.project-description {
+    @extend %inline-block;
+    background-color: darken($neutral, 6);
+    //border-top: solid 6px $active;
+    //color: $lightest;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.project-links {
+    @extend %block;
+    text-align: center;
+}
+
+.illustrations {
+    padding-bottom: 2em;
+
+    img {
+        //border: solid 4px transparent;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width:1000px) {
+    .project {
+        box-sizing: border-box;
+        width: auto;
+    }
+
+    .row {
+        .col-1, 
+        .col-2 {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    .project-image img {
+        height: 100%;
+        width: auto;
+    }
+}

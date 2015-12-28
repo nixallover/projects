@@ -1,0 +1,142 @@
+extends ./layout.jade
+
+block content
+    .menu
+
+    #header.content-block
+        .content-block-body
+            h1.site-title Hello, I'm Nicole.
+            p.lead Multi-disciplinary web developer + artist
+
+    .content-block.alt
+        .content-block-body
+            h2.content-block-title Web Development
+
+            p I'm a full-stack web developer at UC San Diego, with a focus on <strong>interaction design and development</strong>. My development platform of choice is Node.js.
+
+            //- h3 Technical Specialties
+            //- ul
+            //-     li: a(href='https://trello.com/nixallover/recommend') Trello
+            //-     li: a(href='https://nodejs.org/') Node.js
+            //-     li: a(href='http://sass-lang.com/') Sass
+            //-     li: a(href='https://git-scm.com/') Git
+            //-     li: a(href='https://github.com/Prinzhorn/skrollr') Skrollr
+
+            h3 Recent Freelance Projects
+
+            .project
+                .project-image
+                    img(src='img/website-zmd.png' alt='screenshot')
+                .project-content
+                    h3
+                        a(href='http://zombiematchdefense.com/') Zombie Match Defense
+                        small  June 2015
+                    p Promotional website for an mobile match 3 game
+
+
+            .project
+                .project-image
+                    img(src='img/website-tunnel.png' alt='screenshot')
+                .project-content
+                    h3
+                        a(href='http://tunnel-vision.net/') Tunnel Vision - portfolio of Gerald Hardin
+                        small  January 2014
+                    p Project-oriented site for a 3D character sculptor
+
+
+    .content-block
+        .content-block-body
+            h2.content-block-title Illustration
+
+            p ... is my passion on the side. Check out some recent projects on <a href='https://nixallover.carbonmade.com/'>Carbonmade</a>.
+
+            //- +bigButton('portfolio', 'Carbonmade', 'https://nixallover.carbonmade.com/')
+
+        .row.illustrations
+            .col-md-3.col-sm-12
+                img(src='work/illustration001.png')
+            .col-md-2.col-sm-12
+                img(src='work/illustration002.png')
+            .col-md-3.col-sm-12
+                img(src='work/illustration003.png')
+            .col-md-2.col-sm-12
+                img(src='work/illustration004.png')
+            .col-md-2.col-sm-12
+                img(src='work/illustration005.png')
+
+
+    .content-block.alt
+        .content-block-body
+            h2.content-block-title Games
+
+            p I contribute as an artist to the occasional indie game--these are the most recent completed.
+
+            .project
+                .project-image
+                    img(src='img/game-murderhouse.png')
+                .project-content
+                    h3 
+                        | 1BB Murder House
+                        small  January 2014
+                    .project-links
+                        a.button.button-antiman(href='http://globalgamejam.org/2014/games/1bb-murder-house') Global Game Jam
+
+                .project-description
+                    p <strong>Contributions:</strong> game art assets, animator
+
+            .project
+                .project-image
+                    img(src='img/game-antwarz.png')
+                .project-content
+                    h3 
+                        | Ant Warz
+                        small  February 2013
+                    .project-links
+                        a.button.button-antiman(href='https://nixallover.carbonmade.com/projects/5143952') Gallery
+                .project-description
+                    p A mobile RTS on the Android platform.<em> No longer available on Google Play.</em>
+                    p <strong>Contributions:</strong> game art assets, animations, promotional art, website
+
+            .project
+                .project-image
+                    img(src='img/game-broadsides.png')
+                .project-content
+                    h3 
+                        | Broadsides
+                        small  June 2012
+                    .project-links
+                        a.button.button-antiman(href='https://nixallover.carbonmade.com/projects/5143953') Gallery
+                        a.button.button-antiman(href='http://cse125.ucsd.edu/cse125/2012/cse125g1/') Developer blog
+                .project-description
+                    p A 10-week student project. Broadsides is a multiplayer broadside combat arena game, with LAN multiplayer support for up to 8 players.
+                    p <strong>Contributions:</strong> 3D models & textures, UI, promotional art
+            
+
+
+
+    //- .row
+    //-     .col-md-4
+    //-         +bigButton('portfolio', 'Carbonmade', 'https://nixallover.carbonmade.com/')
+    //-     .col-md-8
+    //-         +bigButton('sketches', 'Tumblr', 'http://nixallover.tumblr.com/')
+
+
+    #footer.content-block
+        .content-block-body
+            h2.content-block-title Let's connect
+
+            .bubble-links
+                //- a(href='#', title='Resume')
+                //-     i.icon.icon-file-text
+                a(href='mailto:nicole@nixallover.com', title='Email')
+                    i.icon.icon-envelope
+                a(href='https://www.linkedin.com/in/nicolesoliver', title='LinkedIn')
+                    i.icon.icon-linkedin
+                a(href='https://twitter.com/nixallover', title='Twitter')
+                    i.icon.icon-twitter
+                a(href='https://www.pinterest.com/nixallover/', title='Pinterest')
+                    i.icon.icon-pinterest
+                a(href='https://github.com/nixallover', title='GitHub')
+                    i.icon.icon-github
+                a(href='http://jsfiddle.net/user/nixallover/fiddles/', title='JS Fiddle')
+                    i.icon.icon-jsfiddle

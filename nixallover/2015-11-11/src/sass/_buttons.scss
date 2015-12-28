@@ -1,0 +1,78 @@
+/* Common button styles */
+
+.button {
+    background-color: $interactive;
+    border: none;
+    color: $lightest;
+    display: inline-block;
+    // float: left;
+    line-height: 1em;
+    margin: 0 1em .5em 0;
+    width: 250px;
+    // min-width: 150px;
+    padding: 1em 2em;
+    position: relative;
+    text-decoration: none;
+    vertical-align: middle;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+
+    &:hover {
+        outline: none;
+        background-color: $active;
+        color: $lightest;
+    }
+    > span {
+        vertical-align: middle;
+    }
+}
+
+$height-big-button: 175px;
+
+/*a*/.big-button {
+    @extend %block;
+    background-color: $interactive;
+    color: $neutral;
+    min-height: $height-big-button;
+    margin: 0 0 1em 0;
+    text-decoration: none;
+    width: 100%;
+    
+    &:hover {
+        background-color: $active;
+        color: $lightest;
+    }
+    
+    .big-button-icon {
+        background: url() transparent 0 0 no-repeat;
+        background-size: auto $height-big-button;
+        border:none;
+        float: left;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: $height-big-button;
+        width: $height-big-button;
+        
+        &.bbi-Unknotted { background-image: url('../img/icon-dev.png'); }
+        &.bbi-GitHub { background-image: url('../img/icon-github.png'); }
+        &.bbi-Tumblr { background-image: url('../img/icon-illustration.png'); }
+    }
+    
+    .big-button-text {
+        font-size: 200%;
+        font-weight: bold;
+        line-height: 1em;
+        margin-left: $height-big-button;
+        padding: 1em;
+        text-align: right;
+        vertical-align: top;
+        
+        .small {
+            font-size: 80%;
+            font-weight: normal;
+        }
+    }
+}
