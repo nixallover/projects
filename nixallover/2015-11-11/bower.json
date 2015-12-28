@@ -1,0 +1,22 @@
+{
+  "name": "nixallover-website",
+  "version": "0.0.0",
+  "authors": [
+    "Nicole Oliver <nicole.oliver.42@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "~3.3.0",
+    "foundation": "~5.5.2",
+    "skrollr": "~0.6.30",
+    "jquery-visible": "~1.2.0"
+  }
+}

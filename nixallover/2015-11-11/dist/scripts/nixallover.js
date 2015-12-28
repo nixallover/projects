@@ -1,0 +1,1 @@
+$(function(){console.log("wahoo initialized!");skrollr.init();$(".site-title").addClass("animated fadeInDown"),$("#header").removeClass("expanded")});
