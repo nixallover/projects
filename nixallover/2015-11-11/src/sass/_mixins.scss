@@ -65,10 +65,29 @@
 
 @mixin scale($x, $y){
     -webkit-transform: scale($x, $y);
-    -moz-transform   : scale($x, $y);
-    -o-transform     : scale($x, $y);
-    -ms-transform    : scale($x, $y);
-    transform        : scale($x, $y);
+       -moz-transform: scale($x, $y);
+        -ms-transform: scale($x, $y);
+         -o-transform: scale($x, $y);
+            transform: scale($x, $y);
+}
+
+//   @include animdetail(3s, 2s, 1);
+@mixin animdetail($duration, $delay, $iteration) {
+    -webkit-animation-duration: $duration;
+       -moz-animation-duration: $duration;
+        -ms-animation-duration: $duration;
+         -o-animation-duration: $duration;
+            animation-duration: $duration;
+    -webkit-animation-delay: $delay;
+       -moz-animation-delay: $delay;
+        -ms-animation-delay: $delay;
+         -o-animation-delay: $delay;
+            animation-delay: $delay;
+    -webkit-animation-iteration-count: $iteration;
+       -moz-animation-iteration-count: $iteration;
+        -ms-animation-iteration-count: $iteration;
+         -o-animation-iteration-count: $iteration;
+            animation-iteration-count: $iteration;
 }
 
 // animations

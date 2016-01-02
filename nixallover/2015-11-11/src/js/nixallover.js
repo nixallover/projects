@@ -1,14 +1,36 @@
 $(function(){
-	console.log( "wahoo initialized!" );
-	var s = skrollr.init();
+    console.log( "wahoo initialized!" );
 
-	var animBaseClass = "animated ";
+    // skrollr
+    var s = skrollr.init();
 
-	var anim = {
-		fadeInDown: "fadeInDown"
-	};
 
-	$( ".site-title" ).addClass( "animated fadeInDown" );
+    // animate css stuff
+    var animBaseClass = "animated";
 
-	$( "#header" ).removeClass( "expanded" );
+    var anim = {
+        fadeInDown: "fadeInDown"
+    };
+
+    // init
+    $( ".site-title" ).addClass( animBaseClass + " " + anim.fadeInDown );
+    // $( "#header" ).removeClass( "expanded" );
+
+
+    // $( window ).on( "scroll", function(e){
+    //     var blockHeading = ".content-block-title";
+    //     // detect if visible
+    //     var titleIsVisible = function(){
+    //         return $( blockHeading ).visible();
+    //     };
+
+    //     if( titleIsVisible() ){
+    //         console.log( "visible" );
+    //         $( blockHeading ).addClass( animBaseClass + " " + anim.fadeInDown );
+    //         // $( this ).text()
+    //         // trigger animation class
+    //     } else {
+    //         // nada
+    //     }
+    // });
 });

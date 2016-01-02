@@ -8,19 +8,20 @@ block content
             h1.site-title Hello, I'm Nicole.
             p.lead Multi-disciplinary web developer + artist
 
+            .top-nav
+                a(href='#webdev') Web Development
+                a(href='#illustration') Illustration
+                a(href='#games') Games
+                a(href='#contact') Contact
+
+    a(name='webdev')
     .content-block.alt
         .content-block-body
-            h2.content-block-title Web Development
+            .content-block-title 
+                h2 Web Development
 
             p I'm a full-stack web developer at UC San Diego, with a focus on <strong>interaction design and development</strong>. My development platform of choice is Node.js.
 
-            //- h3 Technical Specialties
-            //- ul
-            //-     li: a(href='https://trello.com/nixallover/recommend') Trello
-            //-     li: a(href='https://nodejs.org/') Node.js
-            //-     li: a(href='http://sass-lang.com/') Sass
-            //-     li: a(href='https://git-scm.com/') Git
-            //-     li: a(href='https://github.com/Prinzhorn/skrollr') Skrollr
 
             h3 Recent Freelance Projects
 
@@ -44,11 +45,13 @@ block content
                     p Project-oriented site for a 3D character sculptor
 
 
+    a(name='illustration')
     .content-block
         .content-block-body
-            h2.content-block-title Illustration
+            .content-block-title 
+                h2 Illustration
 
-            p ... is my passion on the side. Check out some recent projects on <a href='https://nixallover.carbonmade.com/'>Carbonmade</a>.
+            p My passion on the side. Check out some recent projects on <a href='https://nixallover.carbonmade.com/'>Carbonmade</a>.
 
             //- +bigButton('portfolio', 'Carbonmade', 'https://nixallover.carbonmade.com/')
 
@@ -65,9 +68,11 @@ block content
                 img(src='work/illustration005.png')
 
 
+    a(name='games')
     .content-block.alt
         .content-block-body
-            h2.content-block-title Games
+            .content-block-title 
+                h2 Games
 
             p I contribute as an artist to the occasional indie game--these are the most recent completed.
 
@@ -114,16 +119,11 @@ block content
 
 
 
-    //- .row
-    //-     .col-md-4
-    //-         +bigButton('portfolio', 'Carbonmade', 'https://nixallover.carbonmade.com/')
-    //-     .col-md-8
-    //-         +bigButton('sketches', 'Tumblr', 'http://nixallover.tumblr.com/')
-
-
+    a(name='contact')
     #footer.content-block
         .content-block-body
-            h2.content-block-title Let's connect
+            .content-block-title 
+                h2 Let's connect
 
             .bubble-links
                 //- a(href='#', title='Resume')
@@ -140,3 +140,18 @@ block content
                     i.icon.icon-github
                 a(href='http://jsfiddle.net/user/nixallover/fiddles/', title='JS Fiddle')
                     i.icon.icon-jsfiddle
+
+
+        //- h3 Technical Specialties
+    //- ul
+    //-     li: a(href='https://trello.com/nixallover/recommend') Trello
+    //-     li: a(href='https://nodejs.org/') Node.js
+    //-     li: a(href='http://sass-lang.com/') Sass
+    //-     li: a(href='https://git-scm.com/') Git
+    //-     li: a(href='https://github.com/Prinzhorn/skrollr') Skrollr
+    
+    //- .row
+    //-     .col-md-4
+    //-         +bigButton('portfolio', 'Carbonmade', 'https://nixallover.carbonmade.com/')
+    //-     .col-md-8
+    //-         +bigButton('sketches', 'Tumblr', 'http://nixallover.tumblr.com/')

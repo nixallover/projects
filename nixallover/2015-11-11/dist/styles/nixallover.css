@@ -395,9 +395,9 @@ th {
 
 /* Common button styles */
 .button {
-  background-color: #EF6250;
+  background-color: #ef6250;
   border: none;
-  color: #fff;
+  color: white;
   display: inline-block;
   line-height: 1em;
   margin: 0 1em .5em 0;
@@ -412,8 +412,8 @@ th {
 }
 .button:hover {
   outline: none;
-  background-color: #27D6A0;
-  color: #fff;
+  background-color: #27d6a0;
+  color: white;
 }
 .button > span {
   vertical-align: middle;
@@ -421,16 +421,16 @@ th {
 
 /*a*/
 .big-button {
-  background-color: #EF6250;
-  color: #EFEFEE;
+  background-color: #ef6250;
+  color: #efefee;
   min-height: 175px;
   margin: 0 0 1em 0;
   text-decoration: none;
   width: 100%;
 }
 .big-button:hover {
-  background-color: #27D6A0;
-  color: #fff;
+  background-color: #27d6a0;
+  color: white;
 }
 .big-button .big-button-icon {
   background: url() transparent 0 0 no-repeat;
@@ -524,6 +524,7 @@ http://osvaldas.info/elegant-css-and-jquery-tooltip-responsive-mobile-friendly
     -webkit-transform: translate3d(0, -5%, 0);
     transform: translate3d(0, -5%, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
@@ -536,6 +537,7 @@ http://osvaldas.info/elegant-css-and-jquery-tooltip-responsive-mobile-friendly
     -webkit-transform: translate3d(0, -5%, 0);
     transform: translate3d(0, -5%, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
@@ -553,6 +555,7 @@ http://osvaldas.info/elegant-css-and-jquery-tooltip-responsive-mobile-friendly
     -webkit-transform: translate3d(-5%, 0, 0);
     transform: translate3d(-5%, 0, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
@@ -565,6 +568,7 @@ http://osvaldas.info/elegant-css-and-jquery-tooltip-responsive-mobile-friendly
     -webkit-transform: translate3d(-5%, 0, 0);
     transform: translate3d(-5%, 0, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
@@ -576,7 +580,7 @@ http://osvaldas.info/elegant-css-and-jquery-tooltip-responsive-mobile-friendly
   animation-name: fadeInLeft;
 }
 
-.big-button, .content-block, .content-block-body, .bubble-links, .row, .project-container, .project, .project-links {
+.big-button, .content-block, .content-block-title, .content-block-body, .top-nav, .bubble-links, .row, .project-container, .project, .project-links {
   display: block;
   position: relative;
 }
@@ -609,7 +613,7 @@ http://osvaldas.info/elegant-css-and-jquery-tooltip-responsive-mobile-friendly
   clear: both;
 }
 .content-block.alt {
-  background-color: #EFEFEE;
+  background-color: #efefee;
 }
 .content-block:before {
   -webkit-transform: rotate(180deg);
@@ -619,11 +623,27 @@ http://osvaldas.info/elegant-css-and-jquery-tooltip-responsive-mobile-friendly
   transform: rotate(180deg);
 }
 
+.content-block-title {
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  text-align: center;
+  width: 100%;
+}
+.content-block-title h2 {
+  display: inline;
+  font-family: 'Oleo Script';
+  font-size: 225%;
+  margin: 10px;
+}
+
 #header,
 #footer {
   background: url(../img/bg.gif);
-  background-color: #2E3442;
-  color: #EFEFEE;
+  background-color: #2e3442;
+  color: #efefee;
 }
 
 #header:before,
@@ -645,10 +665,10 @@ http://osvaldas.info/elegant-css-and-jquery-tooltip-responsive-mobile-friendly
 }
 
 body {
-  background-color: #fff;
+  background-color: white;
   font-family: 'Roboto Slab', serif;
   font-size: 20px;
-  color: #2E3442;
+  color: #2e3442;
 }
 body * {
   -webkit-box-sizing: border-box;
@@ -666,11 +686,26 @@ p, small {
 
 .site-title {
   font-size: 275%;
-  color: #fff;
+  color: white;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -ms-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -ms-animation-delay: 0;
+  -o-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 a {
-  color: #EF6250;
+  color: #ef6250;
   -webkit-transition: all 0.1s ease-in;
   -moz-transition: all 0.1s ease-in;
   -ms-transition: all 0.1s ease-in;
@@ -678,7 +713,22 @@ a {
   transition: all 0.1s ease-in;
 }
 a:hover, a:focus {
-  color: #27D6A0;
+  color: #27d6a0;
+}
+
+.top-nav {
+  margin: 15px auto;
+  text-align: center;
+}
+.top-nav:before, .top-nav:after {
+  content: "";
+  display: table;
+}
+.top-nav:after {
+  clear: both;
+}
+.top-nav > a {
+  margin: 0 1em;
 }
 
 .bubble-links {
@@ -689,8 +739,8 @@ a:hover, a:focus {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  border: solid 3px #EF6250;
-  color: #EF6250;
+  border: solid 3px #ef6250;
+  color: #ef6250;
   height: 50px;
   margin: 5px;
   width: 50px;
@@ -700,8 +750,8 @@ a:hover, a:focus {
   line-height: 1.8em;
 }
 .bubble-links a:hover {
-  border-color: #27D6A0;
-  color: #27D6A0;
+  border-color: #27d6a0;
+  color: #27d6a0;
 }
 
 .row .col-1,
@@ -723,7 +773,7 @@ a:hover, a:focus {
 }
 
 .project {
-  background-color: #fff;
+  background-color: white;
   padding: 0;
   width: 100%;
   margin-bottom: 30px;
@@ -763,7 +813,6 @@ a:hover, a:focus {
   padding-bottom: 2em;
 }
 .illustrations img {
-  border: solid 4px transparent;
   width: 100%;
   height: auto;
 }
@@ -785,5 +834,3 @@ a:hover, a:focus {
     width: auto;
   }
 }
-
-/*# sourceMappingURL=nixallover.css.map */

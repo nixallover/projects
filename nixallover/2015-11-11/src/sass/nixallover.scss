@@ -73,6 +73,33 @@ $test: $pink;
     }
 }
 
+.content-block-title {
+    @extend %block;
+    @include rotate(-2deg);
+    text-align: center;
+    width: 100%;
+
+    h2 {
+        // border: dotted 1px green;
+        // background: url(../img/header-banner.png) 100% 100% no-repeat;
+        display: inline;
+        font-family: 'Oleo Script';
+        font-size: 225%;
+        margin: 10px;
+
+        // &:before,
+        // &:after {
+        //     @extend %block;
+        //     border: dotted 1px green;
+        //     background-image: url(../img/zag.svg);
+        //     height: 25px;
+        //     width: 25px;
+        //     // content:' # ';
+        //     // font-weight: normal;
+        // }
+    }
+}
+
 // #header {
 //     @include transition(height, 1s, ease-in);
 //     height: 408px;
@@ -129,8 +156,10 @@ p, small {
 }
 
 .site-title {
+    // font-family: 'Oleo Script';
     font-size: 275%;
     color: $lightest;
+    @include animdetail(3s, 0, 1);
 }
 
 a {
@@ -140,6 +169,17 @@ a {
     &:hover, 
     &:focus {
         color: $active;
+    }
+}
+
+.top-nav {
+    @extend %block;
+    @include clearfix();
+    margin: 15px auto;
+    text-align: center;
+
+    > a {
+        margin: 0 1em;
     }
 }
 

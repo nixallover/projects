@@ -1,1 +1,1 @@
-$(function(){console.log("wahoo initialized!");skrollr.init();$(".site-title").addClass("animated fadeInDown"),$("#header").removeClass("expanded")});
+$(function(){console.log("wahoo initialized!");var a=(skrollr.init(),"animated"),b={fadeInDown:"fadeInDown"};$(".site-title").addClass(a+" "+b.fadeInDown)});
