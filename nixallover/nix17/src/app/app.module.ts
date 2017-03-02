@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SectionComponent } from './section/section.component';
+import { TitleComponent } from './title/title.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SkillsComponent,
-    SectionComponent
+    SectionComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,

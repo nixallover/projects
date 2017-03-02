@@ -1,27 +1,29 @@
-/*** layout ***/
+@import '../../sass/_common';
+
 .section {
-    border-bottom: dotted 1px lightslategray;
+    // @include clearfix();
+    border-bottom: dotted 1px $color-test;
     display: table;
     position: relative;
     width: 100%;
 
     // color variations
     &.section-plain {
-        background-color: #eaeadb;
+        background-color: $color-neutral;
     }
     &.section-alt {
-        background-color: #ccccba;
+        background-color: $color-neutral-med;
     }
     &.section-bold {
-        background-color: #bc493c;
+        background-color: $color-bold;
     }
 
     // content
     .section-content {
-        border: dotted 1px lightsalmon;
+        border: dotted 1px $color-test;
         display: block;
         position: relative;
-        margin: 4rem auto;
+        margin: $large-margin auto;
         max-width: 900px;
     }
 }
