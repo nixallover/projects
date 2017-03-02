@@ -38,3 +38,29 @@ $border-radius-med: 5px;
     display: inline-block;
     position: relative;
 }
+
+
+// columns
+.row {
+    @extend %block;
+}
+
+%column {
+    @extend %inline-block;
+    margin: 0;
+    padding: 0 1rem 0 0;
+
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+.col-3 {
+    @extend %column;
+    width: 33%;
+}
+
+.col-2 {
+    @extend %column;
+    width: 49.5%;
+}

@@ -6,26 +6,32 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-  private skills: string[] = [
-    'HTML5',
-    'CSS3',
-    'Sass',
-    'CSS animation',
-    'Angular',
-    'Jade (Pug)',
-    'JSTL',
-    'MySQL',
-    'Node.js',
-    'Express.js',
-    'TypeScript',
-    'Adobe Photoshop',
-    'Adobe Illustrator',
-    'Git',
-    'WordPress',
-    'Cascade',
-    'Trello',
-    'FogBugz',
-    'Jira'
+  private skillList: any[] = [
+    [
+      'HTML5',
+      'CSS3',
+      'Sass',
+      'CSS animation',
+      'Adobe Photoshop',
+      'Adobe Illustrator',
+    ],
+    [
+      'Angular',
+      'Jade (Pug)',
+      'JSTL',
+      'MySQL',
+      'Node.js',
+      'Express.js',
+      'TypeScript',
+    ],
+    [
+      'Git',
+      'WordPress',
+      'Cascade',
+      'Trello',
+      'FogBugz',
+      'Jira'
+    ]
   ];
   
   constructor() { }

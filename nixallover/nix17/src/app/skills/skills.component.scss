@@ -1,18 +1,17 @@
 @import '../../sass/_common';
 
 .skill-list {
-    @extend %block;
-    column-count: 3;
-    list-style: none;
-    margin: 0 1rem $margin-med 0;
+    margin: 0;
     padding: 0;
-    width: 100%;
+    list-style: none;
+    vertical-align: top;
 }
 
 .skill {
     @extend %block;
     background-color: $color-neutral;
     margin-bottom: 1rem;
+    //transform: rotate(-2deg);
 
     .skill-overlay {
         border: solid 4px transparent;
@@ -20,9 +19,11 @@
         width: 100%;
         height: 100%;
         margin: 0;
-        transform: rotate(0);
+        transform: rotate(2deg);
         transition: transform .4s, border-color .2s;
-        -webkit-backface-visibility: hidden;
+        // -webkit-backface-visibility: hidden;
+        /* smooths jagged edge */
+        outline: 1px solid transparent;
 
         &:hover, 
         &:focus {
