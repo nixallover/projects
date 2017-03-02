@@ -7,15 +7,16 @@ $color-bold: tomato;
 $color-test: #e2a3e9;
 
 // typography
+$font-title: 'Pacifico', cursive;
+$font-display: 'Oswald', sans-serif;
 $font-standard: 'Open Sans', sans-serif;
-$font-display: 'Pacifico', cursive;
 
 
 // spacing
 $margin-med: 2rem;
 $large-margin: 4rem;
 
-
+$border-width: 4px;
 $border-radius-med: 5px;
 
 
@@ -49,6 +50,7 @@ $border-radius-med: 5px;
     @extend %inline-block;
     margin: 0;
     padding: 0 1rem 0 0;
+    vertical-align: top;
 
     &:last-child {
         padding-right: 0;

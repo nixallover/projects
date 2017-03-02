@@ -14,7 +14,7 @@
     //transform: rotate(-2deg);
 
     .skill-overlay {
-        border: solid 4px transparent;
+        border: solid $border-width transparent;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -35,8 +35,9 @@
     .skill-content {
         padding: 1rem;
         font-size: 120%;
+        font-family: $font-display;
         color: $color-bold;
-        font-weight: bold;
+        // font-weight: bold;
         text-transform: uppercase;
         text-align: center;
         letter-spacing: .1rem;

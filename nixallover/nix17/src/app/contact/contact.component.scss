@@ -1,0 +1,30 @@
+@import '../../sass/_common';
+
+// bubble links
+$width-bubble: 50px;
+
+.bubble-links {
+    @extend %block;
+    text-align: center;
+
+    a {
+        @extend %inline-block;
+        border-radius: 50%;
+        //border: solid $border-width $color-bold;
+        color: $color-bold;
+        height: $width-bubble;
+        margin: 5px;
+        width: $width-bubble;
+
+        .icon {
+            font-size: 200%;
+            line-height: 1.8em;
+        }
+
+        &:hover, 
+        &:focus {
+            border-color: $color-neutral;
+            color: $color-neutral;
+        }
+    }
+}
