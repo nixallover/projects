@@ -1,0 +1,27 @@
+/*** layout ***/
+.section {
+    border-bottom: dotted 1px lightslategray;
+    display: table;
+    position: relative;
+    width: 100%;
+
+    // color variations
+    &.section-plain {
+        background-color: #eaeadb;
+    }
+    &.section-alt {
+        background-color: #ccccba;
+    }
+    &.section-bold {
+        background-color: #bc493c;
+    }
+
+    // content
+    .section-content {
+        border: dotted 1px lightsalmon;
+        display: block;
+        position: relative;
+        margin: 4rem auto;
+        max-width: 900px;
+    }
+}
