@@ -27,7 +27,7 @@ export class SkillsComponent implements OnInit {
     [
       'Git',
       'WordPress',
-      'Cascade',
+      'Cascade CMS',
       'Trello',
       'FogBugz',
       'Jira'

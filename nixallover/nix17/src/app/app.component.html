@@ -3,9 +3,6 @@
 <nix-section type="alt">
   <h2>About me</h2>
   <p>I'm a front-end developer with 5 years of professional experience. I'm currently based in San Diego, California.</p>
-
-  <h2>Drop me a line</h2>
-  <nix-contact></nix-contact>
 </nix-section>
 
 <nix-section>
@@ -29,8 +26,20 @@
 <nix-section>
   <h2>Presentations</h2>
 
-  <ul>
-    <li>Node.js - the new swiss army chainsaw</li>
-    <li>Smart Text https://www.youtube.com/watch?v=5W3SZ_o8m5o</li>
-  </ul>
+  <div class="row">
+    <div class="col-2" *ngFor="let presentation of presentations">
+      <div class="presentation">
+        <h3>
+          <a href="{{presentation.url}}">{{presentation.title}}</a>
+        </h3>
+        <p><em>{{presentation.subtitle}}, {{presentation.date}}</em></p>
+        <p>{{presentation.description}}</p>
+      </div>
+    </div>
+  </div>
+</nix-section>
+
+<nix-section type="alt">
+  <h2>Drop me a line</h2>
+  <nix-contact></nix-contact>
 </nix-section>
