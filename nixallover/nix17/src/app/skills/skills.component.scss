@@ -1,0 +1,23 @@
+@import '../../sass/_common';
+
+.skill-list {
+    @extend %block;
+    box-sizing: border-box;
+    column-count: 3;
+    list-style: none;
+    margin: 0 1rem $margin-med 0;
+    padding: 0;
+    width: 100%;
+}
+
+.skill {
+    @extend %block;
+    background-color: $color-neutral;
+    font-size: 120%;
+    color: $color-bold;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}

@@ -4,7 +4,7 @@
 $color-neutral: #f8f8f3;
 $color-neutral-med: #e3e3d9;
 $color-bold: tomato;
-$color-test: #d221e4;
+$color-test: #e2a3e9;
 
 // typography
 $font-standard: 'Open Sans', sans-serif;
@@ -12,6 +12,7 @@ $font-display: 'Pacifico', cursive;
 
 
 // spacing
+$margin-med: 2rem;
 $large-margin: 4rem;
 
 
@@ -29,5 +30,11 @@ $border-radius-med: 5px;
 %block {
     //border: dotted 1px $test;
     display: block;
+    position: relative;
+}
+
+%inline-block {
+    //border: dotted 1px $test;
+    display: inline-block;
     position: relative;
 }
