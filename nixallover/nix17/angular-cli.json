@@ -19,7 +19,7 @@
       "mobile": false,
       "styles": [
         "../node_modules/normalize.css/normalize.css",
-        "common.css"
+        "nixallover.css"
       ],
       "scripts": [],
       "environments": {

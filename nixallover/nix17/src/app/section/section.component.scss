@@ -16,14 +16,25 @@
     }
     &.section-bold {
         background-color: $color-bold;
+        color: $color-neutral;
     }
 
     // content
     .section-content {
+        @extend %block;
         border: dotted 1px $color-test;
-        display: block;
-        position: relative;
         margin: $large-margin auto;
         max-width: 900px;
+    }
+}
+
+:host /deep/ {
+    h2 {
+        font-family: $font-display;
+        color: $color-bold;
+    }
+
+    .section-bold h2 {
+        color: $color-neutral;
     }
 }

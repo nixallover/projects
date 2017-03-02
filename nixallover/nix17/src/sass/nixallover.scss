@@ -1,3 +1,9 @@
-.test {
-    border: solid 1px green;
+@import '_common';
+
+body {
+    font-family: $font-standard;
+}
+
+h2 {
+    font-size: 250%;
 }
