@@ -1,5 +1,8 @@
 <h2>Skills and technologies</h2>
 
 <ul class="skill-list">
-  <li class="skill" *ngFor="let skill of skills">{{skill}}</li>
+  <li class="skill" *ngFor="let skill of skills">
+    <div class="skill-overlay"></div>
+    <div class="skill-content">{{skill}}</div>
+  </li>
 </ul>

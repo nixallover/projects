@@ -4,6 +4,10 @@ body {
     font-family: $font-standard;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 h2 {
     font-size: 250%;
 }
