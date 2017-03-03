@@ -3,28 +3,51 @@
 // bubble links
 $width-bubble: 50px;
 
-.bubble-links {
+.contact-link-list {
     @extend %block;
     text-align: center;
+}
 
-    a {
-        @extend %inline-block;
-        border-radius: 50%;
-        //border: solid $border-width $color-bold;
+.contact-link {
+    @extend %inline-block;
+    // border-radius: 50%;
+    // border: dotted 1px $color-test;
+    height: $width-bubble;
+    margin: 5px;
+    width: $width-bubble;
+
+    .contact-link-backdrop {
+        background-color: transparent;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        z-index: 5;
+        transform: translate(60px, 60px);
+        transition: background-color .4s, transform .4s;
+    }
+
+    .contact-link-icon {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+        z-index: 10;
+    }
+
+    .icon {
         color: $color-bold;
-        height: $width-bubble;
-        margin: 5px;
-        width: $width-bubble;
+        font-size: 200%;
+        line-height: 1.6em;
+    }
 
-        .icon {
-            font-size: 200%;
-            line-height: 1.8em;
-        }
-
-        &:hover, 
-        &:focus {
-            border-color: $color-neutral;
-            color: $color-neutral;
+    &:hover, 
+    &:focus {
+        .contact-link-backdrop {
+            background-color: $color-neutral;
+            transform: translate(0px, 0px);
         }
     }
 }

@@ -1,19 +1,8 @@
-<div class="bubble-links">
-  <a href="mailto:nicole@nixallover.com" title="Email">
-    <i class="icon icon-envelope"></i>
-  </a>
-  <a href="https://www.linkedin.com/in/nicolesoliver" title="LinkedIn">
-    <i class="icon icon-linkedin"></i>
-  </a>
-  <a href="https://twitter.com/nixallover" title="Twitter">
-    <i class="icon icon-twitter"></i></a>
-  <a href="https://www.pinterest.com/nixallover/" title="Pinterest">
-    <i class="icon icon-pinterest"></i>
-  </a>
-  <a href="https://github.com/nixallover" title="GitHub">
-    <i class="icon icon-github"></i>
-  </a>
-  <a href="http://jsfiddle.net/user/nixallover/fiddles/" title="JS Fiddle">
-    <i class="icon icon-jsfiddle"></i>
-  </a>
+<div class="contact-link-list">
+  <div class="contact-link" *ngFor="let link of contactLinks">
+    <div class="contact-link-backdrop"></div>
+    <a class="contact-link-icon" href="{{link.url}}" title="{{link.title}}">
+      <i class="icon icon-{{link.icon}}"></i>
+    </a>
+  </div>
 </div>
