@@ -15,6 +15,15 @@
     max-width: 900px;
 }
 
+.brand-image {
+    @extend %block;
+    background-color: $color-bold;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
 h1 {
     font: 400% $font-title;
     margin-bottom: 0;
@@ -22,7 +31,9 @@ h1 {
 }
 
 .subtitle {
-    font-size: 150%;
+    font: 150% $font-display;
     text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
     margin-top: 0;
 }
