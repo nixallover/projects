@@ -2,6 +2,7 @@
 
 body {
     font-family: $font-standard;
+    color: $color-dark;
 }
 
 * {
@@ -14,4 +15,9 @@ h2 {
 
 p {
     line-height: 1.5em;
+
+    &.lead {
+        //font-size: 110%;
+        font-style: italic;
+    }
 }

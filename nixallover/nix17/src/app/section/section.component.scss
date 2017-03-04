@@ -1,31 +1,58 @@
 @import '../../sass/_common';
 
+// %border-style {
+//     background: url('assets/chevron.svg') #f44;
+//     background-size: 100% 100%;
+//     display: block;
+//     height: 50px;
+//     text-indent: -9999px;
+//     width: 100%;
+//     z-index: 1000;
+// }
+
 .section {
-    // @include clearfix();
+    @extend %block;
+    @include clearfix();
     border-bottom: dotted 1px $color-test;
-    display: table;
-    position: relative;
+    // margin-bottom: -50px;
     width: 100%;
 
     // color variations
     &.section-plain {
         background-color: $color-neutral;
+
+        // &:after {
+        //     @extend %border-style;
+        //     fill: $color-neutral;
+        // }
     }
     &.section-alt {
         background-color: $color-neutral-med;
+
+        // &:after {
+        //     @extend %border-style;
+        //     fill: $color-neutral-med;
+        // }
     }
     &.section-bold {
         background-color: $color-bold;
         color: $color-neutral;
+
+        // &:after {
+        //     @extend %border-style;
+        //     fill: $color-bold;
+        // }
     }
 
     // content
     .section-content {
         @extend %block;
+        @include clearfix();
         border: dotted 1px $color-test;
         margin: $large-margin auto;
         max-width: 900px;
     }
+
 }
 
 :host /deep/ {

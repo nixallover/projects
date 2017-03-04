@@ -2,9 +2,9 @@
 
 .profile-image {
     @extend %block;
-    background-color: $color-bold;
+    //background-color: $color-bold;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     margin: 0 auto;
 }
