@@ -33,12 +33,10 @@
     }
 
     .skill-content {
+        @extend %display-text;
         padding: 1rem;
         font-size: 120%;
-        font-family: $font-display;
         color: $color-bold;
-        // font-weight: bold;
-        text-transform: uppercase;
         text-align: center;
         letter-spacing: .1rem;
     }

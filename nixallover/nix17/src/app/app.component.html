@@ -2,7 +2,18 @@
 
 <nix-section type="alt">
   <h2>About me</h2>
-  <p>I'm a front-end developer with 5 years of professional experience. I'm currently based in San Diego, California.</p>
+  <div class="row">
+    <div class="col-4">
+      <p>
+        I'm a front-end developer with 5 years of professional experience. 
+        I'm currently based in San Diego, California.
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis repellendus deserunt, corporis aperiam praesentium id expedita nihil, odit nulla, illo porro! Voluptatum debitis perferendis, necessitatibus ut sunt repellendus autem.</p>
+    </div>
+    <div class="col-2">
+      <div class="profile-image"></div>
+    </div>
+  </div>
 </nix-section>
 
 <nix-section>
@@ -24,19 +35,7 @@
 </nix-section>
 
 <nix-section>
-  <h2>Presentations</h2>
-
-  <div class="row">
-    <div class="col-2" *ngFor="let presentation of presentations">
-      <div class="presentation">
-        <h3>
-          <a href="{{presentation.url}}">{{presentation.title}}</a>
-        </h3>
-        <p><em>{{presentation.subtitle}}, {{presentation.date}}</em></p>
-        <p>{{presentation.description}}</p>
-      </div>
-    </div>
-  </div>
+  <nix-presentations></nix-presentations>
 </nix-section>
 
 <nix-section type="alt">

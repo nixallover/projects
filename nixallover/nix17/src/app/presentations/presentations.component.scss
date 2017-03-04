@@ -1,0 +1,11 @@
+@import '../../sass/_common';
+
+.presentation {
+    background-color: $color-neutral-med;
+    padding: 2rem;
+
+    .presentation-title {
+        @extend %display-text;
+        font-size: 140%;
+    }
+}

@@ -40,6 +40,11 @@ $border-radius-med: 5px;
     position: relative;
 }
 
+%display-text {
+    font-family: $font-display;
+    font-weight: normal;
+    text-transform: uppercase;
+}
 
 // columns
 .row {
@@ -57,12 +62,23 @@ $border-radius-med: 5px;
     }
 }
 
-.col-3 {
-    @extend %column;
-    width: 33%;
-}
-
+// columns are x out of 6
 .col-2 {
     @extend %column;
-    width: 49.5%;
+    width: 33.3%;
 }
+
+.col-3 {
+    @extend %column;
+    width: 50%;
+}
+
+.col-4 {
+    @extend %column;
+    width: 66%;
+}
+
+// .col {
+//     @extend %column;
+//     width: 33%;
+// }
