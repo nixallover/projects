@@ -13,6 +13,11 @@ h2 {
     font-size: 250%;
 }
 
+h3 {
+    @extend %display-text;
+    font-size: 140%;
+}
+
 p {
     line-height: 1.5em;
 

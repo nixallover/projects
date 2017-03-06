@@ -1,0 +1,14 @@
+@import '../../sass/_common';
+
+.project {
+    @extend %inline-block;
+    padding: $margin-med/2;
+    width: 50%;
+    vertical-align: top;
+}
+
+.project-card {
+    background-color: lighten($color-bold, 5);
+    padding: $margin-med;
+    min-height: 250px;
+}

@@ -7,11 +7,6 @@
     animation: fadeIn 1s ease-in;
     transition: all .5s ease;
 
-    .presentation-title {
-        @extend %display-text;
-        font-size: 140%;
-    }
-
     &:hover {
         transform: scale(1.05);
         background-color: darken($color-neutral-med, 5);
