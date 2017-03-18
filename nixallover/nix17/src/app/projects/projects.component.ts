@@ -11,6 +11,7 @@ export class ProjectsComponent implements OnInit {
       title: 'Instructional Management System (IMS)',
       type: 'Application',
       date: '2016-present',
+      image: 'ims',
       url: null,
       description: 'A UC San Diego campus-wide application that allow schedulers to plan course schedules for the year, review instructors for their unit, communicate with instructors about their teaching preferences, and generate reports about instruction',
       technologies: ['Node.js', 'Typescript', 'Angular', 'Sass']
@@ -19,6 +20,7 @@ export class ProjectsComponent implements OnInit {
       title: 'Lab Safety Training and Assessment',
       type: 'Application',
       date: '2015-16',
+      image: 'ims',
       url: null,
       description: '',
       technologies: ['Node.js', 'Express.js', 'Sass', 'Jade (Pug)']
@@ -27,6 +29,7 @@ export class ProjectsComponent implements OnInit {
       title: 'Zombie Match Defense',
       type: 'Promotional Website',
       date: 'June 2015',
+      image: 'zmd',
       url: 'http://zombiematchdefense.com/',
       description: 'A promotional website for a mobile game featuring parallax scrolling and CSS3 animations',
       technologies: ['Sass', 'Skrollr.js']
@@ -35,6 +38,7 @@ export class ProjectsComponent implements OnInit {
       title: 'Amber front-end framework',
       type: 'Internal Toolset',
       date: '2014-15',
+      image: 'ims',
       url: null,
       description: '',
       technologies: ['Node.js', 'Sass', 'Grunt', 'JQuery', 'Bootstrap']

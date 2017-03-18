@@ -2,10 +2,14 @@
 
 <div class="project-container">
   <div class="project" *ngFor="let project of projects">
+    <div class="project-description"> 
+      <div class="slidein1"><span>{{project.type}}</span></div>
+      <div class="slidein2"><h3><span>{{project.title}}</span></h3></div>
+      <div class="slidein3"><span>{{project.date}}</span></div>
+    </div>
+    <div class="project-overlay"></div>
     <div class="project-card">
-      <p>{{project.type}}</p>
-      <h3>{{project.title}}</h3>
-      <p>{{project.date}}</p>
+      <img class="project-image" src="assets/project-{{project.image}}.png" />
     </div>
   </div>
 </div>

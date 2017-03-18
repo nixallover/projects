@@ -2,13 +2,89 @@
 
 .project {
     @extend %inline-block;
-    padding: $margin-med/2;
+    //border: dotted 1px $color-test;
+    //padding: $margin-med/2;
     width: 50%;
+    overflow: hidden;
     vertical-align: top;
+
+    &:hover {
+        .project-description {
+            h3, div {
+                transform: translate(0,0);
+            }
+        }
+        .project-overlay {
+            //transform: translate(0,0);
+            opacity: .4;
+        }
+    }
+}
+
+%description-text {
+    @extend %block;
+    transform: translate(-300px, -300px);
+    transition: transform .4s ease-out;
+}
+
+.project-description {
+    position: absolute;
+    padding: 3rem;
+    color: $color-neutral;
+    //border: dotted 1px $color-test;
+    z-index: 3;
+
+    span {
+        background-color: $color-bold;
+        padding: .3rem .5rem;
+        margin-bottom: .5rem;
+    }
+
+    h3 {
+        line-height: 170%;
+    }
+
+    div.slidein1 {
+        @extend %description-text;
+        transition-delay: 0;
+    }
+
+    div.slidein2 {
+        @extend %description-text;
+        transition-delay: .1s;
+    }
+
+    div.slidein3 {
+        @extend %description-text;
+        transition-delay: .2s;
+    }
+
 }
 
 .project-card {
-    background-color: lighten($color-bold, 5);
-    padding: $margin-med;
-    min-height: 250px;
+    //background-color: green;
+    height: auto;
+    position: relative;
+    display: block;
+    z-index: 0;
+}
+
+.project-overlay {
+    background-color: $color-bold;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    //transform: translate(500px, 500px);
+    transition: opacity .3s ease-in;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    margin: 0;
 }
