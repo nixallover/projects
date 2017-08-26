@@ -2,10 +2,19 @@
 
 <div class="project-container">
   <div class="project" *ngFor="let project of projects">
-    <div class="project-description"> 
-      <div class="slidein1"><span>{{project.type}}</span></div>
-      <div class="slidein2"><h3><span>{{project.title}}</span></h3></div>
-      <div class="slidein3"><span>{{project.date}}</span></div>
+    <div class="project-description slide-blocks"> 
+      <div>
+        <span>{{project.type}}</span>
+      </div>
+      <div>
+        <h3><span>{{project.title}}</span></h3>
+      </div>
+      <div>
+        <span>{{project.date}}</span>
+      </div>
+      <div>
+        <button>Check it out</button>
+      </div>
     </div>
     <div class="project-overlay"></div>
     <div class="project-card">

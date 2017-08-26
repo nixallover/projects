@@ -2,9 +2,9 @@
 
 .project {
     @extend %inline-block;
-    //border: dotted 1px $color-test;
-    //padding: $margin-med/2;
     width: 50%;
+    // padding: 0;
+    // margin: 0;
     overflow: hidden;
     vertical-align: top;
 
@@ -21,21 +21,14 @@
     }
 }
 
-%description-text {
-    @extend %block;
-    transform: translate(-300px, -300px);
-    transition: transform .4s ease-out;
-}
-
 .project-description {
     position: absolute;
     padding: 3rem;
-    color: $color-neutral;
-    //border: dotted 1px $color-test;
+    color: $color-bold;
     z-index: 3;
 
     span {
-        background-color: $color-bold;
+        background-color: $color-neutral;
         padding: .3rem .5rem;
         margin-bottom: .5rem;
     }
@@ -44,21 +37,32 @@
         line-height: 170%;
     }
 
-    div.slidein1 {
-        @extend %description-text;
-        transition-delay: 0;
+    button {
+        background-color: $color-bold;
+        outline: 0;
     }
 
-    div.slidein2 {
-        @extend %description-text;
-        transition-delay: .1s;
-    }
+}
 
-    div.slidein3 {
-        @extend %description-text;
-        transition-delay: .2s;
-    }
+.slide-blocks {
+    div {
+        @extend %block;
+        transform: translate(-300px, -300px);
+        transition: transform .4s ease-out;
 
+        &:nth-child(1){
+            transition-delay: 0;
+        }
+        &:nth-child(2){
+            transition-delay: .1s;
+        }
+        &:nth-child(3){
+            transition-delay: .2s;
+        }
+        &:nth-child(4){
+            transition-delay: .3s;
+        }
+    }
 }
 
 .project-card {
