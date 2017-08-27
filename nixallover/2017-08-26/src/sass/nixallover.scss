@@ -1,0 +1,30 @@
+@import '_common';
+
+body {
+    background-color: $color-neutral-med;
+    color: $color-dark;
+    font-family: $font-standard;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 250%;
+}
+
+h3 {
+    @extend %display-text;
+    font-size: 170%;
+}
+
+p {
+    line-height: 1.7em;
+
+    // &.lead {
+    //     @extend %display-text;
+    //     font-size: 170%;
+    //     //font-style: italic;
+    // }
+}

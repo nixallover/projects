@@ -1,0 +1,43 @@
+@import '../../sass/_common';
+
+.skill-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: top;
+}
+
+.skill {
+    @extend %block;
+    background-color: $color-neutral;
+    margin-bottom: 1rem;
+    //transform: rotate(-2deg);
+
+    .skill-overlay {
+        border: solid $border-width transparent;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        transform: rotate(2deg);
+        transition: transform .6s, border-color .2s;
+        // -webkit-backface-visibility: hidden;
+        /* smooths jagged edge */
+        outline: 1px solid transparent;
+
+        &:hover, 
+        &:focus {
+            border-color: $color-bold;
+            transform: rotate(3deg);
+        }
+    }
+
+    .skill-content {
+        @extend %display-text;
+        padding: 1rem;
+        font-size: 120%;
+        color: $color-bold;
+        text-align: center;
+        letter-spacing: .1rem;
+    }
+}

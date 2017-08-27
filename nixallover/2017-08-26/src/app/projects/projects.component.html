@@ -1,0 +1,24 @@
+<h2>Projects</h2>
+
+<div class="project-container">
+  <div class="project" *ngFor="let project of projects">
+    <div class="project-description slide-blocks"> 
+      <div>
+        <span>{{project.type}}</span>
+      </div>
+      <div>
+        <h3><span>{{project.title}}</span></h3>
+      </div>
+      <div>
+        <span>{{project.date}}</span>
+      </div>
+      <div>
+        <button>Check it out</button>
+      </div>
+    </div>
+    <div class="project-overlay"></div>
+    <div class="project-card">
+      <img class="project-image" src="assets/project-{{project.image}}.png" />
+    </div>
+  </div>
+</div>

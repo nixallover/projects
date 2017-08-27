@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-3" *ngFor="let presentation of presentations">
+    <div class="presentation">
+    	<div class="header">
+    		<!-- <h5>Presentation</h5> -->
+    	</div>
+    	<div class="body">
+    		<h3>{{presentation.title}}</h3>
+	      <p><em>{{presentation.subtitle}}, {{presentation.date}}</em></p>
+	      <p>{{presentation.description}}</p>
+    	</div>
+    </div>
+  </div>
+</div>

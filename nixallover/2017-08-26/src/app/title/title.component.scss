@@ -1,0 +1,39 @@
+@import '../../sass/_common';
+
+.title-section {
+    background-color: $color-bold;
+    color: $color-neutral;
+    clip-path: polygon(0 0, 0 85%, 50% 100%, 100% 85%, 100% 0);
+    display: table;
+    position: relative;
+    width: 100%;
+}
+
+.title-section-content {
+    @extend %block;
+    border: dotted 1px $color-test;
+    margin: $large-margin auto;
+    max-width: 900px;
+}
+
+.brand-image {
+    @extend %block;
+    background-color: $color-neutral;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font: 400% $font-title;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.subtitle {
+    @extend %display-text;
+    font-size: 150%;
+    text-align: center;
+    margin-top: 0;
+}

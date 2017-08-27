@@ -1,0 +1,25 @@
+@import '../../sass/_common';
+@import '../../sass/_animations';
+
+.presentation {
+    background-color: $color-neutral-med;
+    //animation: fadeIn 1s ease-in;
+    //transition: all .5s ease;
+    min-height: 400px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 40px 0px;
+    overflow: hidden;
+
+    .header {
+        background-color: $color-dark;
+        display: block;
+        height: 100px;
+        width: 100%;
+    }
+
+    .body {
+        padding: 2rem;
+    }
+}
