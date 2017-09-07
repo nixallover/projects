@@ -4,6 +4,7 @@ body {
     background-color: $color-neutral-med;
     color: $color-dark;
     font-family: $font-standard;
+    margin-top: 600px;
 }
 
 * {
@@ -27,4 +28,8 @@ p {
     //     font-size: 170%;
     //     //font-style: italic;
     // }
+}
+
+a {
+    color: $color-bold;
 }

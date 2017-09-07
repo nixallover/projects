@@ -7,7 +7,11 @@
     	<div class="body">
     		<h3>{{presentation.title}}</h3>
 	      <p><em>{{presentation.subtitle}}, {{presentation.date}}</em></p>
-	      <p>{{presentation.description}}</p>
+				<p>{{presentation.description}}</p>
+				<a [href]="presentation.url">
+					<span class="flurry"></span>
+					<span class="content">{{presentation.linkText}}</span>
+				</a>
     	</div>
     </div>
   </div>

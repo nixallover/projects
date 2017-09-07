@@ -22,4 +22,42 @@
     .body {
         padding: 2rem;
     }
+
+    a {
+        background-color: $color-bold;
+        color: $color-neutral;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        margin: .2rem 0;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+
+        .flurry {
+            display: block;
+            border-radius: 50%;
+            background-color: $color-dark;
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            top: -100px;
+            left: -100px;
+            transition: all 1s;
+            z-index: 3;
+        }
+
+        .content {
+            z-index: 5;
+        }
+
+        &:hover {
+            .flurry {
+                width: 400px;
+                height: 400px;
+            }
+            // span {
+            //     font-size: 110%;
+            // }
+        }
+    }
 }
