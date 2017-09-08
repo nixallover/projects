@@ -2,13 +2,16 @@
 
 .project {
     @extend %inline-block;
-    width: 50%;
-    // padding: 0;
-    // margin: 0;
+    width: 44%;
+    margin: 3%;
     overflow: hidden;
     vertical-align: top;
+    transition: all .3s;
 
     &:hover {
+        width: 50%;
+        margin: 0;
+
         .project-description {
             h3, div {
                 transform: translate(0,0);
@@ -38,8 +41,17 @@
     }
 
     button {
+        border: none;
         background-color: $color-bold;
-        outline: 0;
+        color: $color-neutral;
+        margin: 1rem 0;
+        box-shadow: none;
+        padding: .8rem 1.5rem;
+
+        &:hover {
+            background-color: carken($color-bold, 10);
+        }
+
     }
 
 }
@@ -74,7 +86,7 @@
 }
 
 .project-overlay {
-    background-color: $color-bold;
+    background-color: $color-neutral;
     position: absolute;
     display: block;
     top: 0;

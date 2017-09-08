@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ProjectsComponent implements OnInit {
   private projects: any[] = [
     {
-      title: 'Instructional Management System (IMS)',
+      title: 'Instructional Scheduling Assistant',
       type: 'Application',
       date: '2016-present',
       image: 'ims',

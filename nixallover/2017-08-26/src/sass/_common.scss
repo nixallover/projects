@@ -86,3 +86,8 @@ $border-radius-med: 5px;
 //     @extend %column;
 //     width: 33%;
 // }
+
+.image {
+    display: block;
+    max-width: 100%;
+}

@@ -5,6 +5,7 @@ $width-bubble: 50px;
 
 .contact-link-list {
     @extend %block;
+    float: right;
     text-align: center;
 }
 
