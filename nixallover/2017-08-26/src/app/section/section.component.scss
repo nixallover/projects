@@ -12,9 +12,17 @@
         background-color: $color-neutral;
         clip-path: polygon(0 0, 0 90%, 100% 100%, 100% 10%);
         padding: 100px 0;
+
+        .hexagon {
+            background-color: $color-neutral-med;
+        }
     }
     &.section-alt {
         background-color: $color-neutral-med;
+
+        .hexagon {
+            background-color: $color-neutral;
+        }
     }
     &.section-bold {
         background-color: $color-bold;

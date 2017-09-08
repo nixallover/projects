@@ -1,7 +1,7 @@
 @import '../../sass/_common';
 
 // bubble links
-$width-bubble: 50px;
+$width-bubble: 75px;
 
 .contact-link-list {
     @extend %block;
@@ -41,7 +41,7 @@ $width-bubble: 50px;
 
     .icon {
         color: $color-bold;
-        font-size: 200%;
+        font-size: 300%;
         line-height: 1.6em;
     }
 

@@ -11,11 +11,13 @@
     border: none;
     border-radius: 40px 0px;
     overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(20, 20, 20, .2);
 
     .header {
         background-color: $color-dark;
         display: block;
-        height: 100px;
+        height: 200px;
+        overflow: hidden;
         width: 100%;
     }
 
