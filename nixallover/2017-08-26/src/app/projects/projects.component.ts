@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'nix-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  styleUrls: ['./projects-2.component.scss']
 })
 export class ProjectsComponent implements OnInit {
   private projects: any[] = [
@@ -11,16 +11,16 @@ export class ProjectsComponent implements OnInit {
       title: 'Instructional Scheduling Assistant',
       type: 'Application',
       date: '2016-present',
-      image: 'ims',
+      image: 'isa',
       url: null,
       description: 'A UC San Diego campus-wide application that allow schedulers to plan course schedules for the year, review instructors for their unit, communicate with instructors about their teaching preferences, and generate reports about instruction',
       technologies: ['Node.js', 'Typescript', 'Angular', 'Sass']
     },
     {
-      title: 'Lab Safety Training and Assessment',
+      title: 'Lab Safety Training & Assessment',
       type: 'Application',
       date: '2015-16',
-      image: 'ims',
+      image: 'lab',
       url: null,
       description: '',
       technologies: ['Node.js', 'Express.js', 'Sass', 'Jade (Pug)']
@@ -38,7 +38,7 @@ export class ProjectsComponent implements OnInit {
       title: 'Amber front-end framework',
       type: 'Internal Toolset',
       date: '2014-15',
-      image: 'ims',
+      image: 'amb',
       url: null,
       description: '',
       technologies: ['Node.js', 'Sass', 'Grunt', 'JQuery', 'Bootstrap']

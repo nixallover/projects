@@ -1,6 +1,12 @@
-<h2>Projects</h2>
+<!-- <h2>Projects</h2> -->
 
 <div class="project-container">
+  <div class="project project-{{project.image}}" *ngFor="let project of projects">
+      <h3 class="project-title"><span>{{project.title}}</span></h3>
+  </div>
+</div>
+
+<!-- <div class="project-container">
   <div class="project" *ngFor="let project of projects">
     <div class="project-description slide-blocks"> 
       <div>
@@ -23,4 +29,4 @@
       <img class="project-image" src="assets/project-{{project.image}}.png" />
     </div>
   </div>
-</div>
+</div> -->

@@ -24,6 +24,7 @@
         // -webkit-backface-visibility: hidden;
         /* smooths jagged edge */
         outline: 1px solid transparent;
+        z-index: 3;
 
         &:hover, 
         &:focus {
@@ -36,8 +37,32 @@
         @extend %display-text;
         padding: 1rem;
         font-size: 120%;
-        color: $color-bold;
+        color: $color-dark;
         text-align: center;
         letter-spacing: .1rem;
+        z-index: 1;
+    }
+
+    .skill-description {
+        background-color: $color-dark;
+        color: $color-neutral;
+        // display: none;
+        position: absolute;
+        padding: 1rem;
+        opacity: 0;
+        text-align: center;
+        width: 100%;
+        z-index: 2;
+        transform: translateY(-50px);
+        transition: opacity .6s, transform .4s;
+    }
+
+    &:hover, 
+    &:focus {
+        .skill-description {
+            // display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }

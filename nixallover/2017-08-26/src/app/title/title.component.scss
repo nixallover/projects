@@ -12,9 +12,10 @@
     width: 100%;
 }
 
-.brand-title-block {
-    //animation: fadein .2s ease-in-out;
-}
+// .brand-title-block {
+    
+//     //animation: fadein .2s ease-in-out;
+// }
 
 .title-section-content {
     @extend %block;
@@ -35,15 +36,20 @@ h1 {
     font-size: 150%;
     text-align: center;
     margin-top: 0;
+    opacity: .8;
     //animation: fadein 1s ease-in-out .5s both;
 }
 
 .brand-image {
     @extend %block;
-    background-color: $color-neutral;
-    border-radius: 50%;
-    width: 200px;
+    //background-color: $color-neutral;
+    //border-radius: 50%;
+    width: 500px;
     height: 200px;
     margin: 0 auto;
     animation: inflate 1s ease-in-out 1s both;
+
+    .art-supply-decoration {
+        width: 100%;
+    }
 }
