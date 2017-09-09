@@ -12,6 +12,10 @@
     width: 100%;
 }
 
+.brand-title-block {
+    //animation: fadein .2s ease-in-out;
+}
+
 .title-section-content {
     @extend %block;
     border: dotted 1px $color-test;

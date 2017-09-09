@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SectionComponent implements OnInit {
   @Input() type: string;
+  public randomInt: number;
 
   private style: string;
 
@@ -14,6 +15,11 @@ export class SectionComponent implements OnInit {
 
   public ngOnInit(): void {
     this.style = this.type || 'plain';
+    this.randomInt = this.getRandomInt();
+  }
+
+  private getRandomInt(): number {
+    return Math.floor((Math.random() * 3) + 1);
   }
 
 }

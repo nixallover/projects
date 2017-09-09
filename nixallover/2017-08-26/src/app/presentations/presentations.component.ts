@@ -12,7 +12,7 @@ export class PresentationsComponent implements OnInit {
       subtitle: 'UC San Diego Campus Lisa Talk',
       date: 'July 2015',
       url: 'http://slides.com/nixallover/nodejs',
-      linkText: 'Browse the slides',
+      linkText: 'Browse slides',
       description: 'I co-presented this one hour intro to Node.js, discussing ways that our shop has utilized it to create internal tooling'
     },
     {
@@ -20,7 +20,7 @@ export class PresentationsComponent implements OnInit {
       subtitle: 'Adobe Illustrator Tutorial',
       date: 'August 2012',
       url: 'https://www.youtube.com/watch?v=5W3SZ_o8m5o',
-      linkText: 'Watch the tutorial',
+      linkText: 'Watch tutorial',
       description: 'A screencast describing how to create a custom text envelope in Illustrator. Runner up in Deke Techniques: the Challenge (Illustrator category)'
     }
   ];

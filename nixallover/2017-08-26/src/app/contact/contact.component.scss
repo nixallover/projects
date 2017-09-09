@@ -40,9 +40,10 @@ $width-bubble: 75px;
     }
 
     .icon {
-        color: $color-bold;
+        color: $color-dark;
         font-size: 300%;
         line-height: 1.6em;
+        transition: color .6s;
     }
 
     &:hover, 
@@ -50,6 +51,10 @@ $width-bubble: 75px;
         .contact-link-backdrop {
             background-color: $color-neutral;
             transform: translateY(0px);
+        }
+
+        .icon {
+            color: $color-bold;
         }
     }
 }
