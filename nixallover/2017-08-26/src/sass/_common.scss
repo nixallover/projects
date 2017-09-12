@@ -1,0 +1,93 @@
+// common variables and mixins
+
+// colors
+$color-neutral: #f8f8f3;
+$color-neutral-med: #e3e3d9;
+$color-dark: #3E3E3E;
+$color-bold: #08a89d;
+$color-test: #e2a3e9;
+
+// typography
+$font-title: 'Pacifico', cursive;
+$font-display: 'Oswald', sans-serif;
+$font-standard: 'Open Sans', sans-serif;
+
+
+// spacing
+$margin-med: 2rem;
+$large-margin: 4rem;
+
+$border-width: 4px;
+$border-radius-med: 5px;
+
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+%block {
+    //border: dotted 1px $test;
+    display: block;
+    position: relative;
+}
+
+%inline-block {
+    //border: dotted 1px $test;
+    display: inline-block;
+    position: relative;
+}
+
+%display-text {
+    font-family: $font-display;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+// columns
+.row {
+    @extend %block;
+}
+
+%column {
+    @extend %inline-block;
+    margin: 0;
+    padding: 0 1rem 0 0;
+    vertical-align: top;
+
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+// columns are x out of 6
+.col-2 {
+    @extend %column;
+    width: 33%;
+}
+
+.col-3 {
+    @extend %column;
+    width: 50%;
+}
+
+.col-4 {
+    @extend %column;
+    width: 66%;
+}
+
+// .col {
+//     @extend %column;
+//     width: 33%;
+// }
+
+.image {
+    display: block;
+    max-width: 100%;
+}

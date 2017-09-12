@@ -1,0 +1,83 @@
+@import '_common';
+
+body {
+    background-color: $color-neutral-med;
+    color: $color-dark;
+    font-family: $font-standard;
+    margin-top: 600px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 250%;
+}
+
+h3 {
+    @extend %display-text;
+    font-size: 170%;
+}
+
+p {
+    line-height: 1.7em;
+
+    // &.lead {
+    //     @extend %display-text;
+    //     font-size: 170%;
+    //     //font-style: italic;
+    // }
+}
+
+// a {
+//     color: $color-bold;
+// }
+
+.text-right {
+    text-align: right;
+}
+
+
+/** button style from codrops -- https://tympanus.net/codrops/2015/02/26/inspiration-button-styles-effects/ **/
+/* FIXME - add vendor prefixes */
+.block-button {
+    @extend %display-text;
+    border: solid 3px $color-dark;
+    color: $color-dark;
+    display: inline-block;
+    margin: .2rem 0;
+    overflow: hidden;
+    padding: 1.2rem 3rem;
+    position: relative;
+    text-decoration: none;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition: border-color 0.3s, color 0.3s;
+    z-index: 5;
+
+    &::before {
+        background-color: $color-bold;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform-origin: 0% 100%;
+        transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+        transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+        width: 150%;
+        z-index: -1;
+    }
+
+    &:hover {
+        border-color: $color-bold;
+        color: $color-neutral;
+
+        &::before {
+            background-color: $color-bold;
+            opacity: 1;
+            transform: rotate3d(0, 0, 1, 0deg);
+            transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+        }
+    }
+}

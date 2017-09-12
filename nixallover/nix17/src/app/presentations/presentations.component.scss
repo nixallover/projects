@@ -1,0 +1,17 @@
+@import '../../sass/_common';
+@import '../../sass/_animations';
+
+.presentation {
+    background-color: $color-neutral-med;
+    padding: 2rem;
+    animation: fadeIn 1s ease-in;
+    transition: all .5s ease;
+    min-height: 300px;
+
+    &:hover {
+        transform: scale(1.05);
+        background-color: darken($color-neutral-med, 5);
+    }
+
+
+}

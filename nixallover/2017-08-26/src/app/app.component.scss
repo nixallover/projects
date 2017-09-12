@@ -1,0 +1,59 @@
+@import '../sass/_common';
+
+//clip-path: polygon(0 0, 0 75%, 15% 100%, 100% 100%, 100% 25%, 85% 0);
+
+.profile-image {
+    @extend %block;
+    //background-color: $color-bold;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.experience-block {
+    border-radius: 20px 0px;
+    animation: fadeIn 1s ease-in;
+    background-color: $color-dark;
+    border: none;
+    color: $color-neutral;
+    margin: 2em 0;
+    padding: 1rem;
+    text-align: center;
+    transition: all .5s ease;
+
+    .image {
+        background-color: $color-bold;
+        border-radius: 50%;
+        display: block;
+        height: 70px;
+        margin: 0 auto;
+        margin-top: -50px;
+        position: relative;
+        width: 70px;
+
+        .icon {
+            font-size: 200%;
+            margin: 1.1rem;
+        }
+    }
+}
+
+.contact-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+        display: block;
+        background-color: $color-neutral;
+        margin-bottom: .5rem;
+        padding: 1rem;
+
+        a {
+            color: $color-dark;
+            border-bottom: dotted 1px $color-dark;
+            text-decoration: none;
+        }
+    }
+}

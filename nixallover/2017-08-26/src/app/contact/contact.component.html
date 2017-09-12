@@ -1,0 +1,8 @@
+<div class="contact-link-list">
+  <div class="contact-link" *ngFor="let link of contactLinks">
+    <div class="contact-link-backdrop"></div>
+    <a class="contact-link-icon" href="{{link.url}}" title="{{link.title}}">
+      <i class="icon icon-{{link.icon}}"></i>
+    </a>
+  </div>
+</div>

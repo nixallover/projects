@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-3" *ngFor="let presentation of presentations">
+    <div class="presentation">
+    	<div class="header">
+    		<img src="/assets/presentation-brainstorm.png" />
+    	</div>
+    	<div class="body">
+    		<h3>{{presentation.title}}</h3>
+	      <p><em>{{presentation.subtitle}}, {{presentation.date}}</em></p>
+				<p>{{presentation.description}}</p>
+				<a class="block-button" [href]="presentation.url">
+					{{presentation.linkText}}
+				</a>
+    	</div>
+    </div>
+  </div>
+</div>

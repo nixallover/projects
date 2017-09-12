@@ -1,0 +1,13 @@
+<h2>Skills and technologies I play with</h2>
+
+<div class="row">
+  <div class="col-2" *ngFor="let sublist of skillList">
+    <ul class="skill-list">
+      <li class="skill" *ngFor="let skill of sublist">
+        <div class="skill-overlay"></div>
+        <div class="skill-content">{{skill}}</div>
+        <div class="skill-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint reprehenderit asperiores officiis expedita, quae, quis voluptate sequi quos minus pariatur non possimus! Suscipit sequi quam illo, a sint ut est?</div>
+      </li>
+    </ul>
+  </div>
+</div>
