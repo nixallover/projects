@@ -8,45 +8,69 @@
     @extend %inline-block;
     border: solid 1px $color-test;
     width: 25%;
+    overflow: hidden;
     background-color: $color-dark;
     min-height: 600px;
-    background-position: center center;
-    transition: background-position .4s ease-out;
 
-    &::after {
-        background-color: $color-dark;
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 100%;
+    .background {
+        background-position: center center;
+        display: block;
         height: 100%;
-        opacity: 0;
-        transition: opacity .4s ease-out;
+        position: absolute;
+        transform: scale(1.3);
+        //transition: transform .4s ease-out;
+        width: 100%;
+
+        /* colored overlay */
+        &::after {
+            background-color: $color-dark;
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity .4s ease-out;
+        }
+
+        &.project-isa { background-image: url(/assets/project-isa.jpg); }
+        &.project-zmd { background-image: url(/assets/project-zmd.jpg); }
+        &.project-lab { background-image: url(/assets/project-lab.jpg); }
+        &.project-amb { background-image: url(/assets/project-amb.jpg); }
     }
 
     .project-title {
-        color: $color-bold;
+        color: $color-neutral;
         margin: 2rem;
         position: absolute;
         bottom: 3rem;
+        line-height: 2.5rem;
 
         span {
-            background-color: $color-neutral;
+            background-color: $color-bold;
         }
     }
 
-    &.project-isa { background-image: url(/assets/project-isa.jpg); }
-    &.project-zmd { background-image: url(/assets/project-zmd.jpg); }
-    &.project-lab { background-image: url(/assets/project-lab.jpg); }
-    &.project-amb { background-image: url(/assets/project-amb.jpg); }
+    .button-expand {
+        border: solid 4px $color-bold;
+        background-color: transparent;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 40%;
+        left: 40%;
+    }
 
     &:hover, 
     &:focus {
-        background-position: center -2rem;
+        .background {
+            //transform: scale(1);
+            //background-position: center -2rem;
 
-        &::after {
-            opacity: .4;
+            &::after {
+                opacity: .4;
+            }
         }
     }
 }

@@ -9,12 +9,13 @@
     margin: 0;
     padding: 0;
     border: none;
-    border-radius: 40px 0px;
+    //border-radius: 40px 0px;
     overflow: hidden;
-    box-shadow: 5px 5px 15px rgba(20, 20, 20, .2);
+    //box-shadow: 5px 5px 15px rgba(20, 20, 20, .2);
 
     .header {
         background-color: $color-dark;
+        clip-path: polygon(0 0, 0 100%, 100% 90%, 100% 0);
         display: block;
         height: 200px;
         overflow: hidden;

@@ -8,29 +8,88 @@ import { Component, OnInit } from '@angular/core';
 export class SkillsComponent implements OnInit {
   private skillList: any[] = [
     [
-      'HTML5',
-      'CSS3',
-      'Sass',
-      'CSS animation',
-      'Adobe Photoshop',
-      'Adobe Illustrator',
+      {
+        title: 'CSS3',
+        comment: ''
+      },
+      {
+        title: 'Sass',
+        comment: ''
+      },
+      {
+        title: 'CSS animation',
+        comment: ''
+      },
+      {
+        title: 'HTML5',
+        comment: ''
+      },
+      {
+        title: 'Adobe Photoshop',
+        comment: ''
+      },
+      {
+        title: 'Adobe Illustrator',
+        comment: ''
+      }
     ],
+
     [
-      'Angular',
-      'Jade (Pug)',
-      'JSTL',
-      'MySQL',
-      'Node.js',
-      'Express.js',
-      'TypeScript',
+      {
+        title: 'Angular',
+        comment: 'Just over a year working with Angular 2+'
+      },
+      {
+        title: 'TypeScript',
+        comment: ''
+      },
+      {
+        title: 'Node.js',
+        comment: ''
+      },
+      {
+        title: 'JSTL',
+        comment: ''
+      },
+      {
+        title: 'Express.js',
+        comment: ''
+      },
+      {
+        title: 'MySQL',
+        comment: ''
+      },
+      {
+        title: 'Jade (Pug)',
+        comment: ''
+      },
     ],
+
     [
-      'Git',
-      'WordPress',
-      'Cascade CMS',
-      'Trello',
-      'FogBugz',
-      'Jira'
+      {
+        title: 'Git',
+        comment: ''
+      },
+      {
+        title: 'WordPress',
+        comment: ''
+      },
+      {
+        title: 'Cascade CMS',
+        comment: 'This CMS from Hannon Hill is UC San Diego'
+      },
+      {
+        title: 'Trello',
+        comment: ''
+      },
+      {
+        title: 'FogBugz',
+        comment: ''
+      },
+      {
+        title: 'Jira',
+        comment: ''
+      }
     ]
   ];
   
