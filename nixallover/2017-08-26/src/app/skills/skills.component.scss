@@ -19,18 +19,18 @@
         width: 100%;
         height: 100%;
         margin: 0;
-        transform: rotate(2deg);
-        transition: transform .6s, border-color .2s;
+        // transform: rotate(2deg);
+        // transition: transform .6s, border-color .2s;
         // -webkit-backface-visibility: hidden;
         /* smooths jagged edge */
-        outline: 1px solid transparent;
-        z-index: 3;
+        // outline: 1px solid transparent;
+        // z-index: 3;
 
-        &:hover, 
-        &:focus {
-            border-color: $color-bold;
-            transform: rotate(3deg);
-        }
+        // &:hover, 
+        // &:focus {
+        //     border-color: $color-bold;
+        //     transform: rotate(3deg);
+        // }
     }
 
     .skill-content {
@@ -43,26 +43,26 @@
         z-index: 1;
     }
 
-    .skill-description {
-        background-color: $color-dark;
-        color: $color-neutral;
-        // display: none;
-        position: absolute;
-        padding: 1rem;
-        opacity: 0;
-        text-align: center;
-        width: 100%;
-        z-index: 2;
-        transform: translateY(-50px);
-        transition: opacity .6s, transform .4s;
-    }
+    // .skill-description {
+    //     background-color: $color-dark;
+    //     color: $color-neutral;
+    //     // display: none;
+    //     position: absolute;
+    //     padding: 1rem;
+    //     opacity: 0;
+    //     text-align: center;
+    //     width: 100%;
+    //     z-index: 2;
+    //     transform: translateY(-50px);
+    //     transition: opacity .6s, transform .4s;
+    // }
 
-    &:hover, 
-    &:focus {
-        .skill-description {
-            // display: block;
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
+    // &:hover, 
+    // &:focus {
+    //     .skill-description {
+    //         // display: block;
+    //         opacity: 1;
+    //         transform: translateY(0);
+    //     }
+    // }
 }
