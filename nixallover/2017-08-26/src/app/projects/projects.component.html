@@ -1,11 +1,21 @@
-<!-- <h2>Projects</h2> -->
+<h2>Recent projects</h2>
 
-<div class="project-container">
-  <div class="project project-{{project.image}}" *ngFor="let project of projects">
+
+<div class="project" *ngFor="let project of projects">
+  <!-- <div class="image-container project-{{project.image}}"></div> -->
+  <img src="/assets/{{project.image}}.png" class="cover-image" />
+  <div class="description-container">
+    <h3 class="project-title"><span>{{project.title}}</span></h3>
+  </div>
+</div>
+
+<!-- <div class="project-container">
+  <div class="project" *ngFor="let project of projects">
+      <div class="background project-{{project.image}}"></div>
       <button class="button-expand"></button>
       <h3 class="project-title"><span>{{project.title}}</span></h3>
   </div>
-</div>
+</div> -->
 
 <!-- <div class="project-container">
   <div class="project" *ngFor="let project of projects">
