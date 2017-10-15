@@ -1,12 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 
+class Project {
+  title: string;
+  type: string;
+  date: string;
+  image: string;
+  url: string;
+  description: string;
+  technologies: string[];
+}
+
 @Component({
   selector: 'nix-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects-2.component.scss']
+  styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-  private projects: any[] = [
+  private projects: Project[] = [
     {
       title: 'Instructional Scheduling Assistant',
       type: 'Application',

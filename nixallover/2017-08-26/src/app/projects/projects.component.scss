@@ -1,106 +1,68 @@
 @import '../../sass/_common';
 
 .project {
-    @extend %inline-block;
-    width: 44%;
-    margin: 3%;
-    overflow: hidden;
-    vertical-align: top;
-    transition: all .3s;
+    @extend %block;
+    background-color: $color-dark;
+    height: 350px;
+    margin: 0 0 4rem 0;
+    width: 100%;
 
-    &:hover {
-        width: 50%;
+    &:nth-child(odd) {
+        background-color: darken($color-dark,5);
+
+        .cover-image {
+            float: right;
+        }
+
+    }
+
+    .image-container,
+    .description-container {
+        @extend %inline-block;
+        box-sizing: border-box;
+        min-height: 400px;
         margin: 0;
-
-        .project-description {
-            h3, div {
-                transform: translate(0,0);
-            }
-        }
-        .project-overlay {
-            //transform: translate(0,0);
-            opacity: .4;
-        }
-    }
-}
-
-.project-description {
-    position: absolute;
-    padding: 3rem;
-    color: $color-bold;
-    z-index: 3;
-
-    span {
-        background-color: $color-neutral;
-        padding: .3rem .5rem;
-        margin-bottom: .5rem;
+        vertical-align: top;
     }
 
-    h3 {
-        line-height: 170%;
+    .cover-image {
+        width: auto;
+        height: 100%;
     }
 
-    button {
-        border: none;
-        background-color: $color-bold;
+    .description-container {
+        padding: 2rem;
+    }
+
+    .project-title {
         color: $color-neutral;
-        margin: 1rem 0;
-        box-shadow: none;
-        padding: .8rem 1.5rem;
 
-        &:hover {
-            background-color: darken($color-bold, 10);
-        }
-
+        span { background-color: $color-bold; }
     }
 
-}
+    
+    // $width-button: 60px;
 
-.slide-blocks {
-    div {
-        @extend %block;
-        transform: translate(-300px, -300px);
-        transition: transform .4s ease-out;
+    // .button-expand {
+    //     border: solid 4px $color-bold;
+    //     border-radius: 50%;
+    //     background-color: transparent;
+    //     position: absolute;
+    //     width: $width-button;
+    //     height: $width-button;
+    //     top: 40%;
+    //     left: 40%;
+    // }
 
-        &:nth-child(1){
-            transition-delay: 0;
-        }
-        &:nth-child(2){
-            transition-delay: .1s;
-        }
-        &:nth-child(3){
-            transition-delay: .2s;
-        }
-        &:nth-child(4){
-            transition-delay: .3s;
-        }
-    }
-}
+    // &:hover, 
+    // &:focus {
+    //     .background {
+    //         //transform: scale(1);
+    //         //background-position: center -2rem;
 
-.project-card {
-    //background-color: green;
-    height: auto;
-    position: relative;
-    display: block;
-    z-index: 0;
-}
-
-.project-overlay {
-    background-color: $color-neutral;
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0;
-    //transform: translate(500px, 500px);
-    transition: opacity .3s ease-in;
-}
-
-.project-image {
-    width: 100%;
-    height: auto;
-    margin: 0;
+    //         &::after {
+    //             opacity: .4;
+    //         }
+    //     }
+    // }
 }
