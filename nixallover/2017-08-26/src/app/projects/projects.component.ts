@@ -55,9 +55,17 @@ export class ProjectsComponent implements OnInit {
     }
   ];
 
+  public active: Project;
+
   constructor() { }
 
   ngOnInit() {
+    // temp - for development
+    this.active = this.projects[0];
+  }
+
+  setActiveProject(project: Project): void {
+    this.active = project;
   }
 
 }

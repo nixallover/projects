@@ -1,43 +1,24 @@
-<h2>Recent projects</h2>
-
-
-<div class="project" *ngFor="let project of projects">
-  <!-- <div class="image-container project-{{project.image}}"></div> -->
-  <img src="/assets/{{project.image}}.png" class="cover-image" />
-  <div class="description-container">
-    <h3 class="project-title"><span>{{project.title}}</span></h3>
+<div *ngIf="active" class="modal-overlay">
+  <div class="modal">
+    <h2>{{active.title}}</h2>
+    <p>{{active.date}}</p>
+    <p>{{active.description}}</p>
+    <ul *ngFor="let tech of active.technologies">
+      <li>{{tech}}</li>
+    </ul>
   </div>
 </div>
 
-<!-- <div class="project-container">
+<nix-section>
+  <h2>Recent projects</h2>
+  
   <div class="project" *ngFor="let project of projects">
-      <div class="background project-{{project.image}}"></div>
-      <button class="button-expand"></button>
+    <!-- <div class="image-container project-{{project.image}}"></div> -->
+    <img src="/assets/{{project.image}}.png" class="cover-image" />
+    <div class="description-container">
       <h3 class="project-title"><span>{{project.title}}</span></h3>
-  </div>
-</div> -->
-
-<!-- <div class="project-container">
-  <div class="project" *ngFor="let project of projects">
-    <div class="project-description slide-blocks"> 
-      <div>
-        <span>{{project.type}}</span>
-      </div>
-      <div>
-        <h3><span>{{project.title}}</span></h3>
-      </div>
-      <div>
-        <span>{{project.date}}</span>
-      </div>
-      <div>
-        <a class="block-button" [href]="project.url">
-					More
-				</a>
-      </div>
-    </div>
-    <div class="project-overlay"></div>
-    <div class="project-card">
-      <img class="project-image" src="assets/project-{{project.image}}.png" />
+      <h4>{{project.date}}</h4>
+      <button (click)="setActiveProject(project)">Open</button>
     </div>
   </div>
-</div> -->
+</nix-section>

@@ -2,36 +2,42 @@
 
 .project {
     @extend %block;
+    @include clearfix;
     background-color: $color-dark;
-    height: 350px;
+    color: $color-neutral;
     margin: 0 0 4rem 0;
+    max-height: 400px;
+    text-align: right;
     width: 100%;
 
     &:nth-child(odd) {
         background-color: darken($color-dark,5);
+        text-align: left;
 
         .cover-image {
             float: right;
+            //clip-path: polygon(0 0, 10% 50%, 0 100%, 100% 100%, 100% 0);
         }
 
     }
 
-    .image-container,
     .description-container {
         @extend %inline-block;
+        border: dotted 1px lighten($color-dark, 5);
         box-sizing: border-box;
-        min-height: 400px;
+        height: 100%;
         margin: 0;
+        padding: 2rem;
         vertical-align: top;
     }
 
     .cover-image {
+        //clip-path: polygon(0 0, 0 100%, 100% 100%, 90% 50%, 100% 0);
+        background-color: $color-neutral;
+        float: left;
+        height: auto;
+        max-width: 500px;
         width: auto;
-        height: 100%;
-    }
-
-    .description-container {
-        padding: 2rem;
     }
 
     .project-title {
@@ -39,6 +45,12 @@
 
         span { background-color: $color-bold; }
     }
+
+    // &:hover {
+    //     .cover-image {
+    //         f
+    //     }
+    // }
 
     
     // $width-button: 60px;
@@ -65,4 +77,14 @@
     //         }
     //     }
     // }
+}
+
+.modal-overlay {
+    background-color: transparentize($color-bold, .5);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
