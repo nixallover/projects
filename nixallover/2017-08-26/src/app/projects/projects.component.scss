@@ -105,11 +105,37 @@
 
 $modal-button-width: 40px;
 .modal-close-btn {
-    background-color: $color-neutral-med;
+    background-color: transparent;
     border: 0;
+    cursor: hand;
     float: right;
+    position: relative;
     width: $modal-button-width;
     height: $modal-button-width;
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        margin-top: -1px;
+        background-color: $color-dark;
+        transition: background-color .4s;
+    }
+    &::before {
+        @include transform(rotate(45deg));
+    }
+    &::after {
+        @include transform(rotate(-45deg));
+    }
+
+    &:hover, &:focus {
+        &::before, &::after {
+            background-color: $color-bold;
+        }
+    }
 }
 
 .technologies {
