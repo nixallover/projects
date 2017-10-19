@@ -88,3 +88,40 @@
     width: 100%;
     z-index: 1000;
 }
+
+.modal {
+    @extend %block;
+    background-color: $color-neutral;
+    box-sizing: border-box;
+    padding: 2rem;
+    margin: 5rem auto 0;
+    max-width: 900px;
+    
+    &:after {
+        content: '';
+    }
+
+}
+
+$modal-button-width: 40px;
+.modal-close-btn {
+    background-color: $color-neutral-med;
+    border: 0;
+    float: right;
+    width: $modal-button-width;
+    height: $modal-button-width;
+}
+
+.technologies {
+    list-style: none;
+    padding: 0;
+
+    li {
+        background-color: $color-neutral-med;
+        font-family: $font-display;
+        padding: .5rem;
+        margin: .3rem;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+}

@@ -1,10 +1,19 @@
 <div *ngIf="active" class="modal-overlay">
   <div class="modal">
-    <h2>{{active.title}}</h2>
+    <button (click)="active = undefined" type="button" class="modal-close-btn" aria-label="Close"></button>
+
+    <h3 class="project-title"><span>{{active.title}}</span></h3>
     <p>{{active.date}}</p>
+
+    <h4>Responsibilities</h4>
+    <p>{{active.roleDescription}}</p>
+
+    <h4>Project description</h4>
     <p>{{active.description}}</p>
-    <ul *ngFor="let tech of active.technologies">
-      <li>{{tech}}</li>
+
+    <h4>Technologies</h4>
+    <ul class="technologies">
+      <li *ngFor="let tech of active.technologies">{{tech}}</li>
     </ul>
   </div>
 </div>
@@ -17,8 +26,8 @@
     <img src="/assets/{{project.image}}.png" class="cover-image" />
     <div class="description-container">
       <h3 class="project-title"><span>{{project.title}}</span></h3>
-      <h4>{{project.date}}</h4>
-      <button (click)="setActiveProject(project)">Open</button>
+      <p>{{project.date}}</p>
+      <button (click)="setActiveProject(project)" type="button" class="block-button">Open</button>
     </div>
   </div>
 </nix-section>
