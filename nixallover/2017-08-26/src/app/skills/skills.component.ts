@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-  private skillList: any[] = [
+  public skillList: any[] = [
     [
       'HTML5',
       'CSS3',

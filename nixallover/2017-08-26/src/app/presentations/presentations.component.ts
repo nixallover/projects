@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./presentations.component.scss']
 })
 export class PresentationsComponent implements OnInit {
-  private presentations: any[] = [
+  public presentations: any[] = [
     {
       id: 'nodejs',
       title: 'Node.js - the New Swiss Army Chainsaw',

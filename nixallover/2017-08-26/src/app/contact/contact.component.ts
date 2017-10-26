@@ -6,12 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  private contactLinks: any[] = [
-    // {
-    //   title: 'E-mail',
-    //   url: 'mailto:nicole@nixallover.com',
-    //   icon: 'envelope'
-    // },
+  public contactLinks: any[] = [
     {
       title: 'LinkedIn',
       url: 'https://www.linkedin.com/in/nicolesoliver',

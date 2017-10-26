@@ -18,7 +18,7 @@ class Project {
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-  private projects: Project[] = [
+  public projects: Project[] = [
     {
       title: 'Instructional Scheduling Assistant',
       type: 'Application',

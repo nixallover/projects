@@ -9,7 +9,7 @@ export class SectionComponent implements OnInit {
   @Input() type: string;
   public randomInt: number;
 
-  private style: string;
+  public style: string;
 
   constructor() { }
 
