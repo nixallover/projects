@@ -10,20 +10,23 @@
     text-align: right;
     width: 100%;
 
-    &:nth-child(odd) {
-        background-color: darken($color-dark,5);
-        text-align: left;
+    @media screen and (min-width: 800px) {
+        &:nth-child(odd) {
+            background-color: darken($color-dark,5);
+            text-align: left;
 
-        .cover-image {
-            float: right;
-            //clip-path: polygon(0 0, 10% 50%, 0 100%, 100% 100%, 100% 0);
+            .cover-image {
+                float: right;
+                margin-right: 0;
+                margin-left: 2rem;
+            }
+
         }
-
     }
 
     .description-container {
-        @extend %inline-block;
-        border: dotted 1px lighten($color-dark, 5);
+        @extend %block;
+        //border: dotted 1px lighten($color-dark, 5);
         box-sizing: border-box;
         height: 100%;
         margin: 0;
@@ -32,51 +35,57 @@
     }
 
     .cover-image {
-        //clip-path: polygon(0 0, 0 100%, 100% 100%, 90% 50%, 100% 0);
         background-color: $color-neutral;
+        display: block;
         float: left;
         height: auto;
         max-width: 500px;
+        margin-right: 2rem;
+        margin-left: 0;
         width: auto;
     }
 
     .project-title {
         color: $color-neutral;
+        line-height: 1.5em;
 
         span { background-color: $color-bold; }
     }
+}
 
-    // &:hover {
-    //     .cover-image {
-    //         f
-    //     }
-    // }
+@media screen and (max-width: 800px) {
+    .project {
+        max-height: none;
 
-    
-    // $width-button: 60px;
+        .cover-image {
+            float: none;
+            margin: 0 auto;
+            max-width: 100%;
+        }
 
-    // .button-expand {
-    //     border: solid 4px $color-bold;
-    //     border-radius: 50%;
-    //     background-color: transparent;
-    //     position: absolute;
-    //     width: $width-button;
-    //     height: $width-button;
-    //     top: 40%;
-    //     left: 40%;
-    // }
+        .description-container {
+            text-align: center;
+        }
+    }
+}
 
-    // &:hover, 
-    // &:focus {
-    //     .background {
-    //         //transform: scale(1);
-    //         //background-position: center -2rem;
+.role-title {
+    background-color: $color-dark;
+    color: $color-neutral;
+    float: left;
+    font-family: $font-display;
+    font-weight: normal;
+    margin: 0;
+    padding: .5rem;
+    font-size: 150%;
+    margin-top: -2.5rem;
+    text-transform: uppercase;
+}
 
-    //         &::after {
-    //             opacity: .4;
-    //         }
-    //     }
-    // }
+.role-description {
+    background-color: $color-neutral-med;
+    padding: 1rem 1.5rem .5rem 1.5rem;
+    margin-top: 2.5rem;
 }
 
 .modal-overlay {

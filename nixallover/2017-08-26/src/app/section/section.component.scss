@@ -19,7 +19,7 @@
         color: $color-neutral;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         &.section-plain {
             clip-path: polygon(0 0, 0 97%, 100% 100%, 100% 3%);
         }

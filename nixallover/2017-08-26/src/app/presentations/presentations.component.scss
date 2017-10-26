@@ -22,6 +22,11 @@ $height-slide: 50px;
         height: 200px;
         overflow: hidden;
         width: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 
     .body {
