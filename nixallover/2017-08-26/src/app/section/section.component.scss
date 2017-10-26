@@ -3,8 +3,6 @@
 .section {
     @extend %block;
     @include clearfix();
-    //border-bottom: dotted 1px $color-test;
-    // margin-bottom: -50px;
     width: 100%;
 
     // color variations
@@ -12,17 +10,19 @@
         background-color: $color-neutral;
         clip-path: polygon(0 0, 0 90%, 100% 100%, 100% 10%);
         padding: 100px 0;
-
-        // .hexagon, .line-decoration { background-color: $color-neutral-med; }
     }
     &.section-alt {
         background-color: $color-neutral-med;
-
-        // .hexagon, .line-decoration { background-color: $color-neutral; }
     }
     &.section-bold {
         background-color: $color-bold;
         color: $color-neutral;
+    }
+
+    @media screen and (max-width: 600px) {
+        &.section-plain {
+            clip-path: polygon(0 0, 0 97%, 100% 100%, 100% 3%);
+        }
     }
 
     // content
@@ -47,55 +47,3 @@
         color: $color-neutral;
     }
 }
-
-// BG decoration experiment
-// .hexagon {
-//     background-color: $color-neutral-med;
-//     display: block;
-//     clip-path: polygon(50% 0, 5% 25%, 5% 75%, 50% 100%, 95% 75%, 95% 25%);
-//     position: absolute;
-//     opacity: .5;
-//     z-index: 0;
-
-//     &.hexagon-1 {
-//         height: 120px;
-//         width: 120px;
-//         left: 210px;
-//         top: 80px;
-//     }
-
-//     &.hexagon-2 {
-//         height: 100px;
-//         width: 100px;
-//         left: 280px;
-//         top: 190px;
-//     }
-
-//     &.hexagon-3 {
-//         height: 70px;
-//         width: 70px;
-//         left: 400px;
-//         top: 60px;
-//     }
-// }
-
-// .line-decoration {
-//     background-color: $color-neutral-med;
-//     position: absolute;
-//     display: block;
-//     height: 4px;
-//     width: 100%;
-
-//     &.line-1 {
-//         top: 200px;
-//         transform: rotate(-4deg); 
-//     }
-//     &.line-2 { 
-//         top: 400px;
-//         transform: rotate(-2deg); 
-//     }
-//     &.line-3 { 
-//         top: 300px;
-//         transform: rotate(-1deg); 
-//     }
-// }

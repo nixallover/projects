@@ -6,6 +6,7 @@ class Project {
   date: string;
   image: string;
   url: string;
+  roleTitle: string;
   roleDescription: string;
   description: string;
   technologies: string[];
@@ -24,9 +25,10 @@ export class ProjectsComponent implements OnInit {
       date: '2016-present',
       image: 'isa',
       url: null,
-      roleDescription: 'Front-end lead developer. Developed interfaces from prototype to QA.',
+      roleTitle: 'Front-end lead developer',
+      roleDescription: 'Built 20+ interfaces based on mockups from UX lead and stakeholder input. Produced clean, reusable Angular components and optimized module bundling. Developed application styles based on campus standards. Implemented e2e tests.',
       description: 'A UC San Diego campus-wide application that allow schedulers to plan course schedules for the year, review instructors for their unit, communicate with instructors about their teaching preferences, and generate reports about instruction',
-      technologies: ['Node.js', 'Typescript', 'Angular', 'Sass']
+      technologies: ['Node.js', 'Angular', 'Typescript', 'Protractor', 'Sass']
     },
     {
       title: 'Lab Safety Training & Assessment',
@@ -34,8 +36,9 @@ export class ProjectsComponent implements OnInit {
       date: '2015-16',
       image: 'lab',
       url: null,
-      roleDescription: 'Full-stack developer. Designed front and back end.',
-      description: '',
+      roleTitle: 'Full-stack developer',
+      roleDescription: 'Designed front and back end.',
+      description: 'A module for students and instructional assistants in the division to fulfill lab safety training requirements once a quarter. User is guided through a static training guide, and then completes a timed assessment. Once the training has been completed at least once, a history of previous attempts is available. The quarter this application is currently qualifying for is dynamically determined. Quiz questions are semi-randomized (a certain number are drawn from each subject in the training). ',
       technologies: ['Node.js', 'Express.js', 'Sass', 'Jade (Pug)']
     },
     {
@@ -44,9 +47,10 @@ export class ProjectsComponent implements OnInit {
       date: 'June 2015',
       image: 'zmd',
       url: 'http://zombiematchdefense.com/',
-      roleDescription: 'Worked with client to design a dynamic website.',
+      roleTitle: 'Developer',
+      roleDescription: 'Worked with client to develop a dynamic website matching his vision.',
       description: 'A promotional website for a mobile game featuring parallax scrolling and CSS3 animations',
-      technologies: ['Sass', 'Skrollr.js']
+      technologies: ['Sass', 'CSS animations', 'CSS sprite sheet animations', 'Skrollr.js', 'Jade (Pug)']
     },
     {
       title: 'Amber front-end framework',
@@ -54,7 +58,8 @@ export class ProjectsComponent implements OnInit {
       date: '2014-15',
       image: 'amb',
       url: null,
-      roleDescription: 'Surveyed development team to identify front end toolset needs.',
+      roleTitle: 'Developer',
+      roleDescription: 'Surveyed development team to identify front end toolset needs. Assembled a library of custom and externally-sourced components. Built an extensive styleguide outlining practical use and best practices.',
       description: '',
       technologies: ['Node.js', 'Sass', 'Grunt', 'JQuery', 'Bootstrap']
     }
@@ -66,7 +71,7 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
     // temp - for development
-    this.active = this.projects[0];
+    //this.active = this.projects[0];
   }
 
   setActiveProject(project: Project): void {

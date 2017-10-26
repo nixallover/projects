@@ -18,7 +18,7 @@
   </div>
 </div>
 
-<nix-section>
+<nix-section type="alt">
   <h2>Recent projects</h2>
   
   <div class="project" *ngFor="let project of projects">
@@ -27,7 +27,9 @@
     <div class="description-container">
       <h3 class="project-title"><span>{{project.title}}</span></h3>
       <p>{{project.date}}</p>
-      <button (click)="setActiveProject(project)" type="button" class="block-button">Open</button>
+      <p>
+        <button (click)="setActiveProject(project)" type="button" class="block-button">More</button>
+      </p>
     </div>
   </div>
 </nix-section>

@@ -95,10 +95,19 @@ $border-radius-med: 5px;
     width: 66%;
 }
 
-// .col {
-//     @extend %column;
-//     width: 33%;
-// }
+@media screen and (max-width: 600px) {
+    .col-2,
+    .col-3,
+    .col-4 {
+        padding: 0 2rem;
+        width: 100%;
+
+        &:last-child {
+            padding-right: 2rem;
+        }
+    }
+    
+}
 
 .image {
     display: block;

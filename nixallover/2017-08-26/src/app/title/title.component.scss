@@ -7,13 +7,13 @@
     display: block;
     position: absolute;
     top: 0;
-    z-index: 1;
+    z-index: 10;
     width: 100%;
 }
 
 .title-section-content {
     @extend %block;
-    border: dotted 1px $color-test;
+    //border: dotted 1px $color-test;
     margin: $large-margin auto;
     max-width: 900px;
 }
@@ -34,8 +34,8 @@ h1 {
 
 .brand-image {
     @extend %block;
-    width: 500px;
-    height: 200px;
+    max-width: 500px;
+    height: auto;
     margin: 0 auto;
 
     .code-decoration {
