@@ -1,8 +1,9 @@
 @import '../../sass/_common';
 
 .title-section {
-    animation: scrollup .6s ease-in 2s both;
-    background-color: $color-bold;
+    animation: scrollup .5s ease-in 2.3s both;
+    //background-color: $color-bold;
+    background-image: linear-gradient($color-bold, #00a1de);
     color: $color-neutral;
     display: block;
     position: absolute;

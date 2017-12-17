@@ -2,17 +2,19 @@
   <div *ngIf="active" class="modal" [@fadeBack]>
     <button (click)="active = undefined" type="button" class="modal-close-btn" aria-label="Close"></button>
 
-    <h3 class="project-title">{{active.title}} ({{active.type}})</h3>
+    <h3 class="project-title">{{active.title}}</h3>
 
     <a *ngIf="active.url" class="block-button pull-right" [href]="active.url">
       Visit site
     </a>
 
-    <p>{{active.date}}</p>
+    <p>{{active.type}}  &middot;  {{active.date}}</p>
 
     <div class="role-description">
       <h4 class="role-title">{{active.roleTitle}}</h4>
-      <p>{{active.roleDescription}}</p>
+      <ul>
+        <li *ngFor="let item of active.roleDescription">{{item}}</li>
+      </ul>
     </div>
 
     <h4>Project description</h4>
@@ -33,7 +35,7 @@
     <img src="/assets/{{project.image}}.png" class="cover-image" />
     <div class="description-container">
       <h3 class="project-title"><span>{{project.title}}</span></h3>
-      <p>{{project.type}} - {{project.date}}</p>
+      <p>{{project.type}}  &middot;  {{project.date}}</p>
       <p>
         <button (click)="setActiveProject(project)" type="button" class="block-button">More</button>
       </p>

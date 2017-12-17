@@ -45,6 +45,12 @@ $border-radius-med: 5px;
     @include transform(rotate(#{$deg}deg));
 }
 
+@mixin linear-gradient($direction, $color-stops...) {
+    background: nth(nth($color-stops, 1), 1);
+    background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+    background: linear-gradient($direction, $color-stops);
+}
+
 %block {
     //border: dotted 1px $test;
     display: block;

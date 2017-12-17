@@ -142,7 +142,7 @@ $modal-button-width: 40px;
         left: 0;
         margin-top: -1px;
         background-color: $color-dark;
-        transition: background-color .4s;
+        transition: all .4s;
     }
     &::before {
         @include transform(rotate(45deg));
@@ -154,6 +154,13 @@ $modal-button-width: 40px;
     &:hover, &:focus {
         &::before, &::after {
             background-color: $color-bold;
+        }
+
+        &::before {
+            @include transform(rotate(-45deg));
+        }
+        &::after {
+            @include transform(rotate(45deg));
         }
     }
 }

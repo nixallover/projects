@@ -9,7 +9,7 @@ class Project {
   image: string;
   url: string;
   roleTitle: string;
-  roleDescription: string;
+  roleDescription: string[];
   description: string;
   technologies: string[];
 }
@@ -29,7 +29,12 @@ export class ProjectsComponent implements OnInit {
       image: 'isa',
       url: null,
       roleTitle: 'Front-end lead developer',
-      roleDescription: 'Built 20+ interfaces based on mockups from UX lead and stakeholder input. Produced clean, reusable Angular components and optimized module bundling. Developed application styles based on campus standards. Implemented end-to-end tests.',
+      roleDescription: [
+        'Built 15+ interfaces based on mockups from UX lead and stakeholder input',
+        'Produced clean, reusable Angular components and optimized module bundling',
+        'Developed application styles based on campus standards',
+        'Implemented end-to-end and unit tests'
+      ],
       description: 'A UC San Diego campus-wide application that allow schedulers to plan course schedules for the year, review instructors for their unit, communicate with instructors about their teaching preferences, and generate scheduling reports.',
       technologies: ['Node.js', 'Angular', 'Typescript', 'Protractor', 'Sass']
     },
@@ -40,8 +45,13 @@ export class ProjectsComponent implements OnInit {
       image: 'lab',
       url: null,
       roleTitle: 'Full-stack developer',
-      roleDescription: 'Designed the application from top to bottom.',
-      description: 'A module for students and instructional assistants in the division to fulfill lab safety training requirements once a quarter. User is guided through a static training guide, and then completes a timed assessment. Once the training has been completed at least once, a history of previous attempts is available. The quarter this application is currently qualifying for is dynamically determined. Quiz questions are semi-randomized (a certain number are drawn from each subject in the training). ',
+      roleDescription: [
+        'Built an Express back-end that served a static, paginated training guide and semi-randomized multiple choice assessment',
+        'Created logic for a semi-randomized assessment (a certain number of questions are drawn from each subject in the training)',
+        'Created interfaces using Jade templates from mockups',
+        'Helped conduct user acceptance testing with students'
+      ],
+      description: 'A module for students and instructional assistants in the division to fulfill lab safety training requirements once a quarter. User is guided through a static training guide, and then completes a timed assessment. Once the training has been completed at least once, a history of previous attempts is available. The quarter this application is currently qualifying for is dynamically determined.',
       technologies: ['Node.js', 'Express.js', 'Sass', 'Jade (Pug)']
     },
     {
@@ -51,7 +61,11 @@ export class ProjectsComponent implements OnInit {
       image: 'zmd',
       url: 'http://zombiematchdefense.com/',
       roleTitle: 'Developer',
-      roleDescription: 'Worked with client to develop a dynamic website matching his vision.',
+      roleDescription: [
+        'Worked with client to develop a dynamic website matching his vision',
+        'Built custom CSS3 animations using original game assets',
+        'Tested on desktop and mobile platforms'
+      ],
       description: 'A promotional website for a mobile game featuring parallax scrolling and CSS3 animations',
       technologies: ['Sass', 'CSS animations', 'CSS sprite sheet animations', 'Skrollr.js', 'Jade (Pug)']
     },
@@ -62,8 +76,13 @@ export class ProjectsComponent implements OnInit {
       image: 'amb',
       url: null,
       roleTitle: 'Developer',
-      roleDescription: 'Surveyed development team to identify front end toolset needs. Assembled a library of custom and externally-sourced components. Built an extensive styleguide outlining practical use and best practices.',
-      description: 'An opinionated suite of front-end tooling specially assembled for the Division of Biological Sciences at UC San Diego.',
+      roleDescription: [
+        'Surveyed development team to identify front-end needs and UX pain points',
+        'Assembled a library of custom and externally-sourced components',
+        'Built an extensive style guide for developers outlining practical use and best practices',
+        'Ported toolset from Java Servlet environment to Express and Jade'
+      ],
+      description: 'An opinionated suite of front-end tooling specially assembled for the Division of Biological Sciences at UC San Diego. Sitting on top of bootstrap, this ',
       technologies: ['Node.js', 'Sass', 'Grunt', 'JQuery', 'Bootstrap']
     }
   ];
