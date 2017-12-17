@@ -1,7 +1,7 @@
 @import '../../sass/_common';
 
 .title-section {
-    animation: scrollup .5s ease-in 2.3s both;
+    //animation: scrollup .5s ease-in 2.3s both;
     //background-color: $color-bold;
     background-image: linear-gradient($color-bold, #00a1de);
     color: $color-neutral;
@@ -36,17 +36,50 @@ h1 {
 .brand-image {
     @extend %block;
     max-width: 500px;
-    height: auto;
+    height: 250px;
     margin: 0 auto;
 
     .code-decoration {
+        border: solid 1px green;
         position: absolute;
         width: 100%;
+        height: 100%;
         animation: inflate 1s ease-in-out 1s both;
     }
 
     .art-supply-decoration {
+        border: solid 1px green;
         width: 100%;
-        animation: inflate 1s ease-in-out .5s both;
+        height: 100%;
+        //animation: inflate 1s ease-in-out .5s both;
     }
+}
+
+
+
+.pencil, 
+.pen {
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 50px;
+    height: 300px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.pencil { background: url('/assets/pencil.png'); }
+.pen { background-image: url('/assets/pen.png'); }
+
+.pencil-1 { 
+    transform: scale(.6) translate(150px, 30px) rotate(50deg); 
+    transition: transform .5s;
+}
+
+.pen-1 { 
+    transform: scale(.6) translate(-150px, 30px) rotate(-50deg); 
+    //transition: transform 1s;
 }
