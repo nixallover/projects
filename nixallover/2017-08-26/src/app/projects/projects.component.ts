@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { fadeBack } from '../animations';
+
 class Project {
   title: string;
   type: string;
@@ -15,7 +17,8 @@ class Project {
 @Component({
   selector: 'nix-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  styleUrls: ['./projects.component.scss'],
+  animations: [ fadeBack(200) ]
 })
 export class ProjectsComponent implements OnInit {
   public projects: Project[] = [

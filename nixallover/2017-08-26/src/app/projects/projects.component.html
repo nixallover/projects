@@ -1,5 +1,5 @@
-<div *ngIf="active" class="modal-overlay">
-  <div class="modal">
+<div class="modal-overlay" [class.active]="active">
+  <div *ngIf="active" class="modal" [@fadeBack]>
     <button (click)="active = undefined" type="button" class="modal-close-btn" aria-label="Close"></button>
 
     <h3 class="project-title">{{active.title}} ({{active.type}})</h3>
@@ -10,7 +10,6 @@
 
     <p>{{active.date}}</p>
 
-    <!-- <h4>Responsibilities</h4> -->
     <div class="role-description">
       <h4 class="role-title">{{active.roleTitle}}</h4>
       <p>{{active.roleDescription}}</p>

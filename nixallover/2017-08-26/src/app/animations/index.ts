@@ -1,0 +1,1 @@
+export { fadeBack } from './fade-back.animation';

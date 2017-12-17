@@ -89,13 +89,24 @@
 }
 
 .modal-overlay {
-    background-color: transparentize($color-bold, .5);
+    background-color: transparentize($color-bold, 1);
     height: 100%;
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    transition: all 1.5s;
+
+    // hidden styles 
+    visibility: hidden;
+    //opacity: 0;
+
+    &.active {
+        background-color: transparentize($color-bold, .5);
+        visibility: visible;
+        //opacity: 1;
+    }
 }
 
 .modal {
