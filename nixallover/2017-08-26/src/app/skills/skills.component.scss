@@ -9,60 +9,30 @@
 
 .skill {
     @extend %block;
+    @extend %display-text;
+    padding: 1rem;
+    font-size: 120%;
+    color: $color-dark;
+    text-align: center;
+    letter-spacing: .1rem;
+    z-index: 1;
     background-color: $color-neutral;
     margin-bottom: 1rem;
-    //transform: rotate(-2deg);
-
-    .skill-overlay {
-        border: solid $border-width transparent;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        transform: rotate(2deg);
-        transition: transform .6s, border-color .2s;
-        // -webkit-backface-visibility: hidden;
-        /* smooths jagged edge */
-        outline: 1px solid transparent;
-        z-index: 3;
-
-        &:hover, 
-        &:focus {
-            border-color: $color-bold;
-            transform: rotate(3deg);
-        }
-    }
-
-    .skill-content {
-        @extend %display-text;
-        padding: 1rem;
-        font-size: 120%;
-        color: $color-dark;
-        text-align: center;
-        letter-spacing: .1rem;
-        z-index: 1;
-    }
-
-    .skill-description {
-        background-color: $color-dark;
-        color: $color-neutral;
-        // display: none;
-        position: absolute;
-        padding: 1rem;
-        opacity: 0;
-        text-align: center;
-        width: 100%;
-        z-index: 2;
-        transform: translateY(-50px);
-        transition: opacity .6s, transform .4s;
-    }
-
-    &:hover, 
-    &:focus {
-        .skill-description {
-            // display: block;
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
 }
+
+// keeping just in case I want to use in intro animation
+// .skill {
+//     @extend %block;
+//     background-color: $color-neutral;
+//     margin-bottom: 1rem;
+
+//     .skill-content {
+//         @extend %display-text;
+//         padding: 1rem;
+//         font-size: 120%;
+//         color: $color-dark;
+//         text-align: center;
+//         letter-spacing: .1rem;
+//         z-index: 1;
+//     }
+// }

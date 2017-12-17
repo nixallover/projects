@@ -1,27 +1,42 @@
 @import '../../sass/_common';
 @import '../../sass/_animations';
 
+$height-header: 200px;
+$height-body: 50px;
+$height-slide: 50px;
+
 .presentation {
     background-color: $color-neutral-med;
-    //animation: fadeIn 1s ease-in;
-    //transition: all .5s ease;
     min-height: 400px;
-    margin: 0;
+    margin: 0 0 2rem 0;
     padding: 0;
     border: none;
-    border-radius: 40px 0px;
     overflow: hidden;
-    box-shadow: 5px 5px 15px rgba(20, 20, 20, .2);
+    
+    .header, .body { transition: height .2s ease-out; }
 
     .header {
         background-color: $color-dark;
+        clip-path: polygon(0 0, 0 100%, 100% 90%, 100% 0);
         display: block;
         height: 200px;
         overflow: hidden;
         width: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 
     .body {
         padding: 2rem;
+        height: 400px;
+    }
+
+    &:hover,
+    &:focus {
+        .header { height: 200px - $height-slide; }
+        .body { height: 400px + $height-slide; }
     }
 }

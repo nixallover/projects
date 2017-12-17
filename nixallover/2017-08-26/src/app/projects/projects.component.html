@@ -1,32 +1,43 @@
-<!-- <h2>Projects</h2> -->
+<div *ngIf="active" class="modal-overlay">
+  <div class="modal">
+    <button (click)="active = undefined" type="button" class="modal-close-btn" aria-label="Close"></button>
 
-<div class="project-container">
-  <div class="project project-{{project.image}}" *ngFor="let project of projects">
-      <h3 class="project-title"><span>{{project.title}}</span></h3>
+    <h3 class="project-title">{{active.title}} ({{active.type}})</h3>
+
+    <a *ngIf="active.url" class="block-button pull-right" [href]="active.url">
+      Visit site
+    </a>
+
+    <p>{{active.date}}</p>
+
+    <!-- <h4>Responsibilities</h4> -->
+    <div class="role-description">
+      <h4 class="role-title">{{active.roleTitle}}</h4>
+      <p>{{active.roleDescription}}</p>
+    </div>
+
+    <h4>Project description</h4>
+    <p>{{active.description}}</p>
+
+    <h4>Technologies</h4>
+    <ul class="technologies">
+      <li *ngFor="let tech of active.technologies">{{tech}}</li>
+    </ul>
   </div>
 </div>
 
-<!-- <div class="project-container">
+<nix-section type="alt">
+  <h2>Recent projects</h2>
+  
   <div class="project" *ngFor="let project of projects">
-    <div class="project-description slide-blocks"> 
-      <div>
-        <span>{{project.type}}</span>
-      </div>
-      <div>
-        <h3><span>{{project.title}}</span></h3>
-      </div>
-      <div>
-        <span>{{project.date}}</span>
-      </div>
-      <div>
-        <a class="block-button" [href]="project.url">
-					More
-				</a>
-      </div>
-    </div>
-    <div class="project-overlay"></div>
-    <div class="project-card">
-      <img class="project-image" src="assets/project-{{project.image}}.png" />
+    <!-- <div class="image-container project-{{project.image}}"></div> -->
+    <img src="/assets/{{project.image}}.png" class="cover-image" />
+    <div class="description-container">
+      <h3 class="project-title"><span>{{project.title}}</span></h3>
+      <p>{{project.type}} - {{project.date}}</p>
+      <p>
+        <button (click)="setActiveProject(project)" type="button" class="block-button">More</button>
+      </p>
     </div>
   </div>
-</div> -->
+</nix-section>

@@ -43,12 +43,13 @@ p {
 /* FIXME - add vendor prefixes */
 .block-button {
     @extend %display-text;
+    background-color: $color-neutral;
     border: solid 3px $color-dark;
     color: $color-dark;
     display: inline-block;
-    margin: .2rem 0;
+    margin: 0;
     overflow: hidden;
-    padding: 1.2rem 3rem;
+    padding: 1rem 3rem;
     position: relative;
     text-decoration: none;
     transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);

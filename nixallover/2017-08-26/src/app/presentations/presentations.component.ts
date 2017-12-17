@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./presentations.component.scss']
 })
 export class PresentationsComponent implements OnInit {
-  private presentations: any[] = [
+  public presentations: any[] = [
     {
+      id: 'nodejs',
       title: 'Node.js - the New Swiss Army Chainsaw',
       subtitle: 'UC San Diego Campus Lisa Talk',
       date: 'July 2015',
@@ -16,6 +17,7 @@ export class PresentationsComponent implements OnInit {
       description: 'I co-presented this one hour intro to Node.js, discussing ways that our shop has utilized it to create internal tooling'
     },
     {
+      id: 'brainstorm',
       title: 'Smart Text',
       subtitle: 'Adobe Illustrator Tutorial',
       date: 'August 2012',
