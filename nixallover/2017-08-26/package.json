@@ -9,6 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "build-prod": "ng build -target=production --env=prod",
     "build-sass": "node-sass --output-style compressed -o src src/sass",
     "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
   },

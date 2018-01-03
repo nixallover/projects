@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { fadeBack } from '../animations';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 class Project {
   title: string;
@@ -18,7 +18,25 @@ class Project {
   selector: 'nix-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
-  animations: [ fadeBack(200) ]
+  animations: [
+    trigger(
+      'fadeBack',
+      [
+        state('in', style( {
+          opacity: 1,
+          transform: 'scale(1) translateY(0, 0)'
+        } )),
+        transition(':enter', [ style({
+          opacity: 0,
+          transform: 'scale(.9) translateY(100px)'
+        }), animate( 200 ) ]),
+        transition(':leave', [ animate( 200, style({
+          opacity: 0,
+          transform: 'scale(.9) translateY(100px)'
+        })) ])
+      ]
+    )
+  ]
 })
 export class ProjectsComponent implements OnInit {
   public projects: Project[] = [
