@@ -4,7 +4,8 @@
 $color-neutral: #f8f8f3;
 $color-neutral-med: #e3e3d9;
 $color-dark: #3E3E3E;
-$color-bold: #08a89d;
+$color-bold: #00a1de;
+$color-fade: #08a89d;
 $color-test: #e2a3e9;
 
 // typography
@@ -43,6 +44,12 @@ $border-radius-med: 5px;
 // rotate
 @mixin rotate ($deg) {
     @include transform(rotate(#{$deg}deg));
+}
+
+@mixin linear-gradient($direction, $color-stops...) {
+    background: nth(nth($color-stops, 1), 1);
+    background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+    background: linear-gradient($direction, $color-stops);
 }
 
 %block {

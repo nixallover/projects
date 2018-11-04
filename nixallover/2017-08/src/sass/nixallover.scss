@@ -22,17 +22,12 @@ h3 {
 
 p {
     line-height: 1.7em;
-
-    // &.lead {
-    //     @extend %display-text;
-    //     font-size: 170%;
-    //     //font-style: italic;
-    // }
 }
 
-// a {
-//     color: $color-bold;
-// }
+ul li {
+    line-height: 1.7rem;
+    list-style-type: square;
+}
 
 .text-right {
     text-align: right;

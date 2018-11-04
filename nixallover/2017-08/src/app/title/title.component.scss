@@ -1,11 +1,11 @@
 @import '../../sass/_common';
 
 .title-section {
-    animation: scrollup .6s ease-in 2s both;
-    background-color: $color-bold;
+    animation: scrollup 1s ease-out 2.3s both;
+    background-image: linear-gradient($color-fade, $color-bold);
     color: $color-neutral;
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 10;
     width: 100%;
@@ -24,6 +24,15 @@ h1 {
     text-align: center;
 }
 
+// idea I had to have 2 shadows come in to main title
+// .brand-shadow {
+//     color: darken($color-bold, 15);
+//     position: absolute;
+//     margin: 0;
+//     transform: translate(-100%, -50%);
+//     transition: transform 1s;
+// }
+
 .subtitle {
     @extend %display-text;
     font-size: 150%;
@@ -34,18 +43,8 @@ h1 {
 
 .brand-image {
     @extend %block;
-    max-width: 500px;
+    max-width: 200px;
     height: auto;
     margin: 0 auto;
-
-    .code-decoration {
-        position: absolute;
-        width: 100%;
-        animation: inflate 1s ease-in-out 1s both;
-    }
-
-    .art-supply-decoration {
-        width: 100%;
-        animation: inflate 1s ease-in-out .5s both;
-    }
+    animation: inflate 1s ease-in-out 1s both;
 }

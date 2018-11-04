@@ -1,27 +1,14 @@
-// @keyframes fadeIn {
-//     0% {
-//         opacity: 0;
-//         visibility: hidden;
-//     }
-
-//     100% {
-//         opacity: 1;
-//         visibility: visible;
-//     }
-// }
-
 @keyframes scrollup {
-    0% { 
+    0% {
+        position: fixed;
         padding: 200px 0 300px 0;
         clip-path: polygon(0 0, 0 100%, 50% 100%, 100% 100%, 100% 0);
     }
     100% { 
+        position: absolute;
         padding: 0 0;
         clip-path: polygon(0 0, 0 85%, 50% 100%, 100% 85%, 100% 0);
     }
-    // 100% { 
-    //     padding: 20px 0;
-    // }
 }
 
 @keyframes fadein {

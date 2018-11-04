@@ -22,7 +22,7 @@ export class PresentationsComponent implements OnInit {
       subtitle: 'Adobe Illustrator Tutorial',
       date: 'August 2012',
       url: 'https://www.youtube.com/watch?v=5W3SZ_o8m5o',
-      linkText: 'Watch tutorial',
+      linkText: 'Watch on YouTube',
       description: 'A screencast describing how to create a custom text envelope in Illustrator. Runner up in Deke Techniques: the Challenge (Illustrator category)'
     }
   ];
